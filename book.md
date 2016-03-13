@@ -3,5 +3,4 @@ layout: page
 title: Apache Mesos Essentials
 permalink: /book/
 ---
-![](cover.png)
-
+![Book cover](https://raw.githubusercontent.com/dharmeshkakadia/dharmeshkakadia.github.io/master/images/cover.png)
