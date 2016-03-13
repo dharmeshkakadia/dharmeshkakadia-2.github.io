@@ -9,7 +9,7 @@ What is Hive?
 For the readers unaware of Hive, it provides an SQL interface to Hadoop. Hive is compiler that translates SQL (strictly speaking Hive Query Language - HQL, a variant of SQL) into a set of Mapreduce/Tez/Spark jobs. Thus, Hive is very instrumental in enabling non programmers to use Hadoop infrastructure. Traditionally, Hive had only one backend, namely MapReduce. But with recent versions, Hive supports Spark and Tez also as execution engines. This makes Hive a great tool for exploratory data analysis.
 
 The following diagram and terms from the Hive documentation explains high level design of Hive with MapReduce backend.
-
+![Hive design diagram](https://cwiki.apache.org/confluence/download/attachments/27362072/system_architecture.png?version=1&modificationDate=1414560669000&api=v2)
 
 Driver – The component which receives the queries. This component implements the notion of session handles and provides execute and fetch APIs modeled on JDBC/ODBC interfaces.
 Compiler – The component that parses the query, does semantic analysis on the different query blocks and query expressions and eventually generates an execution plan with the help of the table and partition metadata looked up from the metastore.
