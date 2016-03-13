@@ -5,7 +5,7 @@ title: How to write a Hive Hook
 
 Hive Hooks are little known gems that can be used for many purposes - everything you always wanted to know about Hive hooks. In this post we will take a deeper look at what a Hive hook is and how to write and use a Hive hook.
 
-#What is Hive?
+##What is Hive?
 For the readers unaware of [Hive](https://hive.apache.org), it provides an SQL interface to Hadoop. Hive is compiler that translates SQL (strictly speaking Hive Query Language - HQL, a variant of SQL) into a set of Mapreduce/Tez/Spark jobs. Thus, Hive is very instrumental in enabling non programmers to use Hadoop infrastructure. Traditionally, Hive had only one backend, namely MapReduce. But with recent versions, Hive supports [Spark](http://spark.apache.org) and [Tez](http://tez.apache.org) also as execution engines. This makes Hive a great tool for exploratory data analysis.
 
 The following diagram and terms from the Hive documentation explains high level design of Hive with MapReduce backend.
@@ -43,7 +43,7 @@ Before returning the result HiveDriverRunHook.postDriverRun()
 ( HiveConf.ConfVars.HIVE_DRIVER_RUN_HOOKS)
 Return the result.
 
-#What is a Hive Hook?
+##What is a Hive Hook?
 In general Hook is a mechanism for intercepting events, messages or function calls during processing. Hive hooks are mechanism to tie into the internal working of Hive without the need of recompiling Hive. Hooks in this sense provide ability to extend and integrate external functionality with Hive. In other words Hive hooks can be used to run/inject some code during various steps of query processing. Depending on the type of hook it can be invoked at different point during query processing.
 
 
@@ -110,7 +110,7 @@ For now we will just put a single statement
      System.out.println("Hello from the hook !!");
 If you want to see another simple Hive hook with a real use case you can check out YarnReservationHook. It uses Yarn's reservation API to reserve resources for given query just before the query starts the execution via a pre-execution- hook. We have another simple post-execution-hook that cleans up the reservation at the end of query.
 
-##Resources:
+###Resources:
 
 1. http://stackoverflow.com/questions/17461932/hive-execution-hook
 2. http://www.slideshare.net/julingks/apache-hive-hooksminwookim130813
