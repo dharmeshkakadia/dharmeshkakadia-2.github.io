@@ -55,6 +55,7 @@ Pre-semantic-analyzer and Post-semantic-analyzer hooks are invoked before and af
 Metastore initialization hooks are invoked when Hive metastore is initialized. If we want to log what new tables/databases are created in Hive to external services, then Metastore hooks are the place to do it. This can be used for example to keep HBase in sync with Hive metastore.
 org.apache.hadoop.hive.metastore.HiveMetaHook interface defines the following methods that are invoked as part of metastore transections - create/drop a table. The Table object has all the necessary information about the table being processed like its name, database it is part of, Serializer, properties, columns etc.
 
+```java
 public void preCreateTable(Table table) throws MetaException;
 
 public void rollbackCreateTable(Table table) throws MetaException;
@@ -66,7 +67,7 @@ public void preDropTable(Table table) throws MetaException;
 public void rollbackDropTable(Table table) throws MetaException;
 
 public void commitDropTable(Table table, boolean deleteData) throws MetaException;
-
+```
 A hook can be used for any purpose you see appropriate.
 
 Note, that Hooks are invoked in the normal processing path for Hive. So, avoid doing very costly operations in the Hive pre-hooks and metastore hooks.
