@@ -99,7 +99,7 @@ lets setup a project using maven.
 
 Now add the hive-exec package as a dependency to your project using,
 
-{% highlight xml %}
+```xml
     <dependencies>
         <dependency>
             <groupId>org.apache.hive</groupId>
@@ -107,7 +107,7 @@ Now add the hive-exec package as a dependency to your project using,
             <version>1.1.0</version>
         </dependency>
     </dependencies>
-{% endhighlight %}
+```
 
 Now lets create a class that implements the hook interface. We will call our class HiveExampleHook which will implement the org.apache.hadoop.hive.ql.hooks.ExecuteWithHookContext. This interface has only one method with following signature,
      public void run(HookContext) throws Exception;
