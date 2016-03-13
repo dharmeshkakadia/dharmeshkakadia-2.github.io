@@ -77,32 +77,35 @@ Hive is very much alive with Tez and Spark and it's quickly/has become/becoming 
 
 There are many different kinds of Hook that Hive supports.
 
-Hive Hook API
+##Hive Hook API
 
 We will now write an example Hive hook and setup it with hive. We will write a simple pre-execution hook that will write "Hello from the hook !!".
 
 lets setup a project using maven.
 
-xml version="1.0" encoding="UTF-8"?&gt;&lt;project xmlns="http://maven.apache.org/POM/4.0.0"         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"&gt;
-    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-    &lt;groupId&gt;hive-hook-example&lt;/groupId&gt;
-    &lt;artifactId&gt;Hive-hook-example&lt;/artifactId&gt;
-    &lt;version&gt;1.0&lt;/version&gt;
+    <groupId>hive-hook-example</groupId>
+    <artifactId>Hive-hook-example</artifactId>
+    <version>1.0</version>
 
-&lt;/project&gt;
+</project>
+```
 
 Now add the hive-exec package as a dependency to your project using,
 
-
-
-&lt;dependencies&gt;
-        &lt;dependency&gt;
-            &lt;groupId&gt;org.apache.hive&lt;/groupId&gt;
-            &lt;artifactId&gt;hive-exec&lt;/artifactId&gt;
-            &lt;version&gt;1.1.0&lt;/version&gt;
-        &lt;/dependency&gt;
-    &lt;/dependencies&gt;
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.hive</groupId>
+            <artifactId>hive-exec</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+    </dependencies>
 
 Now lets create a class that implements the hook interface. We will call our class HiveExampleHook which will implement the org.apache.hadoop.hive.ql.hooks.ExecuteWithHookContext. This interface has only one method with following signature,
      public void run(HookContext) throws Exception;
