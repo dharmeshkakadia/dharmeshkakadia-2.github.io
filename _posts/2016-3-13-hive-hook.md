@@ -83,7 +83,7 @@ We will now write an example Hive hook and setup it with hive. We will write a s
 
 lets setup a project using maven.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
