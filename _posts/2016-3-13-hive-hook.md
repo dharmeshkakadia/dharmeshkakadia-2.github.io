@@ -3,10 +3,10 @@ layout: post
 title: How to write a Hive Hook
 ---
 
-Hive Hooks are little known gems that can be used for many purposes - everything you always wanted to know about Hive hooks. In this post we will take a deeper look at what a Hive hook is and how to write and use a Hive hook (along with the full source code!).
+Hive Hooks are little known gems that can be used for many purposes. In this post we will take a deeper look at what a Hive hook is and how to write and use a Hive hook (along with the full source code!).
 
 ##What is Hive?
-For the readers unaware of [Hive](https://hive.apache.org), it provides an SQL interface to Hadoop. Hive is compiler that translates SQL (strictly speaking Hive Query Language - HQL, a variant of SQL) into a set of Mapreduce/Tez/Spark jobs. Thus, Hive is very instrumental in enabling non programmers to use Hadoop infrastructure. Traditionally, Hive had only one backend, namely MapReduce. But with recent versions, Hive supports [Spark](http://spark.apache.org) and [Tez](http://tez.apache.org) also as execution engines. This makes Hive a great tool for exploratory data analysis.
+For the readers new to [Hive](https://hive.apache.org), it provides an SQL interface to Hadoop. Hive can be thought of as a compiler that translates SQL (strictly speaking Hive Query Language - HQL, a variant of SQL) into a set of Mapreduce/Tez/Spark jobs. Thus, Hive is very instrumental in enabling non programmers to use Hadoop infrastructure. Traditionally, Hive had only one backend, namely MapReduce. But with recent versions, Hive supports [Spark](http://spark.apache.org) and [Tez](http://tez.apache.org) also as execution engines. This makes Hive a great tool for exploratory data analysis.
 
 The following diagram and terms from the Hive documentation explains high level design of Hive with MapReduce backend.
 ![Hive design diagram](https://cwiki.apache.org/confluence/download/attachments/27362072/system_architecture.png?version=1&modificationDate=1414560669000&api=v2)
@@ -57,7 +57,8 @@ There are many different kinds of Hooks that Hive supports. [Hook](https://githu
 * [HiveSessionHook](https://github.com/apache/hive/blob/master/service/src/java/org/apache/hive/service/cli/session/HiveSessionHook.java) extends Hook interface to provide session level hooks. The hook is called when a new session is started. It is configured with `hive.server2.session.hook`.
 * Hive 1.1 added [Query Redactor Hooks](https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/hooks/Redactor.java). It is an abstract class that implements Hook interface that is useful for removing sensitive information about the query before putting it into job.xml. This hooks can be configured by setting `hive.exec.query.redactor.hooks` property.
 
-Hive codebase have some hook examples in `https://github.com/apache/hive/tree/master/ql/src/java/org/apache/hadoop/hive/ql/hooks`. Right now it has following hook implementations:
+Hive codebase have some [hook examples](https://github.com/apache/hive/tree/master/ql/src/java/org/apache/hadoop/hive/ql/hooks). Right now it has following hook implementations:
+
 * [DriverTestHook](https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/hooks/DriverTestHook.java) is a very simple HiveDriverRunHook that prints the command that you used to the output.
 * [PreExecutePrinter](https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/hooks/PreExecutePrinter.java) and [PostExecutePrinter](https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/hooks/PostExecutePrinter.java) are examples of pre and post execution hooks that prints the parameters to the output.
 * [ATSHook](https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/hooks/ATSHook.java) is a ExecuteWithHookContext that pushes query and plan information to [YARN timeline server](https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/TimelineServer.html)
