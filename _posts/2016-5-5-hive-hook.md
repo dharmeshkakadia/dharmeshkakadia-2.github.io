@@ -5,7 +5,8 @@ title: How to write a Hive Hook
 
 Hive Hooks are little known gems that can be used for many purposes. In this post we will take a deeper look at what a Hive hook is and how to write and use a Hive hook (along with the full source code!).
 
-#What is Hive?
+##What is Hive?
+
 For the readers new to [Hive](https://hive.apache.org), it provides an SQL interface to Hadoop. Hive can be thought of as a compiler that translates SQL (strictly speaking Hive Query Language - HQL, a variant of SQL) into a set of Mapreduce/Tez/Spark jobs. Thus, Hive is very instrumental in enabling non programmers to use Hadoop infrastructure. Traditionally, Hive had only one backend, namely MapReduce. But with recent versions, Hive supports [Spark](http://spark.apache.org) and [Tez](http://tez.apache.org) also as execution engines. This makes Hive a great tool for exploratory data analysis.
 
 The following diagram and terms from the Hive documentation explains high level design of Hive with MapReduce backend.
