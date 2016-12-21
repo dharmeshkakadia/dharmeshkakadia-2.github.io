@@ -16,7 +16,7 @@ The following diagram and terms from the Hive documentation explains high level 
 * Metastore – The component that stores all the structure information of the various tables and partitions in the warehouse including column and column type information, the serializers and deserializers necessary to read and write data and the corresponding HDFS files where the data is stored.
 * Execution Engine – The component which executes the execution plan created by the compiler. The plan is a DAG of stages. The execution engine manages the dependencies between these different stages of the plan and executes these stages on the appropriate system components.
 
-##What is a Hive Hook?
+## What is a Hive Hook?
 In general, Hook is a mechanism for intercepting events, messages or function calls during processing. Hive hooks are mechanism to tie into the internal working of Hive without the need of recompiling Hive. Hooks in this sense provide ability to extend and integrate external functionality with Hive. In other words Hive hooks can be used to run/inject some code during various steps of query processing. Depending on the type of hook it can be invoked at different point during query processing:
 
 * Pre-execution hooks are invoked before the execution of the query by the execution engine begins. Note that at this point you have Hive already has an optimized query plan for the execution ready.
@@ -25,7 +25,7 @@ In general, Hook is a mechanism for intercepting events, messages or function ca
 * Pre-driver-run and post-driver-run hooks are invoked before and after the driver is run on the query.
 * Pre-semantic-analyzer and Post-semantic-analyzer hooks are invoked before and after Hive runs semantic analyzer on the query string.
 
-##Life of a Hive Query
+## Life of a Hive Query
 
 At a high level here are the steps that happen during the processing of a given query in Hive. Don't worry if you are not familiar with some of these terms, we will discuss them later.
 
@@ -46,7 +46,7 @@ At a high level here are the steps that happen during the processing of a given 
 15. Run `org.apache.hadoop.hive.ql.HiveDriverRunHook.postDriverRun()` controlled by `hive.exec.driver.run.hooks`. Note that this is run after the query finishes running and before returning the results to the client.
 16. Return the result.
 
-##Hive Hook API
+## Hive Hook API
 
 There are many different kinds of Hooks that Hive supports. [Hook](https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/hooks/Hook.java) interface is the parent of all the Hooks in Hive. It is an empty interface and has been extended by following interfaces for specific hooks:
 
@@ -140,7 +140,7 @@ That's all. We are now all set to see "Hello from hook !!" before all the Hive s
 
 If you want to see another simple Hive hook with a real use case you can check out my [YarnReservationHook](https://github.com/dharmeshkakadia/hive-yarn-reservation-hook). It uses Yarn's reservation API to reserve resources for given query just before the query starts the execution via a pre-execution- hook. We have another simple post-execution-hook that cleans up the reservation at the end of query.
 
-##Metastore Hooks
+## Metastore Hooks
 
 Hive also has metastore specific hooks for intercepting metastore events. [HiveMetaHook](https://github.com/apache/hive/blob/master/metastore/src/java/org/apache/hadoop/hive/metastore/HiveMetaHook.java) represent the root of metastore hooks.
 Metastore initialization hooks are invoked when Hive metastore is initialized. If we want to log what new tables/databases are created in Hive to external services, then Metastore hooks are the place to do it. This can be used for example to keep HBase in sync with Hive metastore. HiveMetaHook interface defines the following methods that are invoked as part of metastore transactions.
@@ -163,11 +163,11 @@ The [Table](https://github.com/apache/hive/blob/master/ql/src/java/org/apache/ha
 
 Also, there is `hive.metastore.ds.connection.url.hook` which allows alternative implementation for retrieving the JDO connection URL. If its value is empty (default case) the value of `javax.jdo.option.ConnectionURL` is used as the connection URL.
 
-##Caveats
+## Caveats
 * Please note that hook instances are never re-used.
 * Hooks are invoked in the normal processing path for Hive. So, avoid doing very costly operations in the Hive pre-hooks and metastore hooks.
 
-###Resources:
+### Resources:
 
 1. http://stackoverflow.com/questions/17461932/hive-execution-hook
 2. http://www.slideshare.net/julingks/apache-hive-hooksminwookim130813
