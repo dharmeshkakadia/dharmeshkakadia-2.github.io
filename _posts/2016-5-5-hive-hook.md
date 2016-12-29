@@ -159,7 +159,7 @@ public void commitDropTable(Table table, boolean deleteData) throws MetaExceptio
 ```
 The [Table](https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/metadata/Table.java) object has all the necessary information about the Hive table being processed including its name, database it is part of, Serializer, properties, columns etc. Note that HiveMetaHook does not extend Hook interface.
 
-`hive.metastore.filter.hook` can be used to filter metadata results. The [DefaultMetaStoreFilterHookImpl](org.apache.hadoop.hive.metastore.DefaultMetaStoreFilterHookImpl) returns the results as is without modifying. If `hive.security.authorization.manager` is set to instance of `HiveAuthorizerFactory` then this value is ignored.
+`hive.metastore.filter.hook` can be used to filter metadata results. The [DefaultMetaStoreFilterHookImpl](https://github.com/apache/hive/blob/master/metastore/src/java/org/apache/hadoop/hive/metastore/DefaultMetaStoreFilterHookImpl.java) returns the results as is without modifying. If `hive.security.authorization.manager` is set to instance of `HiveAuthorizerFactory` then this value is ignored.
 
 Also, there is `hive.metastore.ds.connection.url.hook` which allows alternative implementation for retrieving the JDO connection URL. If its value is empty (default case) the value of `javax.jdo.option.ConnectionURL` is used as the connection URL.
 
