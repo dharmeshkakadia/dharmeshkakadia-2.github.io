@@ -74,6 +74,10 @@ kramdown:
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
+# http://prose.io
+Prose
+  media: 'images'
+
 # Exclude these files from your production _site
 exclude:
     - Gemfile
