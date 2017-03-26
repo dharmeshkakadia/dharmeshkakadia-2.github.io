@@ -78,11 +78,6 @@ Presto started out at Facebook and has gained a lot of momentum at many organiza
 ![presto-install-steps.gif]({{site.baseurl}}/images/presto-install-steps.gif)
 
 
-
-![presto_install_new.PNG]({{site.baseurl}}/images/presto_install_new.PNG)
-
-
-
 # Customizing installation
 
 https://github.com/dharmeshkakadia/presto-hdinsight#how-do-i-customize-presto-installation
@@ -101,6 +96,18 @@ https://prestodb.io/docs/current/admin/tuning.html
 
 # Inner details
 If you are interestred in the details of what is the above script doing, let me break it down.
+
+[installpresto.sh](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/installpresto.sh) is the script invoked by custome script action. It does mainly the following things:
+
+We use [Slider](https://github.com/prestodb/presto-yarn) to manage presto resources through YARN. In a N node standalone cluster with this script means it will create N-2 containers with maximum memory, 1 slider AM that monitors any failed containers and relaunches it a presto co-ordinator.
+
+1. Download the the github repo.
+2. Create a build presto build that has support of Windows Azure Storage Blob (WASB). Note that this step is required since the WASB support has not [merged](https://github.com/prestodb/presto-hadoop-apache2/pull/14) in the upstream Presto yet. The script builds the package under ``/var/lib/presto/`` on the primary headnode.
+3. Install the created slider package.
+4. Create appropriate presto configuration files for the presto slider package.- JVM
+5. Start the presto with slider.
+6. Wait for the presto to come up and install preso-cli.
+
 
 How to run presto TPCDS article link
 
