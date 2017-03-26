@@ -6,6 +6,10 @@ published: false
 How to run Presto on HDInsight
 If you are faimilier with presto and want to 
 
+WASB support.
+https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/createsliderbuild.sh
+
+
 # What is Presto?
 Presto is a distributed SQL query engine for big data.
 Its known for being fast
@@ -59,7 +63,11 @@ Airpal is the web query interface for presto
 
 ![airpla-demo.gif]({{site.baseurl}}/images/airpla-demo.gif)
 
-JDBC/ODBC drivers are available which allow you to connect to wide range of tools for querying.
+You can install Airpal in HDInsight on an Edge node using [airpal-deploy.json](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/airpal-deploy.json). The step by step by instruction is listed in the [README](https://github.com/dharmeshkakadia/presto-hdinsight#airpal)
+
+Note that with little work, you can combine both the installation with a single azure deployment template.
+
+JDBC/ODBC drivers are available which allow you to connect to wide range of tools for querying. Ofcourse Presto has [client libraries in wide range of lanugauges](https://prestodb.io/docs/current/admin/tuning.html) if you prefer.
 
 # Who is using Presto?
 Presto started out at Facebook and has gained a lot of momentum at many organizations. Some of the 
@@ -67,7 +75,12 @@ Presto started out at Facebook and has gained a lot of momentum at many organiza
 
 # Step by Step instructions
 
+![presto-install-steps.gif]({{site.baseurl}}/images/presto-install-steps.gif)
+
+
+
 ![presto_install_new.PNG]({{site.baseurl}}/images/presto_install_new.PNG)
+
 
 
 # Customizing installation
