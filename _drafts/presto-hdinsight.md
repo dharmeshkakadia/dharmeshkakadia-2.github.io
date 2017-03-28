@@ -46,20 +46,18 @@ The HDInsight script only confgiures hive and [TPCH](https://prestodb.io/docs/cu
 While presto is very successfully used by nuber of orgnizations for their fast data anlysis needs,
 One of the prime aspect that caught my attention was the ability to query various data sources in a single query. This is so magical ✨, let me give you an example,
 
-
-This obviates the need to bring the all the data manged under the same system. This in my opinion is so important since, the world where each system wants to be the _only_ system to store and process data.
-The reality however is that each system makes different tradeoffs and are fit and serve only part of the larger picture.
+This allows querying data without the need to bring all the data in the same place. This also obviates the need to bring all the data manged under the same system. This in my opinion is so important since, the world where each system wants to be the _only_ system to store and process data, presto does not. For real-world usecases each system has different tradeoffs and are fit and serve only part of the larger picture in teh big data architectures.
 
 Presto supprts wide range of [inbuilt and user defined functions](https://prestodb.io/docs/current/functions.html)
 
-The SQL syntax should make you feel home.
+The SQL syntax is similar to Hive and Spark SQL syntax and should make you feel home. Also the auto-complete in presto CLI is pretty dope!.
 
 # Presto UI
 ![prestoui.png]({{site.baseurl}}/images/prestoui.png)
 
 
 # Airpal
-Airpal is the web query interface for presto
+[Airpal](http://airbnb.io/airpal/) is the web query interface for presto.
 
 ![airpla-demo.gif]({{site.baseurl}}/images/airpla-demo.gif)
 
