@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Presto on HDInsight
+published: true
 ---
 How to run Presto on HDInsight
 If you are familiar with presto and want to
@@ -26,9 +27,14 @@ The following figure from the presto documentation highlights key componenets of
 
 ![presto-arch.png]({{site.baseurl}}/images/presto-arch.png)
 
-Presto has coordinator and workers
-
 https://github.com/prestodb/presto/blob/master/presto-docs/src/main/sphinx/overview/concepts.rst
+
+Presto has coordinator and workers
+Al the communication in preso between Coordinator, workers and clients happen via REST API.
+
+## Coordinator
+Presto coordinator is a server that 
+
 
 Workers and coordinator talks via REST API.
 
