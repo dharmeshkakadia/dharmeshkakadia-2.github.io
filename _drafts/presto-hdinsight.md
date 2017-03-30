@@ -34,7 +34,7 @@ https://github.com/prestodb/presto/blob/master/presto-docs/src/main/sphinx/overv
 
 Workers and coordinator talks via REST API. 
 
-Federated query model
+Federated query model that presto uses 
 
 The Data source model
 Presto connector architecutre, 
@@ -50,7 +50,16 @@ Found an issue in Preto on HDInsight, feel free to open a issue on the repo. Not
 
 # Currently avilable connectors
 
-Some of the popular examples of [connectors](https://prestodb.io/docs/current/connector.html) include [Kafka](https://prestodb.io/docs/current/connector/kafka.html), [Cassandra](https://prestodb.io/docs/current/connector/cassandra.html), [Hive](https://prestodb.io/docs/current/connector/hive.html), [Accumulo](https://prestodb.io/docs/current/connector/accumulo.html), [MongoDB](https://prestodb.io/docs/current/connector/mongodb.html), [MySQL](https://prestodb.io/docs/current/connector/mysql.html), [PostegreSQL](https://prestodb.io/docs/current/connector/postgresql.html), [Redis](https://prestodb.io/docs/current/connector/redis.html) and so on.
+Some of the [connectors](https://prestodb.io/docs/current/connector.html) include 
+- [Kafka](https://prestodb.io/docs/current/connector/kafka.html), 
+- [Cassandra](https://prestodb.io/docs/current/connector/cassandra.html), 
+- [Hive](https://prestodb.io/docs/current/connector/hive.html), 
+- [Accumulo](https://prestodb.io/docs/current/connector/accumulo.html), 
+- [MongoDB](https://prestodb.io/docs/current/connector/mongodb.html), 
+- [MySQL](https://prestodb.io/docs/current/connector/mysql.html), 
+- [PostegreSQL](https://prestodb.io/docs/current/connector/postgresql.html), 
+- [Redis](https://prestodb.io/docs/current/connector/redis.html)
+- ... [more](https://prestodb.io/docs/current/connector.html).
 
 The HDInsight script only confgiures hive and [TPCH](https://prestodb.io/docs/current/connector/tpch.html) connetors by default. If you want to add other conenctors, following the instructions below.
 
@@ -75,7 +84,11 @@ The SQL syntax is similar to Hive and Spark SQL syntax and should make you feel 
 
 
 ## Installing airpal on headnode
-
+Install the presto by following the steps. Now, SSH to the headnode an run the [install airpal](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/installairpal.sh) script as sudo as follows.
+``
+cd /var/lib/presto/
+sudo ./presto-hdinsight-master/installpresto.sh
+``
 
 ## Installing airpal on Edgenode
 You can install Airpal in HDInsight on an Edge node using [airpal-deploy.json](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/airpal-deploy.json). The step by step by instruction is listed in the [README](https://github.com/dharmeshkakadia/presto-hdinsight#airpal)
@@ -86,6 +99,15 @@ JDBC/ODBC drivers are available which allow you to connect to wide range of tool
 
 # Who is using Presto?
 Presto started out at Facebook and has gained a lot of momentum at many organizations. Some of the promiment names are 
+- Netflix
+- Airbnb
+- Dropbox
+- LinkedIn
+- Uber
+- NASDAQ
+- Walmart
+- Alibaba
+- ... [many more](https://github.com/prestodb/presto/wiki/Presto-Users) and may be YOU :)
 
 
 # Step by Step instructions
