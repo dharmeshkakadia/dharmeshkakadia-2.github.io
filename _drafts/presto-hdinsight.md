@@ -34,6 +34,8 @@ https://github.com/prestodb/presto/blob/master/presto-docs/src/main/sphinx/overv
 
 Workers and coordinator talks via REST API. 
 
+Federated query model
+
 The Data source model
 Presto connector architecutre, 
 Each connector implements two APIs 
@@ -71,6 +73,11 @@ The SQL syntax is similar to Hive and Spark SQL syntax and should make you feel 
 
 ![airpla-demo.gif]({{site.baseurl}}/images/airpla-demo.gif)
 
+
+## Installing airpal on headnode
+
+
+## Installing airpal on Edgenode
 You can install Airpal in HDInsight on an Edge node using [airpal-deploy.json](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/airpal-deploy.json). The step by step by instruction is listed in the [README](https://github.com/dharmeshkakadia/presto-hdinsight#airpal)
 
 Note that with little work, you can combine both the installation with a single azure deployment template.
@@ -113,9 +120,13 @@ https://github.com/dharmeshkakadia/presto-hdinsight#how-do-i-customize-presto-in
 
 ## Connector configuration 
 
+As mentioned earlier, by default we have hive and tpch connectors installed with the following configurations.
+
+Also, presto by default configuration 
 
 ## JVM configuration
 
+The 
 https://prestodb.io/docs/current/admin/tuning.html
 
 
