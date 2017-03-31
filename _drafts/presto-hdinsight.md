@@ -18,51 +18,25 @@ It supports querying data in wide range of format including Parquet, ORC, Text, 
 The presto
 
 # Presto Architecture
-To understand how does presto works, lets looks at the presto architecture. The below figures are taken from presto website and facebook presentations.
-
-![presto-overview.png]({{site.baseurl}}/images/presto-overview.png)
-
-
-The following figure from the presto documentation highlights key componenets of presto.
+To understand how does presto works, lets looks at the presto architecture. The following figure from the presto documentation highlights key [componenets](https://github.com/prestodb/presto/blob/master/presto-docs/src/main/sphinx/overview/concepts.rst) of presto.
 
 ![presto-arch.png]({{site.baseurl}}/images/presto-arch.png)
-
-https://github.com/prestodb/presto/blob/master/presto-docs/src/main/sphinx/overview/concepts.rst
-
-Presto has coordinator and workers
-
 
 ## Coordinator
 Presto coordinator is responsible for managing workernode membership, parsing the queries, generating execution plan and managing execution of the query. During the execution of the queries, it also manages the delivery of the data between tasks.
 
 The coordinator translates the given query into logical plan. The logical plan is composed of seires of stages and each stage is then executed in a disstributed fashion using several tasks across workers. This is very similar to other distributed query execution engines like Hive and Spark.
 
-
 ## Workers
-Presto worker is responsible for executing tasks and processing data. THis 
+Presto worker is responsible for executing tasks and processing data. 
 
 ## Communication
 Each presto worker advertises itself to the coordinator throught [discovery server](https://github.com/airlift/discovery). 
 All the communication in presto between Coordinator, workers and clients happen via REST API.
 
-## Data sources
-Presot has a federated query model where each data sources is a presto connector. 
-One way to think about different presto connectors is similar to how different drivers enable a database to talk to multiple sources. 
+## Connectors
+Presot has a federated query model where each data sources is a presto connector. One way to think about different presto connectors is similar to how different drivers enable a database to talk to multiple sources. Some of the currently available connectors on the presto project:
 
-## Catalog
-Each catalog in presto is associated with a specific connector, specified in the catalog configuration with ``connector.name``. Based on this name Presto (Catalog Manager) decides how to query a perticular data source. When writing a query in Presto, you can use the fully-qualified name that contains ``connector.schemaname.tablename``. For example, if you have a hive table ``revenue`` in database name ``prod``, you can refer it as ``hive.prod.revenue``.
-
-Each connector implements two APIs
-1. Data streaming API : Specifies how to read/write the data.
-2. Metadata API : Specifies what is the schema or how to interpret the data.
-
-![presto-internals.png]({{site.baseurl}}/images/presto-internals.png)
-
-For further information, presto documentation is a great palce to look.
-
-# Currently avilable connectors
-
-Some of the [connectors](https://prestodb.io/docs/current/connector.html) include
 - [Kafka](https://prestodb.io/docs/current/connector/kafka.html),
 - [Cassandra](https://prestodb.io/docs/current/connector/cassandra.html),
 - [Hive](https://prestodb.io/docs/current/connector/hive.html),
@@ -74,6 +48,17 @@ Some of the [connectors](https://prestodb.io/docs/current/connector.html) includ
 - ... [more](https://prestodb.io/docs/current/connector.html).
 
 The HDInsight script configures [Hive](https://prestodb.io/docs/current/connector/hive.html) and [TPCH](https://prestodb.io/docs/current/connector/tpch.html) connectors by default. If you want to add other conenctors, following the instructions below.
+
+## Catalog
+Each catalog in presto is associated with a specific connector, specified in the catalog configuration with ``connector.name``. Based on this name Presto (Catalog Manager) decides how to query a perticular data source. When writing a query in Presto, you can use the fully-qualified name that contains ``connector.schemaname.tablename``. For example, if you have a hive table ``revenue`` in database name ``prod``, you can refer it as ``hive.prod.revenue``. The below figure highlights how multiple catalogs fit in presto:
+
+![presto-internals.png]({{site.baseurl}}/images/presto-internals.png)
+
+As showed in the figure, each connector implements two APIs
+1. Data streaming API : Specifies how to read/write the data.
+2. Metadata API : Specifies what is the schema or how to interpret the data.
+
+For further information, [presto documentation](https://prestodb.io/docs/current) is a great palce to look :)
 
 # Use cases
 While presto is very successfully used by number of organizations for their fast data analysis needs,
@@ -96,14 +81,20 @@ The SQL syntax is similar to Hive and Spark SQL syntax and should make you feel 
 
 
 ## Installing airpal on headnode
-Install the presto by following the steps. Now, SSH to the headnode an run the [install airpal](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/installairpal.sh) script as sudo as follows.
+Install the presto by following the steps. Now, SSH to the headnode and tun the following command to figure out 
+
+an run the [install airpal](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/installairpal.sh) script as sudo as follows.
 ``
 cd /var/lib/presto/
 sudo ./presto-hdinsight-master/installpresto.sh
 ``
 
+THe airpal will be running on port 9191.
+
 ## Installing airpal on Edgenode
 You can install Airpal in HDInsight on an Edge node using [airpal-deploy.json](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/airpal-deploy.json). The step by step by instruction is listed in the [README](https://github.com/dharmeshkakadia/presto-hdinsight#airpal)
+
+While 
 
 Note that with little work, you can combine both the installation with a single azure deployment template.
 
