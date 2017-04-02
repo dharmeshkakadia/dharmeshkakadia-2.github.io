@@ -3,24 +3,30 @@ layout: post
 title: Presto on HDInsight
 published: true
 ---
-How to run Presto on HDInsight
-If you are familiar with presto and want to
-
-WASB support.
-
-Presto logo + HDInsight logo
+This article will explain presto internals and how to install presto on [Azure HDInsight](https://azure.microsoft.com/en-us/services/hdinsight/). If you are familiar with presto, you can [jump in directly](#installing-presto-on-hdinsight).
 
 # What is Presto?
-Presto is a distributed SQL query engine for big data.
-Its known for being fast
+[Presto](https://prestodb.io/) is a **fast** distributed SQL query engine for big data. Presto is suitable for interactive querying of petabytes of data.
 
-It supports querying data in wide range of format including Parquet, ORC, Text, RCFile and so on.
-The presto
+# Who is using Presto?
+Presto started out at Facebook and has become key piece in the data infrastructure of many organizations. Some of the prominent names who use presto are:
+- Netflix
+- Airbnb
+- Dropbox
+- LinkedIn
+- Uber
+- NASDAQ
+- Walmart
+- Alibaba
+- ... [many more](https://github.com/prestodb/presto/wiki/Presto-Users) and may be, by the end of this article, YOU :)
 
 # Presto Architecture
-To understand how does presto works, lets looks at the presto architecture. The following figure from the presto documentation highlights key [componenets](https://github.com/prestodb/presto/blob/master/presto-docs/src/main/sphinx/overview/concepts.rst) of presto.
+To understand how presto works, lets look at the presto architecture. The following figure from the presto documentation highlights key [components](https://github.com/prestodb/presto/blob/master/presto-docs/src/main/sphinx/overview/concepts.rst) of presto.
 
 ![presto-arch.png]({{site.baseurl}}/images/presto-arch.png)
+
+## Clients
+Clients are where you submit queries to Presto. Clients can use JDBC/ODBC/REST protocol to talk to coordinator.
 
 ## Coordinator
 Presto coordinator is responsible for managing workernode membership, parsing the queries, generating execution plan and managing execution of the query. During the execution of the queries, it also manages the delivery of the data between tasks.
@@ -28,11 +34,10 @@ Presto coordinator is responsible for managing workernode membership, parsing th
 The coordinator translates the given query into logical plan. The logical plan is composed of seires of stages and each stage is then executed in a disstributed fashion using several tasks across workers. This is very similar to other distributed query execution engines like Hive and Spark.
 
 ## Workers
-Presto worker is responsible for executing tasks and processing data. 
+Presto worker is responsible for executing tasks and processing data. This is where the real work of processing the data happens.
 
 ## Communication
-Each presto worker advertises itself to the coordinator throught [discovery server](https://github.com/airlift/discovery). 
-All the communication in presto between Coordinator, workers and clients happen via REST API.
+Each presto worker advertises itself to the coordinator through [discovery server](https://github.com/airlift/discovery). All the communication in presto between Coordinator, workers and clients happen via REST API.
 
 ## Connectors
 Presot has a federated query model where each data sources is a presto connector. One way to think about different presto connectors is similar to how different drivers enable a database to talk to multiple sources. Some of the currently available connectors on the presto project:
@@ -47,7 +52,6 @@ Presot has a federated query model where each data sources is a presto connector
 - [Redis](https://prestodb.io/docs/current/connector/redis.html)
 - ... [more](https://prestodb.io/docs/current/connector.html).
 
-The HDInsight script configures [Hive](https://prestodb.io/docs/current/connector/hive.html) and [TPCH](https://prestodb.io/docs/current/connector/tpch.html) connectors by default. If you want to add other conenctors, following the instructions below.
 
 ## Catalog
 Each catalog in presto is associated with a specific connector, specified in the catalog configuration with ``connector.name``. Based on this name Presto (Catalog Manager) decides how to query a perticular data source. When writing a query in Presto, you can use the fully-qualified name that contains ``connector.schemaname.tablename``. For example, if you have a hive table ``revenue`` in database name ``prod``, you can refer it as ``hive.prod.revenue``. The below figure highlights how multiple catalogs fit in presto:
@@ -58,11 +62,23 @@ As showed in the figure, each connector implements two APIs
 1. Data streaming API : Specifies how to read/write the data.
 2. Metadata API : Specifies what is the schema or how to interpret the data.
 
-For further information, [presto documentation](https://prestodb.io/docs/current) is a great palce to look :)
+For further information, [presto documentation](https://prestodb.io/docs/current) is a great place to look :)
 
-# Use cases
+# Presto Use Cases
+Presto is suitable for interactive query 
 While presto is very successfully used by number of organizations for their fast data analysis needs,
 One of the prime aspect that caught my attention was the ability to query various data sources in a single query. This is so magical ✨, let me give you an example,
+
+```sql
+SELECT s.region, 
+       revenue 
+FROM   hive.weblog.clickstreams s 
+       JOIN mysql.prod.transections t 
+         ON s.userid = t.userid 
+GROUP  BY s.region 
+ORDER  BY revenue DESC 
+LIMIT  100
+```
 
 This allows querying data without the need to bring all the data in the same place. This also obviates the need to bring all the data managed under the same system. This in my opinion is so important since, the world where each system wants to be the _only_ system to store and process data, presto does not. For real-world usecases each system has different tradeoffs and are fit and serve only part of the larger picture in the big data architectures.
 
@@ -89,7 +105,7 @@ cd /var/lib/presto/
 sudo ./presto-hdinsight-master/installpresto.sh
 ``
 
-THe airpal will be running on port 9191.
+The airpal will be running on port 9191.
 
 ## Installing airpal on Edgenode
 You can install Airpal in HDInsight on an Edge node using [airpal-deploy.json](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/airpal-deploy.json). The step by step by instruction is listed in the [README](https://github.com/dharmeshkakadia/presto-hdinsight#airpal)
@@ -100,20 +116,8 @@ Note that with little work, you can combine both the installation with a single 
 
 JDBC/ODBC drivers are available which allow you to connect to wide range of tools for querying. Ofcourse Presto has [client libraries in wide range of lanugauges](https://prestodb.io/docs/current/admin/tuning.html) if you prefer.
 
-# Who is using Presto?
-Presto started out at Facebook and has gained a lot of momentum at many organizations. Some of the prominent names are
-- Netflix
-- Airbnb
-- Dropbox
-- LinkedIn
-- Uber
-- NASDAQ
-- Walmart
-- Alibaba
-- ... [many more](https://github.com/prestodb/presto/wiki/Presto-Users) and may be YOU :)
 
-
-# Step by Step instructions
+# Installing Presto on HDInsight
 
 Presto on HDInsight is supported using [custom action scripts](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux). [Presto custom action script](https://github.com/dharmeshkakadia/presto-hdinsight) can be used on new and existing 3.5+ HdInsight hadoop clusters to install and run presto. There is essentially only one step : to run script action with following URL on headnodes and workernodes.
 
@@ -137,6 +141,8 @@ This will drop you into presto-cli and you can start analyzing data right away.
 presto> select count(*) from hivesampletable;
 ```
 
+You can also run TPCH or [TPCDS](https://github.com/dharmeshkakadia/presto-hdinsight#how-do-i-run-tpcds-on-presto).
+
 If you find any issues in Presto on HDInsight, feel free to open a [issue](https://github.com/dharmeshkakadia/presto-hdinsight/issues/new). Note that like any other custom action scripts, this is not a Microsoft Supported product.
 
 # Inner working of installation script
@@ -149,28 +155,10 @@ We use [Slider](https://github.com/prestodb/presto-yarn) to manage presto resour
 1. Download the github repo.
 2. Create a [presto build](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/createsliderbuild.sh) that has support of Windows Azure Storage Blob (WASB). Note that this step is required since the WASB support has not [merged](https://github.com/prestodb/presto-hadoop-apache2/pull/14) in the upstream Presto yet. The script builds the package under ``/var/lib/presto/`` on the primary headnode.
 3. Install the created slider package.
-4. Create appropriate presto configuration files for the presto slider package. All the configs are generated by [createconfigs.sh](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/createconfigs.sh) script. This configure Hive and TPCH connectors. Hive connector is configured to use the default installed Hive installation, so all the tables from Hive will be automatically visible with presto.
+4. Create appropriate presto-slider configuration files (``appConfig-default.json`` and ``resources-default.json``) for the presto slider package. All the configs are generated by [createconfigs.sh](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/createconfigs.sh) script. This configure Hive and TPCH connectors. Hive connector is configured to use the default installed Hive installation, so all the tables from Hive will be automatically visible with presto.
 5. Start the presto with slider.
 6. Wait for the presto to come up and install [preso-cli](https://prestodb.io/docs/current/installation/cli.html) in the ``/usr/local/bin/``.
 
 ## Customizing installation
 
 Folllow the steps mentioned in [How do I customize presto installation](https://github.com/dharmeshkakadia/presto-hdinsight#how-do-i-customize-presto-installation).
-
-## Connector configuration
-
-As mentioned earlier, by default we have hive and tpch connectors installed with the following configurations.
-
-Also, presto by default configuration
-
-## JVM configuration
-
-The
-https://prestodb.io/docs/current/admin/tuning.html
-
-
-How to run presto TPCDS article link
-
-
-
-https://prestodb.io/
