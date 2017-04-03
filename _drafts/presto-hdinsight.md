@@ -3,22 +3,10 @@ layout: post
 title: Presto on HDInsight
 published: true
 ---
-This article will explain presto internals and how to install presto on [Azure HDInsight](https://azure.microsoft.com/en-us/services/hdinsight/). If you are familiar with presto, you can [jump in directly](#installing-presto-on-hdinsight).
+This article will explain presto internals and how to install presto on [Azure HDInsight](https://azure.microsoft.com/en-us/services/hdinsight/). If you are familiar with presto, you can jump in directly to the [installation](#installing-presto-on-hdinsight).
 
 # What is Presto?
 [Presto](https://prestodb.io/) is a **fast** distributed SQL query engine for big data. Presto is suitable for interactive querying of petabytes of data.
-
-# Who is using Presto?
-Presto started out at Facebook and has become key piece in the data infrastructure of many organizations. Some of the prominent names who use presto are:
-- Netflix
-- Airbnb
-- Dropbox
-- LinkedIn
-- Uber
-- NASDAQ
-- Walmart
-- Alibaba
-- ... [many more](https://github.com/prestodb/presto/wiki/Presto-Users) and may be, by the end of this article, YOU :)
 
 # Presto Architecture
 To understand how presto works, lets look at the presto architecture. The following figure from the presto documentation highlights key [components](https://github.com/prestodb/presto/blob/master/presto-docs/src/main/sphinx/overview/concepts.rst) of presto.
@@ -87,15 +75,27 @@ The above query joins data in Hive WASB with data in a MySQL database. This obvi
 
 This solves a big pain point of big data, where right now you have to copy them in to single location and manage it under a single system. The big data, IMO, should be about deriving insights from data and not managing ETL pipelines and dealing with deduplication issues. Each system has different tradeoffs and are fit to and serve only part of the larger picture in the big data architectures. This, in my opinion, is so important since, the world where each system wants to be the _only_ system to store and process data, presto acknowledges the need to be a good citizen in the big data architecture. 
 
+# Who is using Presto?
+Presto started out at Facebook and has become key piece in the data infrastructure of many organizations. Some of the prominent names who use presto are:
+- Netflix
+- Airbnb
+- Dropbox
+- LinkedIn
+- Uber
+- NASDAQ
+- Walmart
+- Alibaba
+- ... [many more](https://github.com/prestodb/presto/wiki/Presto-Users) and YOU by following the next secion :)
+
 # Installing Presto on HDInsight
 
-Now that we know how Presto works, lets get our hand dirty. Presto on HDInsight is supported using [custom action scripts](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux). [Presto custom action script](https://github.com/dharmeshkakadia/presto-hdinsight) can be used on new and existing 3.5+ HDInsight hadoop clusters to install and run presto. Creating a presto cluster is very simple : run script action with following URL on headnodes and workernodes.
+Now that we know how Presto works, lets get our hand dirty. HDInsight [Custom action scripts](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux) allows extending HDInsight in arbtriary ways through a bash script. [Presto custom action script](https://github.com/dharmeshkakadia/presto-hdinsight) can be used on new and existing 3.5+ HDInsight hadoop clusters to install and run presto. Creating a presto cluster is very simple : run script action with following URL on headnodes and workernodes.
 
 ``
 https://raw.githubusercontent.com/dharmeshkakadia/presto-hdinsight/master/installpresto.sh
 ``
 
-The below GIF shows the step while creating the cluster and specifying the presto script.
+The below GIF shows the steps while creating a cluster and specifying the presto script.
 
 ![presto-install-steps.gif]({{site.baseurl}}/images/presto-install-steps.gif)
 
@@ -111,9 +111,7 @@ This will drop you into presto-cli and you can start analyzing data right away.
 presto> select count(*) from hivesampletable;
 ```
 
-By Default, [Hive](https://prestodb.io/docs/current/connector/hive.html) and [TPCH](https://prestodb.io/docs/current/connector/tpch.html) connectors are configured. Hive connector is configured to use the default installed Hive installation, so all the tables from Hive will be automatically visible in presto. You can also run TPCH or [TPCDS](https://github.com/dharmeshkakadia/presto-hdinsight#how-do-i-run-tpcds-on-presto) if you want to play around.
-
-If you find any issues, please [report](https://github.com/dharmeshkakadia/presto-hdinsight/issues/new). Note that, like all other custom action scripts, this is not a Microsoft Supported product.
+By Default, [Hive](https://prestodb.io/docs/current/connector/hive.html) and [TPCH](https://prestodb.io/docs/current/connector/tpch.html) connectors are configured. Hive connector is configured to use the default installed Hive installation, so all the tables from Hive will be automatically visible in presto. You can also play around with TPCH or [TPCDS](https://github.com/dharmeshkakadia/presto-hdinsight#how-do-i-run-tpcds-on-presto) datasets.
 
 # Inner working of installation script
 
@@ -131,61 +129,68 @@ Customer action invokes [installpresto.sh](https://github.com/dharmeshkakadia/pr
 
 You can [customize the presto installation](https://github.com/dharmeshkakadia/presto-hdinsight#how-do-i-customize-presto-installation) to suit your needs.
 
-
 # Airpal
 [Airpal](http://airbnb.io/airpal/) is the web query interface for presto. The following GIF from the airpal website gives a good overview of available features in airpal.
 
 ![airpla-demo.gif]({{site.baseurl}}/images/airpla-demo.gif)
 
-
 ## Installing airpal on headnode
 You can install Airpal on the cluster headnode using following the steps. 
 
-1. Install presto using the above steps.
-2. Now, SSH to the headnode and run the following command to figure out address of the presto coordinator
-``
-sudo slider registry  --name presto1 --getexp presto
-``
-You will see output like following, note the IP:Port.
-```
-{
-  "coordinator_address" : [ {
-    "value" : "10.0.0.11:9090",
-    "level" : "application",
-    "updatedTime" : "Sat Feb 25 05:45:14 UTC 2017"
-}
-```
+1. Install presto as shown in the previous section.
+2. Now, SSH to the headnode and run the following command to know address of the presto coordinator
+
+  ``
+  sudo slider registry  --name presto1 --getexp presto
+  ``
+
+  You will see output like following, note the IP:Port.
+
+  ```
+  {
+    "coordinator_address" : [ {
+      "value" : "10.0.0.11:9090",
+      "level" : "application",
+      "updatedTime" : "Sat Feb 25 05:45:14 UTC 2017"
+  }
+  ```
 
 3. Run the [install airpal](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/installairpal.sh) script as sudo as follows with the address noted from the previous step.
-``
-cd /var/lib/presto/
-sudo ./presto-hdinsight-master/installpresto.sh 10.0.0.11:9090
-``
 
-This script installs airpal with all its dependencies. Once the script is complete, airpal will be running on port 9191. Note that, to use airpal from your browser, you have to set local tunnelign and SOCKS proxy on your browser. Or you can You can also install airpal on edgenode.
+  ```
+  cd /var/lib/presto/
+  sudo ./presto-hdinsight-master/installpresto.sh 10.0.0.11:9090
+  ```
+
+This script installs airpal with all its dependencies. Once the script is complete, airpal will be running on port 9191. Note that, to use airpal from your browser, you have to setup local tunneling and SOCKS proxy on your browser. Or you can install airpal on edgenode.
 
 ## Installing airpal on Edgenode
-HDInsight Edgenodes are acceisble to/from outside world and you can install any software. You can install Airpal in HDInsight on an Edge node using [airpal-deploy.json](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/airpal-deploy.json) as follows:
+HDInsight Edgenodes are acceisble to/from outside world and you can install any software on them. You can deploy [Airpal on HDInsight](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/airpal-deploy.json) Edge node using as follows:
 
 1. Install presto using the above steps.
 2. Now, SSH to the headnode and run the following command to figure out address of the presto coordinator
-``
-sudo slider registry  --name presto1 --getexp presto
-``
-You will see output like following, note the IP:Port.
-```
-{
-  "coordinator_address" : [ {
-    "value" : "10.0.0.11:9090",
-    "level" : "application",
-    "updatedTime" : "Sat Feb 25 05:45:14 UTC 2017"
-}
-```
+
+  ``
+  sudo slider registry  --name presto1 --getexp presto
+  ``
+  You will see output like following, note the IP:Port.
+  ```
+  {
+    "coordinator_address" : [ {
+      "value" : "10.0.0.11:9090",
+      "level" : "application",
+      "updatedTime" : "Sat Feb 25 05:45:14 UTC 2017"
+  }
+  ```
+  
 3. Click [here](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdharmeshkakadia%2Fpresto-hdinsight%2Fmaster%2Fairpal-deploy.json) to create an edgenode and deploy airpal. 
 
 4. Provide Clustername, EdgeNodeSize and PrestoAddress (noted above). 
 5. To access airpal UI, go to your cluster on azure portal and navigate to Applications and click on portal. You have to login with cluster login credentials.
 
 
-So thats it. WHat do you think about it ? Let me know.
+# Conclusion
 
+Now, that you have Presto and Airpal runnnig on HDInsight, go do your data analysis. If you find any issues, feel free to [report](https://github.com/dharmeshkakadia/presto-hdinsight/issues/new) them. Note that, like all other custom action scripts, this is not a Microsoft Supported product.
+
+[I Would love to hear your questions or feedback](https://twitter.com/dharmeshkakadia).
