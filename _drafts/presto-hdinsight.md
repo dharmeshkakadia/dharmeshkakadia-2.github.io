@@ -19,7 +19,7 @@ Clients are where you submit queries to Presto. Clients can use JDBC/ODBC/REST p
 ## Coordinator
 Presto coordinator is responsible for managing workernode membership, parsing the queries, generating execution plan and managing execution of the query. During the execution of the queries, it also manages the delivery of the data between tasks.
 
-The coordinator translates the given query into logical plan. The logical plan is composed of seires of stages and each stage is then executed in a disstributed fashion using several tasks across workers. This is very similar to other distributed query execution engines like Hive and Spark.
+The coordinator translates the given query into logical plan. The logical plan is composed of series of stages and each stage is then executed in a distributed fashion using several tasks across workers. This is very similar to other distributed query execution engines like Hive and Spark.
 
 ## Workers
 Presto worker is responsible for executing tasks and processing data. This is where the real work of processing the data happens.
@@ -28,7 +28,7 @@ Presto worker is responsible for executing tasks and processing data. This is wh
 Each presto worker advertises itself to the coordinator through [discovery server](https://github.com/airlift/discovery). All the communication in presto between Coordinator, workers and clients happen via REST API.
 
 ## Connectors
-Presot has a federated query model where each data sources is a presto connector. One way to think about different presto connectors is similar to how different drivers enable a database to talk to multiple sources. Some of the currently available connectors on the presto project:
+Presto has a federated query model where each data sources is a presto connector. One way to think about different presto connectors is similar to how different drivers enable a database to talk to multiple sources. Some of the currently available connectors on the presto project:
 
 - [Kafka](https://prestodb.io/docs/current/connector/kafka.html),
 - [Cassandra](https://prestodb.io/docs/current/connector/cassandra.html),
@@ -42,7 +42,7 @@ Presot has a federated query model where each data sources is a presto connector
 
 
 ## Catalog
-Each catalog in presto is associated with a specific connector, specified in the catalog configuration with ``connector.name``. Based on this name Presto (Catalog Manager) decides how to query a perticular data source. When writing a query in Presto, you can use the fully-qualified name that contains ``connector.schemaname.tablename``. For example, if you have a hive table ``revenue`` in database name ``prod``, you can refer it as ``hive.prod.revenue``. The below figure highlights how multiple catalogs fit in presto:
+Each catalog in presto is associated with a specific connector, specified in the catalog configuration with ``connector.name``. Based on this name Presto (Catalog Manager) decides how to query a particular data source. When writing a query in Presto, you can use the fully-qualified name that contains ``connector.schemaname.tablename``. For example, if you have a hive table ``revenue`` in database name ``prod``, you can refer it as ``hive.prod.revenue``. The below figure highlights how multiple catalogs fit in presto:
 
 ![presto-internals.png]({{site.baseurl}}/images/presto-internals.png)
 
@@ -54,7 +54,7 @@ For further information about presto, [presto documentation](https://prestodb.io
 
 # Presto Use Cases
 
-An obvious use case for Presto is for traditional data anlysis similar to SQL-on-Hadoop and Spark-SQL. Like other engines, Presto support both SQL and UDFs. Presto supprts wide range of [inbuilt and user defined functions](https://prestodb.io/docs/current/functions.html). The SQL syntax is similar to Hive and Spark SQL syntax and should make you feel home. Presto even has a [migration guide from Hive](https://prestodb.io/docs/current/migration/from-hive.html). :) Presto JDBC/ODBC drivers allow you to connect to wide range of tools like [Tableu](https://prestodb.io/docs/current/installation/tableau.html) easily. Presto is also well suited for powering analytics dashboards and has [client libraries](https://prestodb.io/resources.html) in your favrioute language, if you prefer to talk programmatically. And while we are at it, the auto-complete in presto CLI is pretty dope! Oh and did I mention how cool (and detailed) the presto UI is ?
+An obvious use case for Presto is for traditional data analysis similar to SQL-on-Hadoop and Spark-SQL. Like other engines, Presto support both SQL and UDFs. Presto supports wide range of [inbuilt and user defined functions](https://prestodb.io/docs/current/functions.html). The SQL syntax is similar to Hive and Spark SQL syntax and should make you feel home. Presto even has a [migration guide from Hive](https://prestodb.io/docs/current/migration/from-hive.html). :) Presto JDBC/ODBC drivers allow you to connect to wide range of tools like [Tableu](https://prestodb.io/docs/current/installation/tableau.html) easily. Presto is also well suited for powering analytics dashboards and has [client libraries](https://prestodb.io/resources.html) in your favorite language, if you prefer to talk programmatically. And while we are at it, the auto-complete in presto CLI is pretty dope! Oh and did I mention how cool (and detailed) the presto UI is ?
 
 ![prestoui.png]({{site.baseurl}}/images/prestoui.png)
 
@@ -89,7 +89,7 @@ Presto started out at Facebook and has become key piece in the data infrastructu
 
 # Installing Presto on HDInsight
 
-Now that we know how Presto works, lets get our hand dirty. HDInsight [Custom action scripts](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux) allows extending HDInsight in arbtriary ways through a bash script. [Presto custom action script](https://github.com/dharmeshkakadia/presto-hdinsight) can be used on new and existing 3.5+ HDInsight hadoop clusters to install and run presto. Creating a presto cluster is very simple : run script action with following URL on headnodes and workernodes.
+Now that we know how Presto works, lets get our hand dirty. HDInsight [Custom action scripts](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux) allows extending HDInsight in arbitrary ways through a bash script. [Presto custom action script](https://github.com/dharmeshkakadia/presto-hdinsight) can be used on new and existing 3.5+ HDInsight hadoop clusters to install and run presto. Creating a presto cluster is very simple : run script action with following URL on headnodes and workernodes.
 
 ``
 https://raw.githubusercontent.com/dharmeshkakadia/presto-hdinsight/master/installpresto.sh
@@ -134,7 +134,7 @@ You can [customize the presto installation](https://github.com/dharmeshkakadia/p
 
 ![airpla-demo.gif]({{site.baseurl}}/images/airpla-demo.gif)
 
-## Installing airpal on headnode
+## Installing Airpal on headnode
 You can install Airpal on the cluster headnode using following the steps. 
 
 1. Install presto as shown in the previous section.
@@ -164,7 +164,7 @@ You can install Airpal on the cluster headnode using following the steps.
 
 This script installs airpal with all its dependencies. Once the script is complete, airpal will be running on port 9191. Note that, to use airpal from your browser, you have to setup local tunneling and SOCKS proxy on your browser. Or you can install airpal on edgenode.
 
-## Installing airpal on Edgenode
+## Installing Airpal on Edgenode
 HDInsight Edgenodes are acceisble to/from outside world and you can install any software on them. You can deploy [Airpal on HDInsight](https://github.com/dharmeshkakadia/presto-hdinsight/blob/master/airpal-deploy.json) Edge node using as follows:
 
 1. Install presto using the above steps.
@@ -191,6 +191,6 @@ HDInsight Edgenodes are acceisble to/from outside world and you can install any 
 
 # Conclusion
 
-Now, that you have Presto and Airpal runnnig on HDInsight, go do your data analysis. If you find any issues, feel free to [report](https://github.com/dharmeshkakadia/presto-hdinsight/issues/new) them. Note that, like all other custom action scripts, this is not a Microsoft Supported product.
+Now, that you have Presto and Airpal running on HDInsight, go do your data analysis. If you find any issues, feel free to [report](https://github.com/dharmeshkakadia/presto-hdinsight/issues/new) them. Note that, like all other custom action scripts, this is not a Microsoft Supported product.
 
 [I Would love to hear your questions or feedback](https://twitter.com/dharmeshkakadia).
