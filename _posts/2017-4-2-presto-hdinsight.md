@@ -140,9 +140,9 @@ You can install Airpal on the cluster headnode using following the steps.
 1. Install presto as shown in the previous section.
 2. Now, SSH to the headnode and run the following command to know address of the presto coordinator
 
-  ``
+  ```
   sudo slider registry  --name presto1 --getexp presto
-  ``
+  ```
 
   You will see output like following, note the IP:Port.
 
@@ -170,10 +170,12 @@ HDInsight Edgenodes are acceisble to/from outside world and you can install any 
 1. Install presto using the above steps.
 2. Now, SSH to the headnode and run the following command to figure out address of the presto coordinator
 
-  ``
+  ```
   sudo slider registry  --name presto1 --getexp presto
-  ``
+  ```
+  
   You will see output like following, note the IP:Port.
+  
   ```
   {
     "coordinator_address" : [ {
