@@ -2,7 +2,9 @@
 layout: page
 title: Talks
 permalink: /talks/
+published: true
 ---
+* [Scheduling Deep Dive - Mesos, Kubernetes and DockerSwarm](https://speakerdeck.com/dharmeshkakadia/scheduling-deep-dive-mesos-kubernetes-and-dockerswarm) @ VelocityConf Jun, 2017
 * [Mesos is the new Linux](https://speakerdeck.com/dharmeshkakadia/mesos-is-the-new-linux-devopsdays-india-2015) @ DevOps Days. Sep, 2015
 * [Managing Resources at Scale with Apache Mesos](https://speakerdeck.com/dharmeshkakadia/managing-resources-at-scale-with-apache-mesos) @ Large Scale Production Engineering. Jun, 2014
 * [MultiStack](https://speakerdeck.com/dharmeshkakadia/multistack-at-openstack-mini-conference-osidays) at OpenStack Mini-conference, OSI Days Nov, 2013
