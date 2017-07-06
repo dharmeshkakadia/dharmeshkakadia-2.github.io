@@ -23,7 +23,7 @@ Step by step instructions
 
   6. compile and package the jar
 
-7. Copy the jar as part of presto
+7. Copy the jar as part of presto plugins
 
 8. Start the presto server
 
