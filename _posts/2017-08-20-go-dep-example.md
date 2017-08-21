@@ -34,4 +34,4 @@ I wanted to give Go’s new dependency management system — [dep](https://g
 
 You are ready, go change the world !
 
-P.S. This post is also published on blog meduim at https://medium.com/@dharmesh.kakadia/minimal-go-dep-example-54fc862615c4
+P.S. This post is also published on [medium](https://medium.com/@dharmesh.kakadia/minimal-go-dep-example-54fc862615c4).
