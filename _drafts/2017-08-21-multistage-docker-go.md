@@ -33,9 +33,9 @@ Support for multistage docker build has landed in Docker earlier this year. One 
 
   Here we create two layers:
   
-    1. go-base layer: Includes go runtime. We are mounting src directory in the image and compiling our go package(hello.go) and generating the output binary hello.
-    
-    2. app layer: Extends the alpine image by copying our binary(/src/hello) from the go-base layer to /app/. It also defines entrypoint for the image as our binary(/app/hello)
+   * go-base layer: Includes go runtime. We are mounting src directory in the image and compiling our go package(hello.go) and generating the output binary hello.
+
+   * app layer: Extends the alpine image by copying our binary(/src/hello) from the go-base layer to /app/. It also defines entrypoint for the image as our binary(/app/hello)
 
 3. Lets build our image and name it `go-multi-stage-docker` :
 
