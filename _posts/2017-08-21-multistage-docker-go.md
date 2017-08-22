@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Multi stage docker build for go
 Support for multistage docker build has landed in Docker earlier this year. Multi stage builds simplify the image building and the genereated images are much smaller in the size. The code/instructions are available at [go-multi-stage-docker](https://github.com/dharmeshkakadia/go-multi-stage-docker)
