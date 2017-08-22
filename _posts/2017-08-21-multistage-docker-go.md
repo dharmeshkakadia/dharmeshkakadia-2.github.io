@@ -6,16 +6,16 @@ Support for multistage docker build has landed in Docker earlier this year. Mult
 
 1. Here is our lovely go program that we want to run in the image:
 
-  ```go
-  package main
+    ```go
+    package main
 
-  import "fmt"
+    import "fmt"
 
-  func main() {
-      fmt.Println("Hello Multistage Docker builds!")
-  }
+    func main() {
+        fmt.Println("Hello Multistage Docker builds!")
+    }
 
-  ```
+    ```
 
 2. Here is the `Dockerfile` that you can use:
 
@@ -41,7 +41,7 @@ Support for multistage docker build has landed in Docker earlier this year. Mult
     $ docker build -f Dockerfile -t go-multi-stage-docker:latest .
     ```
   
-  You can see the new image would be only few MBs in the size :
+    You can see the new image would be only few MBs in the size :
 
     ```
     $ docker image ls go-multi-stage-docker
