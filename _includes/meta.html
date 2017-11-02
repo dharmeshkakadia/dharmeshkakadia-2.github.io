@@ -13,6 +13,31 @@
     <meta name="author" content="{{ site.name }}" />
 
     {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
+        <meta name="twitter:title" content="{{ page.title }}">
+    {% else %}
+        <meta name="twitter:title" content="{{ site.title }}">
+    {% endif %}
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@dharmeshkakadia">
+    {% if page.date %}
+      <meta name="twitter:creator" content="@dharmeshkakadia">
+    {% endif %}
+    <!-- <meta name="twitter:title" content="{% if page.title %}{{ page.title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ site.name }}{% endif %}"> -->
+    <!-- <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}"> -->
+    {% if page.description %}
+        <meta name="twitter:description" content="{{ page.description }}">
+    {% else %}
+        <meta name="twitter:description" content="{{ site.description }}">
+    {% endif %}
+    {% if page.image %}
+        <meta name="twitter:card"  content="summary_large_image">
+        <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+    {% else %}
+        <meta name="twitter:card"  content="summary">
+        <meta name="twitter:image" content="{{ site.title_image }}">
+    {% endif %}
+    <!-- <meta name="twitter:url" content="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}"> -->
+    {% if page.url %}
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
     {% endif %}
