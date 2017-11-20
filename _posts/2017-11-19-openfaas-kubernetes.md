@@ -6,7 +6,7 @@ Minimal steps to run [serveless/functions-as-a-service platform](https://github.
 
 1. Start minikube.
 	
-	``minikube start``
+	```minikube start```
 	
 2. Install helm, if you haven’t already.
 	
