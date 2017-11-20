@@ -1,8 +1,7 @@
 ---
 published: false
+title: OpenFaaS on Minikube
 ---
-## OpenFaaS on Minikube
-
 Minimal steps to run [serveless/functions-as-a-service platform](https://github.com/openfaas) on [Minikube](https://github.com/kubernetes/minikube).
 
 1. Start minikube.
