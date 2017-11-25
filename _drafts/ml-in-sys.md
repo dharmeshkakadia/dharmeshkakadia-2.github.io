@@ -1,7 +1,8 @@
 ---
 published: false
+layout: post
+title: Machine Learning in Systems
 ---
-## Machine Learning in Systems
 
 So many possibilities.
 
@@ -43,4 +44,3 @@ Philosophy
 
 Would we ever trust ML enough to put it in compiler optimizations? That to me sounds like the last step. :)
 
-Find interesting? Dont agree ?  Lets discuss over twitter @dharmeshkakadia ? Email is your thing ? 

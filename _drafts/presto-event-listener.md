@@ -1,7 +1,8 @@
 ---
 published: false
+layout: post
+title: How to write a Presto Event Listener
 ---
-## How to write a Presto Event Listener
 
 Presto added Event Listener support some time back.
 
@@ -13,7 +14,7 @@ Step by step instructions
 
   1. Set up an empty maven project
 
-  2. Add presot dependency
+  2. Add presto dependency
 
   3. Add event lister class, factory and plugin
 

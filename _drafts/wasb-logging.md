@@ -1,7 +1,8 @@
 ---
 published: false
+layout: post
+title: Analyzing Azure Storage logs
 ---
-## Analyzing WASB server logs
 
 Why?
 WASB is critical.
