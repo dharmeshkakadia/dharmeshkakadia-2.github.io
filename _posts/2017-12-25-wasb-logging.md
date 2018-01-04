@@ -44,7 +44,7 @@ This would produce output similar to :
 
 
 **operation\_type**|**count(*)**|**avg(end\_to\_end\_latency\_in\_ms)**|**min(end\_to\_end\_latency\_in\_ms)**|**max(end\_to\_end\_latency\_in\_ms)**|**avg(server\_latency\_in\_ms)**|**min(server\_latency\_in\_ms)**|**max(server\_latency\_in\_ms)**| 
-:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
+:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 CopyBlob|60|44.18333333|6|296|44.18333333|6|296
 CopyBlobDestination|60|44.18333333|6|296|44.18333333|6|296
 CopyBlobSource|60|44.18333333|6|296|44.18333333|6|296
