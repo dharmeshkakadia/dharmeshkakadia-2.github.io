@@ -15,27 +15,27 @@ Lets see how you can use azlogs to download the logs and anlayze them.
 1. Enable azure storage logging by following the [documentation](https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/enabling-storage-logging-and-accessing-log-data).
 
 2. Download the azlogs tool.
-```bash
-git clone https://github.com/dharmeshkakadia/azlogs && cd azlogs
-```
+    ```bash
+    git clone https://github.com/dharmeshkakadia/azlogs && cd azlogs
+    ```
 
 3. Compile it using Maven.
-```bash
-mvn package assembly:single 
-```
+    ```bash
+    mvn package assembly:single 
+    ```
 
 4. Download the logs for a given time range. You need to provide the storage account name and access key along with start and end time for which you want to logs for.
-```bash
-Usage: azlogs <AccountName> <AccountKey> <startDate(seconds since epoch)> <endDate(seconds since epoch)> [columns(sorted)]
-```
-For example, to download the logs for storage account ``storage1`` from ``1476132794`` to ``1476132895``, you can use the following command.
-```bash
-java -jar azlogs.jar storage1 67t2Mw== "1476132794" "1476132895" "request_start_time,operation_type,end_to_end_latency_in_ms" 2>debug_logs > output
-```
+    ```bash
+    Usage: azlogs <AccountName> <AccountKey> <startDate(seconds since epoch)> <endDate(seconds since epoch)> [columns(sorted)]
+    ```
+    For example, to download the logs for storage account ``storage1`` from ``1476132794`` to ``1476132895``, you can use the following command.
+    ```bash
+    java -jar azlogs.jar storage1 67t2Mw== "1476132794" "1476132895" "request_start_time,operation_type,end_to_end_latency_in_ms" 2>debug_logs > output
+    ```
 
 5. The above command will produce an output CSV file(delimited by ;) that you can use to analyze with your favorite data analysis tool. Mine happens to be [csvkit](https://csvkit.readthedocs.io/en/1.0.1/).
 
-    For example, here is how to calculate ``avg``,``min`` and ``max`` latencies (from both client and service side) and the counts for various operations on WASB from above output logs.
+        For example, here is how to calculate ``avg``,``min`` and ``max`` latencies (from both client and service side) and the counts for various operations on WASB from above output logs.
     ```bash
     csvsql -d ";" --query "select operation_type, count(*), avg(end_to_end_latency_in_ms), min(end_to_end_latency_in_ms), max(end_to_end_latency_in_ms), avg(server_latency_in_ms), min(server_latency_in_ms),max(server_latency_in_ms) from output group by operation_type"
     ```
@@ -44,7 +44,7 @@ This would produce output similar to :
 
 
 **operation\_type**|**count(*)**|**avg(end\_to\_end\_latency\_in\_ms)**|**min(end\_to\_end\_latency\_in\_ms)**|**max(end\_to\_end\_latency\_in\_ms)**|**avg(server\_latency\_in\_ms)**|**min(server\_latency\_in\_ms)**|**max(server\_latency\_in\_ms)**| 
-:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+:-----|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 CopyBlob|60|44.18333333|6|296|44.18333333|6|296
 CopyBlobDestination|60|44.18333333|6|296|44.18333333|6|296
 CopyBlobSource|60|44.18333333|6|296|44.18333333|6|296
