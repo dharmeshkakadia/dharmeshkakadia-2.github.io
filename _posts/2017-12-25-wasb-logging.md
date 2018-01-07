@@ -70,29 +70,30 @@ This
 ```
 Here is the sample output
 
-**Query**|**operation\_type**|**E2E99thP**|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
-q10|CopyBlob|50|17.76|7|95|17.76|7|95|95|95|95
-q10|CopyBlobDestination|50|17.76|7|95|17.76|7|95|95|95|95
-q10|CopyBlobSource|50|17.76|7|95|17.76|7|95|95|95|95
-q10|DeleteBlob|52|4.980769231|3|38|4.980769231|3|38|38|38|38
-q10|GetBlob|31242|199.13293|1|13570|76.33883874|1|667|1251|4287|9187
-q10|GetBlobProperties|56321|2.278102306|0|147|2.278102306|0|147|147|147|147
-q10|GetContainerProperties|2549|2.770498235|1|127|2.770498235|1|127|127|127|127
-q10|GetPageRegions|123|2.06504065|1|4|1.975609756|1|4|4|4|4
-q10|ListBlobs|2269|3.374614368|1|158|2.927721463|1|158|158|158|158
-q10|PutBlob|2|5|5|5|5|5|5|5|5|5
-q10|PutBlock|39|72.15384615|5|158|58.61538462|5|148|158|158|158
-q10|PutBlockList|51|12.11764706|4|63|12.09803922|4|63|63|63|63
-q10|PutPage|43|33.3255814|2|207|22|2|107|207|207|207
-q10|SetBlobMetadata|2|3.5|3|4|3.5|3|4|4|4|4
-q10|SetBlobProperties|77|4.597402597|2|39|4.597402597|2|39|39|39|39
+**Query**|**operation\_type**|**E2E99thP**|
+:-----|:-----|-----:|
+q10|CopyBlob|95
+q10|CopyBlobDestination|95
+q10|CopyBlobSource|95
+q10|DeleteBlob|38
+q10|GetBlob|1251
+q10|GetBlobProperties|147
+q10|GetContainerProperties|127
+q10|GetPageRegions|4
+q10|ListBlobs|158
+q10|PutBlob|5
+q10|PutBlock|158
+q10|PutBlockList|63
+q10|PutPage|207
+q10|SetBlobMetadata|4
+q10|SetBlobProperties|39
 
 By changing the ``0.99`` to ``0.999`` we can calcualte 99.9th percentile latency. 
 
 We can combine the above queries to produce the following summary:
 
 **Query**|**operation\_type**|**count(*)**|**avg(end\_to\_end\_latency\_in\_ms)**|**min(end\_to\_end\_latency\_in\_ms)**|**max(end\_to\_end\_latency\_in\_ms)**|**avg(server\_latency\_in\_ms)**|**min(server\_latency\_in\_ms)**|**max(server\_latency\_in\_ms)**|**E2E99thP**|**E2E999thP**|**E2E9999thP**
-:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
+:-----:|:-----|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:
 q10|CopyBlob|50|17.76|7|95|17.76|7|95|95|95|95
 q10|CopyBlobDestination|50|17.76|7|95|17.76|7|95|95|95|95
 q10|CopyBlobSource|50|17.76|7|95|17.76|7|95|95|95|95
