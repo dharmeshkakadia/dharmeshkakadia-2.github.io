@@ -35,7 +35,7 @@ Lets see how you can use azlogs to download the logs and anlayze them.
 
 5. The above command will produce an output CSV file(delimited by ;) that you can use to analyze with your favorite data analysis tool. Mine happens to be [csvkit](https://csvkit.readthedocs.io/en/1.0.1/).
 
-        For example, here is how to calculate ``avg``,``min`` and ``max`` latencies (from both client and service side) and the counts for various operations on WASB from above output logs.
+    For example, here is how to calculate ``avg``,``min`` and ``max`` latencies (from both client and service side) and the counts for various operations on WASB from above output logs.
     ```bash
     csvsql -d ";" --query "select operation_type, count(*), avg(end_to_end_latency_in_ms), min(end_to_end_latency_in_ms), max(end_to_end_latency_in_ms), avg(server_latency_in_ms), min(server_latency_in_ms),max(server_latency_in_ms) from output group by operation_type"
     ```
