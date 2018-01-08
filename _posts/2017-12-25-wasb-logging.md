@@ -1,14 +1,13 @@
 ---
 layout: post
 title: Analyzing Azure Storage Performance
-published: false
 ---
-I work on performance of Big data systems at [Azure HDInsight](https://azure.microsoft.com/en-us/services/hdinsight/) and as part of [benchmarking](https://azure.microsoft.com/en-us/blog/hdinsight-interactive-query-performance-benchmarks-and-integration-with-power-bi-direct-query/) many times I need to analyze the performance of the cloud storage. The performance is very important factor when deciding cloud solutions. In this post we will see how to analyze performance of [Azure Storage Blob (aka WASB)](https://azure.microsoft.com/en-us/services/storage/). We will see how to enable perf logging, how to download and analyze the logs. Even though there are public benchmarks available for theses systems, its important to measure performance for your workload. In that spirit, we will also see how to leverage storage logs for benchmarking big data workload. As an example, we will calculate 99th percentile latency of all the storage request made during execution of a hive query.
+I work on performance of Big data systems at [Azure HDInsight](https://azure.microsoft.com/en-us/services/hdinsight/) and as part of [benchmarking](https://azure.microsoft.com/en-us/blog/hdinsight-interactive-query-performance-benchmarks-and-integration-with-power-bi-direct-query/), many times I need to analyze the performance of the cloud storage. Performance of the storage system plays a very critical role in the performance of the cloud big data systems. Even though there are public benchmarks available for theses systems, its important to measure performance for your workload. In that spirit, we will see how to leverage storage logs for benchmarking your big data workload on [Azure Storage Blob (aka WASB)](https://azure.microsoft.com/en-us/services/storage/). We will see how to enable storage perf logging, how to download and analyze the logs and also how to combine this anlysis with query engines like Spark and Hive. 
 
 
 ## Downloading and Analyzing WASB logs
 
-Azure Storage provides [logs and metrics](https://docs.microsoft.com/en-us/azure/storage/common/storage-analytics) for all the requests. The logs are stored in the storage account in the following form ``https://<accountname>.blob.core.windows.net/$logs/<service-name>/YYYY/MM/DD/hhmm/<counter>.log``. Although, this format for logs is simple, it can be quite challenging to build tools and automatation. This was one of the motivation behind writing [azlogs](https://github.com/dharmeshkakadia/azlogs) - a tool for downloading logs for given timeperiod. I use it automatically [analyze latencies](https://github.com/hdinsight/HivePerformanceAutomation/blob/master/bin/perfdatascripts/getStoreLatency.sh) of WASB requests.
+Azure Storage provides [logs and metrics](https://docs.microsoft.com/en-us/azure/storage/common/storage-analytics) for all the requests. The logs are stored in the storage account in the following form ``https://<accountname>.blob.core.windows.net/$logs/<service-name>/YYYY/MM/DD/hhmm/<counter>.log``. Although, this format for logs is simple, it can be quite challenging to build tools and automatation around this format - especially if you want to be efficient. This was one of my motivation behind writing [azlogs](https://github.com/dharmeshkakadia/azlogs) - a tool for downloading logs for given timeperiod. I use it automatically [analyze latencies](https://github.com/hdinsight/HivePerformanceAutomation/blob/master/bin/perfdatascripts/getStoreLatency.sh) of WASB requests.
 
 Lets see how you can use azlogs to download the logs and anlayze them.
 
@@ -33,9 +32,7 @@ Lets see how you can use azlogs to download the logs and anlayze them.
     java -jar azlogs.jar storage1 67t2Mw== "1476132794" "1476132895" "request_start_time,operation_type,end_to_end_latency_in_ms" 2>debug_logs > output
     ```
 
-5. The above command will produce an output CSV file(delimited by ;) that you can use to analyze with your favorite data analysis tool. Mine happens to be [csvkit](https://csvkit.readthedocs.io/en/1.0.1/).
-
-    For example, here is how to calculate ``avg``,``min`` and ``max`` latencies (from both client and service side) and the counts for various operations on WASB from above output logs.
+5. The above command will produce an output CSV file(delimited by ;) that you can use to analyze with your favorite data analysis tool. I like to use [csvkit](https://csvkit.readthedocs.io/en/1.0.1/) for working with csv files on command line. It allows you to write a sql query against a csv file. For example, here is how to calculate ``avg``,``min`` and ``max`` latencies (from both client and service side) and the counts for various operations on WASB from above output logs using csvkit.
     ```bash
     csvsql -d ";" --query "select operation_type, count(*), avg(end_to_end_latency_in_ms), min(end_to_end_latency_in_ms), max(end_to_end_latency_in_ms), avg(server_latency_in_ms), min(server_latency_in_ms),max(server_latency_in_ms) from output group by operation_type"
     ```
@@ -60,19 +57,40 @@ Lets see how you can use azlogs to download the logs and anlayze them.
     SetBlobProperties|86|34.97674419|3|93|34.97674419|3|93
 
 
-## How to analyze storage performance for Spark or hive queries
+## Analyzing storage performance of a Spark or hive query
 
 We can use the above technique to get the storage logs for a given spark or hive query/job. This is assuming the storage account is only being used by the given query. This is easily achievable in the benchmark or performance debugging scenarios. 
 
-So, the steps for measureing the storage performance for a given spark/hive query:
+At a high level, the steps for measureing the storage performance for a given spark/hive query:
 
-1. Note the start time.
-2. Execute spark or hive job. 
-3. Note the end time.
+1. Record the start time 
+    ```bash 
+    STARTTIME="`date +%s`"
+    ```
+2. Execute spark or hive job(s). 
+    ```bash 
+    spark-sql -e "select count(*) from hivesampletable"
+    ```
+    or if you are using hive 
+
+    ```bash 
+    hive -e "select count(*) from hivesampletable"
+    ```
+    Note that, you can run arbitrary commands here that interact with storage. 
+    
+3. Record the end time.
+    ```bash 
+    ENDTIME="`date +%s`"
+    ```
+
 4. Download the storage logs from start time to end time using the steps mentioned above. This logs will contain all the storage requests made during this time frame. 
-5. Anlayze the storage logs.
+    ```bash
+    java -jar azlogs.jar storage1 67t2Mw== "$STARTTIME" "$ENDTIME" "request_start_time,operation_type,end_to_end_latency_in_ms" 2>debug_logs > output
+    ```
+5. Anlayze the storage logs stored in ``output`` file.
 
-In the above output we saw how to calulate avg, min and max of storage request latecy. While this are useful summaries, [quartiles](https://en.wikipedia.org/wiki/Quartile) provide a much more useful descriptive statstics, especially in case of latency numbers. In performance analysis, we care about 99th, 99.9th, 99.99th percentile latencies very often.  
+
+In the first section of this post, we saw how to calulate ``avg``, ``min`` and ``max`` of storage request latecy. While these are useful statistical summaries, [quartiles](https://en.wikipedia.org/wiki/Quartile) provide a much more useful descriptive statstics, especially in case of latency numbers. In performance analysis, we care about 99th, 99.9th, 99.99th percentile latencies very often.  
 
 We will now see how to calculate 99th percentile of storage requests. You can run the following command to generate 99th percentile latency numbers for different types of operations :
 
@@ -100,7 +118,9 @@ SetBlobProperties|39
 
 By changing ``0.99`` to in above query to ``0.999`` or ``0.9999``, we can calcualte 99.9th or 99.99th percentile latency. We can combine the above queries to get a better picture of the requests success rates and latencies.
 
-While measuring storage latencies for individual queries are useful for debugging query performance, but if we want to get a more complete picture of storage and query engine performance on cloud, we should run industry standard benchmarks like [tpch](https://github.com/dharmeshkakadia/tpch-hdinsight) and [tpcds](https://github.com/dharmeshkakadia/tpcds-hdinsight) and see the storage reuqests numbers. With little more [automation](https://github.com/hdinsight/HivePerformanceAutomation), we can generate the following summary of storage requests across different queries:
+## Analyzing storage performance of your big data workload
+
+While measuring storage latencies for individual queries are useful for debugging query performance, if we want to get a more complete picture of storage and query engine performance on cloud, we should run industry standard benchmarks like [tpch](https://github.com/dharmeshkakadia/tpch-hdinsight) and [tpcds](https://github.com/dharmeshkakadia/tpcds-hdinsight) and see the storage reuqests numbers. With little more [automation](https://github.com/hdinsight/HivePerformanceAutomation), we can generate the following summary of storage requests across different queries:
 
 **Query**|**operation\_type**|**count(*)**|**avg(end\_to\_end\_latency\_in\_ms)**|**min(end\_to\_end\_latency\_in\_ms)**|**max(end\_to\_end\_latency\_in\_ms)**|**avg(server\_latency\_in\_ms)**|**min(server\_latency\_in\_ms)**|**max(server\_latency\_in\_ms)**|**E2E99thP**|**E2E999thP**|**E2E9999thP**
 :-----:|:-----|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:
@@ -150,4 +170,4 @@ q13|PutPage|28|43.10714286|3|151|29.57142857|3|126|151|151|151
 q13|SetBlobMetadata|4|3.25|3|4|3.25|3|4|4|4|4
 q13|SetBlobProperties|65|14.83076923|3|45|14.83076923|3|45|45|45|45
 
-That's it for now! Go measure your storage performance!
+Remember, storage is just one part of the query engines performance, if we want to understand the query engine performance at a deeper level, we need to combine this with other resource performance data - namely network, CPU, memory. In the next post we will see how to achieve that. Till then go measure your storage performance!
