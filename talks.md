@@ -4,6 +4,7 @@ title: Talks
 permalink: /talks/
 published: true
 ---
+* [Building Petabyte scale Interactive Data warehouse in Azure HDInsight](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3355) @ Microsoft Ignite. Oct, 2017. [[slides]](https://8gportalvhdsf9v440s15hrt.blob.core.windows.net/ignite2017/session-presentations/BRK3355.PPTX)  
 * [Scheduling Deep Dive - Mesos, Kubernetes and DockerSwarm](https://speakerdeck.com/dharmeshkakadia/scheduling-deep-dive-mesos-kubernetes-and-dockerswarm) @ VelocityConf Jun, 2017
 * [Mesos is the new Linux](https://speakerdeck.com/dharmeshkakadia/mesos-is-the-new-linux-devopsdays-india-2015) @ DevOps Days. Sep, 2015
 * [Managing Resources at Scale with Apache Mesos](https://speakerdeck.com/dharmeshkakadia/managing-resources-at-scale-with-apache-mesos) @ Large Scale Production Engineering. Jun, 2014
