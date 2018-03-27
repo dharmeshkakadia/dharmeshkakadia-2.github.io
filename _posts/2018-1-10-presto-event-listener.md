@@ -7,7 +7,7 @@ title: How to write a Presto Event Listener
 Presto added Event Listener support some time back.
 [Presto Event Listener](https://prestodb.io/docs/current/develop/event-listener.html) allows you to write a custom event listeners.
 
-Event lisnters are invoked for following events in presto query workflow :
+Event listeners are invoked for following events in presto query workflow :
 1. Query creation
 2. Query completion
 3. Split completion
@@ -25,24 +25,61 @@ It opens up nice use case in terms of operations and support.
 
 Step by step instructions
 
-1. Write a event listener
+Write a event listener
 
   1. Set up an empty maven project
 
-  2. Add presto dependency
+  ```shell
+  git clone https://github.com/dharmeshkakadia/presto-event-logger && cd presto-event-logger
+  ```
 
-  3. Add event lister class, factory and plugin
+  This is how the project will look like
+  ```shell
+  tree
+  ```
 
-  4. Add SPI plugin in metadate 
+  2. Add presto dependency by adding the following into ``project`` section of the ``pom.xml`` file.
 
-  5. Add log4j Properties
+  ```xml
+    <dependencies>
+        <dependency>
+            <groupId>com.facebook.presto</groupId>
+            <artifactId>presto-spi</artifactId>
+            <version>0.172<</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+  ```  
 
-  6. compile and package the jar
+3. Add event lister class, factory and plugin
 
-7. Copy the jar as part of presto plugins
+4. Add SPI plugin in metadate ``src/main/resources/META-INF/services/com.facebook.presto.spi.Plugin`` and put ``QueryFileLoggerPlugin``.
+
+
+5. Add log4j Properties
+  ```shell
+  vim src/main/resources/log4j.properties
+  ```
+
+6. compile and package the jar
+  ```shell
+  mvn package
+  ```
+
+7. Copy the jar to the presto plugins directory.
+  ```shell
+  cp target/presto-event-logger*.jar <path-to-presto>/plugin/event-logger/
+  ```
+    
+  You should also copy ``slf4j-api-*.jar``, ``slf4j-log4j12-*.jar``, ``guava-*.jar``, ``log4j-*.jar`` to the event-logger folder ``<path-to-presto>/plugin/event-logger/``. 
 
 8. Start the presto server
+  ```shell
+    <path-to-presto>/bin/launcher start  
+  ```
 
+
+In the above example we have only used ``queryCompleted()`` [link] method from the [EventListener](link) interface. It provides following methods for different event notifications.
 
 What info is available inside the events.
 
