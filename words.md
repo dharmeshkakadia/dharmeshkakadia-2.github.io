@@ -7,6 +7,10 @@ published: true
 
 + "Dreams are maps" - Carl Sagan
 
++ Roll up your sleevs and make it happen.
+
++ Retention before scale. 
+
 + "A/B tests won't give you an iPhone"
 
 + Ignoring marketing for tech products would be like ignoring maps and roads when going to a destination. Just because the destination is wonderful doesn't mean you don't have to provide a smooth road and detailed map to it.
