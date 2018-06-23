@@ -7,6 +7,12 @@ published: true
 
 + "Dreams are maps" - Carl Sagan
 
++ Build cheaply, and earn the problem of scale
+
++ Don’t run out of money
+
++ “A great goal in life would be to not have to be in a given place at a given time. Being accountable for your output rather than your input. I would love to be paid purely for my judgment.” - naval
+
 + "You were born with wings, why prefer to crawl through life?" ― Rumi
 
 + "You measure yourself by the people who measure themselves by you"
