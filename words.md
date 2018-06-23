@@ -9,6 +9,8 @@ published: true
 
 + Roll up your sleevs and make it happen.
 
++ Measure what matters. 
+
 + Retention before scale. 
 
 + "The Law of Leaky Abstractions - You get ease of use until you splat flat against the abraction wall."
