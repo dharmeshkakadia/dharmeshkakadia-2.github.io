@@ -11,6 +11,8 @@ published: true
 
 + Retention before scale. 
 
++ "The Law of Leaky Abstractions - You get ease of use until you splat flat against the abraction wall."
+
 + "A/B tests won't give you an iPhone"
 
 + Ignoring marketing for tech products would be like ignoring maps and roads when going to a destination. Just because the destination is wonderful doesn't mean you don't have to provide a smooth road and detailed map to it.
