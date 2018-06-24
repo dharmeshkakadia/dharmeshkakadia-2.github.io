@@ -17,6 +17,8 @@ published: true
 
 + "A/B tests won't give you an iPhone"
 
++ "My ideas are mine. Nobody else has a right to them except on my terms. Those who need them must take them my way or not at all." —“Howard Roark” (Ayn Rand)
+
 + Ignoring marketing for tech products would be like ignoring maps and roads when going to a destination. Just because the destination is wonderful doesn't mean you don't have to provide a smooth road and detailed map to it.
 
 + Marimba Phenomenon is when you spend more on PR & marketing than on development. Result: everybody checks your code, it's not good yet. People will be permanently convinced that your code is simple & inadequate, even if you improve it drastically later - @spolsky
