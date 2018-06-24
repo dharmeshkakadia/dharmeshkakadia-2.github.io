@@ -15,6 +15,8 @@ published: true
 
 + "The Law of Leaky Abstractions - You get ease of use until you splat flat against the abraction wall."
 
++ Nature always wears the colors of the spirit. - Ralph Waldo Emerson 
+
 + "A/B tests won't give you an iPhone"
 
 + "My ideas are mine. Nobody else has a right to them except on my terms. Those who need them must take them my way or not at all." —“Howard Roark” (Ayn Rand)
