@@ -9,6 +9,8 @@ published: true
 
 + Roll up your sleevs and make it happen.
 
++ Remember, reality is self inflicted.
+
 + Measure what matters. 
 
 + Retention before scale. 
