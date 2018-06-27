@@ -11,6 +11,8 @@ published: true
 
 + Remember, reality is self inflicted.
 
++ “The drugs of the future will be computers. The computers of the future will be drugs.” — T. McKenna
+
 + Measure what matters. 
 
 + Retention before scale. 
