@@ -11,6 +11,8 @@ published: true
 
 + Remember, reality is self inflicted.
 
++ "Tools should make users feel like pilot, not like mechanics". There is a good way to hide complexity and there is a bad way. Comes down to good abstractions. 
+
 + “The drugs of the future will be computers. The computers of the future will be drugs.” — T. McKenna
 
 + Measure what matters. 
