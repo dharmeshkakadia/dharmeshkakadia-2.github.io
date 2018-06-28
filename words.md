@@ -13,6 +13,8 @@ published: true
 
 + "Tools should make users feel like pilot, not like mechanics". There is a good way to hide complexity and there is a bad way. Comes down to good abstractions. 
 
++ Be self aware about your self awareness - Erik.
+
 + “The drugs of the future will be computers. The computers of the future will be drugs.” — T. McKenna
 
 + Measure what matters. 
