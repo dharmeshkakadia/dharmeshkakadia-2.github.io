@@ -5,7 +5,8 @@ title: Review - Are Ideas Getting Harder to Find?
 This is a review of a recent paper [Are Ideas Getting Harder to Find?](https://web.stanford.edu/~chadj/IdeaPF.pdf) by Charles I. Jones. [Slides](https://web.stanford.edu/~chadj/slides-ideas.pdf) are also available.
 
 The central content of the paper is answering the question with the following formula :
-Economic growth = Research productivity × Number of researchers
+
+> Economic growth = Research productivity × Number of researchers
 
 The paper presents evidence and arguments that even the economic growth has been relatively stable over the years, there is a clear downwards trend in the research productivity. This is compensated by more and more people getting into research. Here is a graph from paper showing those two trends:
 
@@ -15,9 +16,9 @@ The idea machine analogy is great - it requires double the input ust to keep the
 
 The paper than on goes an applies this theory and formulation to number of settings:
 
-    1. Moore's law example.
-    2. Agricultural innovation example - seed yield of Corn, Soybeans, Cotton, Wheat.
-    3. Medicine example - new drugs approved by FDA. (I am not sure this is the best metric). They also look at life expectancy and cancer research data from spending and effect point of view.
+1. Moore's law example.
+2. Agricultural innovation example - seed yield of Corn, Soybeans, Cotton, Wheat.
+3. Medicine example - new drugs approved by FDA. (I am not sure this is the best metric). They also look at life expectancy and cancer research data from spending and effect point of view.
 
 We can also use it in predictive form :
 
