@@ -11,6 +11,8 @@ published: true
 
 + Remember, reality is self inflicted.
 
++ "Money is a form of frozen and tradeable time" - naval
+
 + "Tools should make users feel like pilot, not like mechanics". There is a good way to hide complexity and there is a bad way. Comes down to good abstractions. 
 
 + Be self aware about your self awareness - Erik.
