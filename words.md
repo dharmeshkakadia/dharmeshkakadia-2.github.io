@@ -19,6 +19,10 @@ published: true
 
 + Measure what matters. 
 
++ Culture is how everyone holds everyone else accountable 
+
++ What got you here would not get you there 
+
 + Retention before scale. 
 
 + "The Law of Leaky Abstractions - You get ease of use until you splat flat against the abraction wall."
