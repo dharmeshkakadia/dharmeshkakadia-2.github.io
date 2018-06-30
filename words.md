@@ -21,6 +21,8 @@ published: true
 
 + Measure what matters. 
 
++ "You pile up enough tomorrows, and you’ll find you are left with nothing but a lot of empty yesterdays.”
+
 + Culture is how everyone holds everyone else accountable 
 
 + What got you here would not get you there 
