@@ -53,7 +53,7 @@ Write a event listener
 
 3. Add event lister class, factory and plugin
 
-4. Add SPI plugin in metadate ``src/main/resources/META-INF/services/com.facebook.presto.spi.Plugin`` and put ``QueryFileLoggerPlugin``.
+4. Add SPI plugin in metadate file ``src/main/resources/META-INF/services/com.facebook.presto.spi.Plugin``. The file should container ``QueryFileLoggerPlugin``.
 
 
 5. Add log4j Properties
@@ -82,6 +82,10 @@ Write a event listener
 In the above example we have only used ``queryCompleted()`` [link] method from the [EventListener](link) interface. It provides following methods for different event notifications.
 
 What info is available inside the events.
+
+Also, note that we used logger interface for logging the queries because it provides maximal flexibility 
+
+At high level, I am bit skeptic, and the finding data that supports authors arguments, is always possible.
 
 https://github.com/dharmeshkakadia/presto-event-logger
 
