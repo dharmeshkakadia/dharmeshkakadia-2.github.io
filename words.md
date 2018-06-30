@@ -23,6 +23,8 @@ published: true
 
 + What got you here would not get you there 
 
++ Misery loves company 
+
 + Retention before scale. 
 
 + "The Law of Leaky Abstractions - You get ease of use until you splat flat against the abraction wall."
