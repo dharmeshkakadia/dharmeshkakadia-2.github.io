@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Review - Are Ideas Getting Harder to Find? 
 ---
 This is a review of a recent paper [Are Ideas Getting Harder to Find?](https://web.stanford.edu/~chadj/IdeaPF.pdf) by Charles I. Jones. [Slides](https://web.stanford.edu/~chadj/slides-ideas.pdf) are also available.
@@ -12,7 +12,7 @@ The paper presents evidence and arguments that even the economic growth has been
 
 ![productivity-decline.png]({{site.baseurl}}/images/ideas-1.png)
 
-The idea machine analogy is great - it requires double the input ust to keep the same output.How you define research productivity is similar to normal definition of productivity - how many new ideas are generated per researcher. Graph showing the productivity.
+The idea machine analogy is great - it requires double the input ust to keep the same output.How you define research productivity is similar to normal definition of productivity - how many new ideas are generated per researcher.
 
 The paper than on goes an applies this theory and formulation to number of settings:
 
