@@ -3,7 +3,7 @@ published: false
 layout: post
 title: How to write a Presto Event Listener
 ---
-
+Presto is [a fast distributed SQL query engine for big data](http://dharmeshkakadia.github.io/presto-hdinsight/).
 Presto added Event Listener support some time back.
 [Presto Event Listener](https://prestodb.io/docs/current/develop/event-listener.html) allows you to write a custom event listeners.
 
