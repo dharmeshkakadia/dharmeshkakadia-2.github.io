@@ -41,7 +41,7 @@ If these names dont make sense right now, don't worry. We will go through detail
           <dependency>
               <groupId>com.facebook.presto</groupId>
               <artifactId>presto-spi</artifactId>
-              <version>0.172<</version>
+              <version>0.172</version>
               <scope>provided</scope>
           </dependency>
       </dependencies>
@@ -135,7 +135,7 @@ At this stage, we have our code ready to deploy it to Presto.
     cp target/presto-event-logger*.jar <path-to-presto>/plugin/event-logger/
     ```
     
-  You should also copy ``slf4j-api-*.jar``, ``slf4j-log4j12-*.jar``, ``guava-*.jar``, ``log4j-*.jar`` or any additional dependencies that you have to the event-logger folder ``<path-to-presto>/plugin/event-logger/``.
+    You should also copy ``slf4j-api-*.jar``, ``slf4j-log4j12-*.jar``, ``guava-*.jar``, ``log4j-*.jar`` or any additional dependencies that you have to the event-logger folder ``<path-to-presto>/plugin/event-logger/``.
 
 11. We are all set. Start the presto server
 
