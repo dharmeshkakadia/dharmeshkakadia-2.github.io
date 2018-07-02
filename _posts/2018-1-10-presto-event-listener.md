@@ -113,7 +113,7 @@ If these names dont make sense right now, don't worry. We will go through detail
 
 Now, that we have all the code, lets move to packaging it.
   
-6. Presto uses [Service Provider Interfaces(SPI)](https://docs.oracle.com/javase/tutorial/sound/SPI-intro.html) to extend Presto. SPI is widely used in Java world. Presto uses [SPI](https://prestodb.io/docs/current/develop/spi-overview.html) to load [Connector](https://prestodb.io/docs/current/develop/connectors.html), [Functions](https://prestodb.io/docs/current/develop/functions.html), [Types](https://prestodb.io/docs/current/develop/types.html) and [System Access Control](https://prestodb.io/docs/current/develop/system-access-control.html). SPI are loaded via metadate files. We will create [`src/main/resources/META-INF/services/com.facebook.presto.spi.Plugin`](https://github.com/dharmeshkakadia/presto-event-logger/blob/master/src/main/resources/META-INF/services/com.facebook.presto.spi.Plugin). The file should contain the class name for our plugin - ``QueryFileLoggerPlugin``.
+6. Presto uses [Service Provider Interfaces(SPI)](https://docs.oracle.com/javase/tutorial/sound/SPI-intro.html) to extend Presto. SPI is widely used in Java world. Presto uses [SPI](https://prestodb.io/docs/current/develop/spi-overview.html) to load [Connector](https://prestodb.io/docs/current/develop/connectors.html), [Functions](https://prestodb.io/docs/current/develop/functions.html), [Types](https://prestodb.io/docs/current/develop/types.html) and [System Access Control](https://prestodb.io/docs/current/develop/system-access-control.html). SPI are loaded via metadate files. We will create [`src/main/resources/META-INF/services/com.facebook.presto.spi.Plugin`](https://github.com/dharmeshkakadia/presto-event-logger/blob/master/src/main/resources/META-INF/services/com.facebook.presto.spi.Plugin). The file should contain the class name for our plugin - `QueryFileLoggerPlugin`.
 
 7. We will also add [`log4j.properties`](https://github.com/dharmeshkakadia/presto-event-logger/blob/master/src/main/resources/log4j.properties) file that specifies where to write our query logs. You should adopt this to your environment. 
   
@@ -127,7 +127,7 @@ Now, that we have all the code, lets move to packaging it.
 
 At this stage, we have our code ready to deploy it to Presto. 
 
-9. First we will have to tell Presto to load our listener. We will create event-listener configuration file `<path-to-presto>/etc/event-listener.properties`. This configuration file atleast should have ``event-listener.name`` property whose value should match the string returned by ``EventListenerFactory.getName()`` - in out case `event-logger`. The remaining properties will be passed as a map to ``EventListenerFactory.create()`` which can use for passing any additional information you want to your listener.
+9. First we will have to tell Presto to load our listener. We will create event-listener configuration file `<path-to-presto>/etc/event-listener.properties`. This configuration file atleast should have `event-listener.name` property whose value should match the string returned by `EventListenerFactory.getName()` - in out case `event-logger`. The remaining properties will be passed as a map to `EventListenerFactory.create()` which can use for passing any additional information you want to your listener.
 
 10. Copy our generated jar to the presto plugins directory.
 
@@ -135,7 +135,7 @@ At this stage, we have our code ready to deploy it to Presto.
     cp target/presto-event-logger*.jar <path-to-presto>/plugin/event-logger/
     ```
     
-    You should also copy ``slf4j-api-*.jar``, ``slf4j-log4j12-*.jar``, ``guava-*.jar``, ``log4j-*.jar`` or any additional dependencies that you have to the event-logger folder ``<path-to-presto>/plugin/event-logger/``.
+    You should also copy `slf4j-api-*.jar`, `slf4j-log4j12-*.jar`, `guava-*.jar`, `log4j-*.jar` or any additional dependencies that you have to the event-logger folder `<path-to-presto>/plugin/event-logger/`.
 
 11. We are all set. Start the presto server
 
