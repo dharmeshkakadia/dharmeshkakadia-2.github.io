@@ -27,6 +27,8 @@ published: true
 
 + What got you here would not get you there 
 
++ Idea tarpit: All ideas are possible, but no ideas are easy.
+
 + Misery loves company 
 
 + Retention before scale. 
