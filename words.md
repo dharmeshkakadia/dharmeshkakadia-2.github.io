@@ -101,6 +101,10 @@ published: true
 
 + Use the right tool for the job.Some times the right tool is time, some times its humans and some times its money.
 
++ The days are long but the decades are short - Sam Altman
+
++ Life is not a dress rehearsal. Rose Tremain. Make is count.
+
 + Humans are not generally great at understanding 2nd,3rd or nth order effects of their decisions. Online social media has made some of this effects that relatable, through RT, share etc.
 
 + Build cheaply, and earn the problem of scale
