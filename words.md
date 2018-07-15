@@ -35,7 +35,7 @@ published: true
 
 + Misery loves company 
 
-+ Leadership is about starting the statements, but let others finish it. 
++ Leadership is about starting the statements, but let others finish it. Story-starters and not story-tellers. 
 
 + Retention before scale. 
 
