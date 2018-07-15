@@ -35,6 +35,8 @@ published: true
 
 + Misery loves company 
 
++ Leadership is about starting the statements, but let others finish it. 
+
 + Retention before scale. 
 
 + "The Law of Leaky Abstractions - You get ease of use until you splat flat against the abraction wall."
