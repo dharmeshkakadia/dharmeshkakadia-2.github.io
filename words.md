@@ -11,6 +11,8 @@ published: true
 
 + Remember, reality is self inflicted.
 
++ Turing machine = Finite automata + writing. Finite automate can not multiply. Turing machine can compute _any computatble_ function. Power of writing. 
+
 + "Everything you can imagine is real." ― Pablo Picasso
 
 + "Money is a form of frozen and tradeable time" - naval
