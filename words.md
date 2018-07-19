@@ -105,6 +105,8 @@ published: true
 
 + Religion is scalable cult
 
++ "Too old am I to be content with play; Too young to be untroubled by desire." Goethe's Faust.
+
 + Use the right tool for the job.Some times the right tool is time, some times its humans and some times its money.
 
 + The days are long but the decades are short - Sam Altman
