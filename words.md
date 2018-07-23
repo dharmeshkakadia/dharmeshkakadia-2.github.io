@@ -41,6 +41,8 @@ published: true
 
 + Retention before scale. 
 
++ Syn > Sin.
+
 + "The Law of Leaky Abstractions - You get ease of use until you splat flat against the abraction wall."
 
 + Nature always wears the colors of the spirit. - Ralph Waldo Emerson 
