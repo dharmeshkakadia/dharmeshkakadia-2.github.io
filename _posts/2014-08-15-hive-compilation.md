@@ -19,6 +19,8 @@ $ vim shims/common/src/main/java/org/apache/hadoop/hive/shims/ShimLoader.java
 
 and add the case statement for your version number. I will add "case 3:" as shown below.
 
+{% gist 7a3821c07240826920b3 %}
+
 Now you can build hive with following command.
 
 ```
