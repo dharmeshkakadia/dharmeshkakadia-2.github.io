@@ -31,14 +31,11 @@ After successful completion of the above command, you would find the packages hi
 
 ### Gotchas
 
-1. Don't use JDK 7 otherwise you might hive will fail to compile.
-[https://issues.apache.org/jira/browse/HIVE-3197](https://issues.apache.org/jira/browse/HIVE-3197)
-[https://issues.apache.org/jira/browse/HIVE-3384](https://issues.apache.org/jira/browse/HIVE-3384)
+1. Don't use JDK 7 otherwise you might hive will fail to compile (mentioned in [https://issues.apache.org/jira/browse/HIVE-3197](https://issues.apache.org/jira/browse/HIVE-3197) and [https://issues.apache.org/jira/browse/HIVE-3384](https://issues.apache.org/jira/browse/HIVE-3384))
 
-2. Contrib module in current hive trunk is broken by the dependencies on the package `org.apache.hadoop.record`, which is moved to hadoop-streaming project and then reverted.
-[https://issues.apache.org/jira/browse/HIVE-7077](https://issues.apache.org/jira/browse/HIVE-7077)
-[https://issues.apache.org/jira/browse/HADOOP-10474](https://issues.apache.org/jira/browse/HADOOP-10474)
-  If you encounter this, there is a simple workaround for that. You can just build the `contrib` module with version of hadoop that is not effected by above change. Instead of doing any changes to the pom file etc, I simply built it with the `hadoop-1`. While this is likely to be fixed in the future version,here are the commands to workaround,
+2. Contrib module in current hive trunk is broken by the dependencies on the package `org.apache.hadoop.record`, which is     moved to hadoop-streaming project and then reverted (mentioned in [https://issues.apache.org/jira/browse/HIVE-7077](https://issues.apache.org/jira/browse/HIVE-7077) and [https://issues.apache.org/jira/browse/HADOOP-10474](https://issues.apache.org/jira/browse/HADOOP-10474))
+
+    If you encounter this, there is a simple workaround for that. You can just build the `contrib` module with version of hadoop that is not effected by above change. Instead of doing any changes to the pom file etc, I simply built it with the `hadoop-1`. While this is likely to be fixed in the future version,here are the commands to workaround,
 
     ```
      $ cd contrib
