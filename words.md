@@ -95,6 +95,8 @@ published: true
 
 + "Open source is a cult."
 
++ This is the place. Now is the time. 
+
 + Don’t Start a Blog, Start a Cult – Mr. Money Mustache
 
 + Passion : how many useless facts you know about something.
