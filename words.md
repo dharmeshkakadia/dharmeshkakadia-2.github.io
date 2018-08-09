@@ -39,6 +39,8 @@ published: true
 
 + Misery loves company 
 
++ “There is prodigious strength in sorrow and despair.” ― Charles Dickens, A Tale of Two Cities
+
 + Leadership is about starting the statements, but let others finish it. Story-starters and not story-tellers. 
 
 + Retention before scale. 
