@@ -27,6 +27,8 @@ published: true
 
 + Measure what matters. 
 
++ Easy paths, crowded destinations.
+
 + "You pile up enough tomorrows, and you’ll find you are left with nothing but a lot of empty yesterdays.”
 
 + Culture is how everyone holds everyone else accountable 
