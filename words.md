@@ -15,6 +15,8 @@ published: true
 
 + "Everything you can imagine is real." ― Pablo Picasso
 
++ Don't let your dreams die as dreams.
+
 + "Money is a form of frozen and tradeable time" - naval
 
 + Either you'll make money while you sleep or you'll work until you die - those are your only two options.
@@ -129,6 +131,12 @@ published: true
 
 + Life is not a dress rehearsal. Rose Tremain. Make is count.
 
++ “Every one who has taken a shower has had an idea. It's the person who gets out of the shower, dries off and does something about it that makes a difference.” ― Nolan Bushnell
+
++ “Infinity is my spiritual horizon.” ― Talismanist Giebra
+
++ Dream as if you'll live forever. Live as if you'll die today. - James Dean
+
 + Humans are not generally great at understanding 2nd,3rd or nth order effects of their decisions. Online social media has made some of this effects that relatable, through RT, share etc.
 
 + Build cheaply, and earn the problem of scale
@@ -194,6 +202,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 + "Success isn't a result of spontaneous combustion. You must set yourself on fire." - Arnold H. Glasow
 
 + "Expectation deserves to override reality"
+
++ "Not all those who wander are lost." - Tolkien
 
 + The smartness is initially about off trends, then about tradeoffs.
 
