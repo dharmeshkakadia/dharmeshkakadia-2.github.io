@@ -154,6 +154,8 @@ published: true
 
 + "One day or day one. Decide."
 
++ “Don't forget:beautiful sunsets need cloudy skies.” ― Paulo Coelho
+
 + Curiosity is the cure for imitation
 
 + Basic education is like preventive healthcare (affordable, no negative effects, risk-free, general, easier, un-opinionated, ...)
