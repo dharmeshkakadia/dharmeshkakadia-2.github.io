@@ -119,6 +119,8 @@ published: true
 
 + Religion is scalable cult
 
++ “Create with the heart; build with the mind.” ― Criss Jami, Killosophy
+
 + "Too old am I to be content with play; Too young to be untroubled by desire." Goethe's Faust.
 
 + Use the right tool for the job.Some times the right tool is time, some times its humans and some times its money.
