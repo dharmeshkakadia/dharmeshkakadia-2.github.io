@@ -158,6 +158,8 @@ published: true
 
 + “Don't forget:beautiful sunsets need cloudy skies.” ― Paulo Coelho
 
++ “Sometimes knowing is torture. You wish you could hide your secret away in a dark, cobwebby shed, shut the door, and break the key in the lock, so no one can ever get in again. You wish that you could go to sleep and have your last thought be anything but the buttery light of the New Mexico moon sneaking in through the cracks of an old barn's walls. But you can't erase the knowing.” ― Tawni Waters, Beauty of the Broken
+
 + Curiosity is the cure for imitation
 
 + Basic education is like preventive healthcare (affordable, no negative effects, risk-free, general, easier, un-opinionated, ...)
