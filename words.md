@@ -49,6 +49,8 @@ published: true
 
 + Syn > Sin.
 
++ Meditating is like installing a debugger in your brain. - Daniel Gross
+
 + "The reward for conformity is that everyone likes you except yourself." — Rita Mae Brown
 
 + "The Law of Leaky Abstractions - You get ease of use until you splat flat against the abraction wall."
