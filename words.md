@@ -13,6 +13,8 @@ published: true
 
 + Turing machine = Finite automata + writing. Finite automate can not multiply. Turing machine can compute _any computatble_ function. Power of writing. 
 
++ “The difference between the almost right word and the right word is really a large matter. ’tis the difference between the lightning bug and the lightning.” ― Mark Twain, The Wit and Wisdom of Mark Twain
+
 + "Everything you can imagine is real." ― Pablo Picasso
 
 + Don't let your dreams die as dreams.
