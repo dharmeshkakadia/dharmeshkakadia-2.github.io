@@ -107,6 +107,8 @@ published: true
 
 + "Open source is a cult."
 
++ “Every man has two lives, and the second begins when he realizes he has only one.” - naval
+
 + This is the place. Now is the time. 
 
 + Don’t Start a Blog, Start a Cult – Mr. Money Mustache
