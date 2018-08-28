@@ -73,6 +73,10 @@ published: true
 
 + Code your legacy.
 
++ If you don’t dare to try and chase your dreams, you'll rob yourself the joy of doing it. Don't just dream it. #JustDoIt
+
++ Its only crazy until you do it.
+
 + Be present, not perfect. 
 
 + Creating things makes you humble and confidant. Humble because you knew the chances of success before creation, so later success can't totally blind you. Confidence because you know the chance of success before creation and still decided to pour your heart.
