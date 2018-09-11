@@ -234,6 +234,10 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + Perfection should not become enemy of action.
 
++ “Whenever people agree with me I always feel I must be wrong.” ~Oscar Wilde
+
++ Travel is still the best cure to prejudice.
+
 + Be regular and orderly in your life, so that you may be violent and original in your work. - Gustave Flaubert
 
 + Accuracy is a post action explanation.
