@@ -31,6 +31,8 @@ published: true
 
 + Measure what matters. 
 
++ Do something that you will be proud of no matter the outcome.
+
 + Easy paths, crowded destinations.
 
 + Changing your mind is free. 
