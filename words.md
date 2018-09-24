@@ -19,6 +19,8 @@ published: true
 
 + Don't let your dreams die as dreams.
 
++ Don't treat your heart like an action figure wrapped in plastic and never used - Amy Poehler
+
 + "Money is a form of frozen and tradeable time" - naval
 
 + Either you'll make money while you sleep or you'll work until you die - those are your only two options.
