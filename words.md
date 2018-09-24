@@ -19,6 +19,8 @@ published: true
 
 + Don't let your dreams die as dreams.
 
++ If everybody followed their first dreams in life, the world would be ruled by cowboys and princesses. - Stephen Colbert
+
 + Don't treat your heart like an action figure wrapped in plastic and never used - Amy Poehler
 
 + "Money is a form of frozen and tradeable time" - naval
@@ -157,7 +159,7 @@ published: true
 
 + Build cheaply, and earn the problem of scale
 
-+ Don’t run out of money
++ Don’t run out of money.
 
 + “A great goal in life would be to not have to be in a given place at a given time. Being accountable for your output rather than your input. I would love to be paid purely for my judgment.” - naval
 
