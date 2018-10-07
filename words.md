@@ -39,6 +39,8 @@ published: true
 
 + Easy paths, crowded destinations.
 
++ "If you/your product is better than its perception, focus on improving brand. If Perception is better than product, improve the product." or "If your product is better than its perception, focus on brand. If your product perception is better than product, focus on scaling the product."
+
 + Changing your mind is free. 
 
 + "You pile up enough tomorrows, and you’ll find you are left with nothing but a lot of empty yesterdays.”
