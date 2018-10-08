@@ -219,6 +219,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "Facts are sacred, opinions are for human"
 
++ "What you do counts. Who you are doesn't. You are an ordinary part of an extraordinary process."
+
 + "The safest road to hell is the gradual one - the gentle slope, soft underfoot, without sudden turnings, without milestones, without signposts." - C. S. Lewis
 
 + "Success isn't a result of spontaneous combustion. You must set yourself on fire." - Arnold H. Glasow
