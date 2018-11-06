@@ -17,3 +17,4 @@ published: true
 * [The BIG Opportunity - A peek into Big Data Research](https://speakerdeck.com/dharmeshkakadia/the-big-opportunity-a-peek-into-big-data-research) @ Tcrix Faculty Summit 2013
 * [MECCA: Mobile, Efficient Cloud Computing Workload Adoption Framework using Scheduler Customization and Workload Migration Decisions](https://speakerdeck.com/dharmeshkakadia/acm-mobilecloud-13-presentation) @ ACM MobileCloud Workshop MobiHoc 2013
 * [OpenStack@IIIT-H](https://speakerdeck.com/dharmeshkakadia/openstack-at-iiit-h) @ OpenStack Meetup, Hyderabad. Mar, 2013 
+* [HadoopStack: Big Data Processing on Cloud](https://speakerdeck.com/dharmeshkakadia/hadoopstack-big-data-processing-on-cloud) @ Workshop on Understanding Big Data Analytics, ACM India Special Interest Group on Knowledge Discovery and Data Mining (iKDD). Feb, 2013
