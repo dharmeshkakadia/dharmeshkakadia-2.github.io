@@ -16,3 +16,4 @@ published: true
 * [Network aware Virtual Machine Consolidation for Large Data Centers](https://speakerdeck.com/dharmeshkakadia/sc-13-presentation) @ Network aware Data Management workshop, SuperComputing 2013
 * [The BIG Opportunity - A peek into Big Data Research](https://speakerdeck.com/dharmeshkakadia/the-big-opportunity-a-peek-into-big-data-research) @ Tcrix Faculty Summit 2013
 * [MECCA: Mobile, Efficient Cloud Computing Workload Adoption Framework using Scheduler Customization and Workload Migration Decisions](https://speakerdeck.com/dharmeshkakadia/acm-mobilecloud-13-presentation) @ ACM MobileCloud Workshop MobiHoc 2013
+* [OpenStack@IIIT-H](https://speakerdeck.com/dharmeshkakadia/openstack-at-iiit-h) @ OpenStack Meetup, Hyderabad. Mar, 2013 
