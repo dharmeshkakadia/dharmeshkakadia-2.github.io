@@ -1260,6 +1260,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + Always be smarter than the people who hire you. -Lena Horne
 
++ Every choice is a tradeoff, but not every tradeoff is a choice.
+
 + computers make it easy to do a lot of things, but most of the things they make it easier to do don't need to be done
 
 + The problem with troubleshooting is that trouble shoots back.
