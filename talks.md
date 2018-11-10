@@ -22,6 +22,7 @@ published: true
 ## Posters
 
 * [Set Expansion With Understanding](https://speakerdeck.com/dharmeshkakadia/set-expansion-with-understanding) Dec, 2012.
-* [Seed Selection for Genre Specific Search](https://speakerdeck.com/dharmeshkakadia/seed-selection-for-genre-specific-search), R&D Showcase, IIIT-H, Feb, 2013
-* [Network as a Service for Cloud Computing](https://speakerdeck.com/dharmeshkakadia/network-as-a-service-for-cloud-computing), R&D Showcase IIIT-H. Mar, 2012
-* [HadoopStack: Big Data on Cloud](https://speakerdeck.com/dharmeshkakadia/hadoopstack-big-data-on-cloud) R&D Showcase, IIIT-H, Feb, 2013
+* [Seed Selection for Genre Specific Search](https://speakerdeck.com/dharmeshkakadia/seed-selection-for-genre-specific-search) @ R&D Showcase, IIIT-H, Feb, 2013
+* [Network as a Service for Cloud Computing](https://speakerdeck.com/dharmeshkakadia/network-as-a-service-for-cloud-computing) @ R&D Showcase IIIT-H. Mar, 2012
+* [HadoopStack: Big Data on Cloud](https://speakerdeck.com/dharmeshkakadia/hadoopstack-big-data-on-cloud) @ R&D Showcase, IIIT-H, Feb, 2013
+* [HadoopStack: Big Data Processing on Cloud](https://speakerdeck.com/dharmeshkakadia/hadoopstack-big-data-processing-on-cloud-31da8cd8-9054-432d-a7f4-c1a1494ee927) @ Workshop on Understanding Big Data Analytics, ACM India Special Interest Group on Knowledge Discovery and Data Mining (iKDD). Feb, 2013
