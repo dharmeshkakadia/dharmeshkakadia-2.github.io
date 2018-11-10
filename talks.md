@@ -27,3 +27,5 @@ published: true
 * [HadoopStack: Big Data on Cloud](https://speakerdeck.com/dharmeshkakadia/hadoopstack-big-data-on-cloud) @ R&D Showcase, IIIT-H, Feb, 2013
 * [HadoopStack: Big Data Processing on Cloud](https://speakerdeck.com/dharmeshkakadia/hadoopstack-big-data-processing-on-cloud-31da8cd8-9054-432d-a7f4-c1a1494ee927) @ Workshop on Understanding Big Data Analytics, ACM India Special Interest Group on Knowledge Discovery and Data Mining (iKDD). Feb, 2013
 * [Seed Selection for Genre Specific Search](https://speakerdeck.com/dharmeshkakadia/seed-selection-for-genre-specific-search) @ Workshop on Understanding Big Data Analytics, ACM India Special Interest Group on Knowledge Discovery and Data Mining (iKDD). Feb, 2013
+* [Energy Efficient Data Center Networks - A SDN based approach](https://speakerdeck.com/dharmeshkakadia/energy-efficient-data-center-networks-a-sdn-based-approach) @ IBM Collaborative Academia Research Exchange (ICARE) Conference
+
