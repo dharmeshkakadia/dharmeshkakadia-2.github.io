@@ -22,6 +22,7 @@ published: true
 * [Review Summary System](https://speakerdeck.com/dharmeshkakadia/review-summary-system). @ IIIT-H. Nov, 2011
 * [HadoopStack: Big Data Processing on Cloud](https://speakerdeck.com/dharmeshkakadia/hadoopstack-big-data-processing-on-cloud) @ Workshop on Understanding Big Data Analytics, ACM India Special Interest Group on Knowledge Discovery and Data Mining (iKDD). Feb, 2013
 * [Enhancements to MC/DC Test Data Generation Tool](https://speakerdeck.com/dharmeshkakadia/dc-test-data-generation-tool) @ Tata Research Development and Design Centre (TRDDC). Apr, 2011
+* [Network Virtualization Platform for Hybrid Cloud](https://speakerdeck.com/dharmeshkakadia/network-virtualization-platform-for-hybrid-cloud) @ Network Infrastructure Services as part of Cloud Computing (NetCloud) workshop at IEEE International Conference on Cloud Computing Technology and Science (CloudCom). Dec, 2013
 
 ## Posters
 
