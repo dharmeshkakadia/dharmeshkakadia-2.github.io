@@ -10,4 +10,4 @@ Infinitely curious. I like distributed systems. A lot.
 
 [dharmesh.kakadia@research.iiit.ac.in](mailto:dharmesh.kakadia@research.iiit.ac.in)
 
-[dharmeshkakadia@ymail.com](mailto:dharmeshkakadia@ymail.com)
+[dharmesh.kakadia+github@gmail.com](mailto:dharmesh.kakadia+github@gmail.com)
