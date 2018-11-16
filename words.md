@@ -19,6 +19,8 @@ published: true
 
 + Don't let your dreams die as dreams.
 
++ Embrace your ambitions.
+
 + If everybody followed their first dreams in life, the world would be ruled by cowboys and princesses. - Stephen Colbert
 
 + Don't treat your heart like an action figure wrapped in plastic and never used - Amy Poehler
