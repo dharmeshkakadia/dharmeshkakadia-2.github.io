@@ -147,6 +147,8 @@ published: true
 
 + Religion is scalable cult
 
++ Complexity Sells better but Simplicity works better
+
 + "Every victory is only the price of admission to a more difficult problem" ― Henry Kissinger
 
 + “Create with the heart; build with the mind.” ― Criss Jami, Killosophy
