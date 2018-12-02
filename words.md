@@ -223,6 +223,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "A revolution is a struggle to the death between the future and the past." - Fidel Castro
 
++ When a knife drops, a fraction of a second divides a brilliant save from an emergency-room visit. The 'bleeding edge'.
+
 + You can not move a fort. You have to build it, brick by brick.
 
 + "Facts are sacred, opinions are for human"
