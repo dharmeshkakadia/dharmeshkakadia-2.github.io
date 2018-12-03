@@ -13,9 +13,21 @@ published: true
 
 + Turing machine = Finite automata + writing. Finite automate can not multiply. Turing machine can compute _any computatble_ function. Power of writing. 
 
++ “The difference between the almost right word and the right word is really a large matter. ’tis the difference between the lightning bug and the lightning.” ― Mark Twain, The Wit and Wisdom of Mark Twain
+
 + "Everything you can imagine is real." ― Pablo Picasso
 
++ Don't let your dreams die as dreams.
+
++ Embrace your ambitions.
+
++ If everybody followed their first dreams in life, the world would be ruled by cowboys and princesses. - Stephen Colbert
+
++ Don't treat your heart like an action figure wrapped in plastic and never used - Amy Poehler
+
 + "Money is a form of frozen and tradeable time" - naval
+
++ Its hard to form an identitiy, harder to change one.
 
 + Either you'll make money while you sleep or you'll work until you die - those are your only two options.
 
@@ -27,6 +39,14 @@ published: true
 
 + Measure what matters. 
 
++ Do something that you will be proud of no matter the outcome.
+
++ Easy paths, crowded destinations.
+
++ "If you/your product is better than its perception, focus on improving brand. If Perception is better than product, improve the product." or "If your product is better than its perception, focus on brand. If your product perception is better than product, focus on scaling the product."
+
++ Changing your mind is free. 
+
 + "You pile up enough tomorrows, and you’ll find you are left with nothing but a lot of empty yesterdays.”
 
 + Culture is how everyone holds everyone else accountable 
@@ -37,11 +57,17 @@ published: true
 
 + Misery loves company 
 
++ “There is prodigious strength in sorrow and despair.” ― Charles Dickens, A Tale of Two Cities
+
 + Leadership is about starting the statements, but let others finish it. Story-starters and not story-tellers. 
 
 + Retention before scale. 
 
 + Syn > Sin.
+
++ Meditating is like installing a debugger in your brain. - Daniel Gross
+
++ "The reward for conformity is that everyone likes you except yourself." — Rita Mae Brown
 
 + "The Law of Leaky Abstractions - You get ease of use until you splat flat against the abraction wall."
 
@@ -61,7 +87,15 @@ published: true
 
 + Code your legacy.
 
++ If you don’t dare to try and chase your dreams, you'll rob yourself the joy of doing it. Don't just dream it. #JustDoIt
+
++ Its only crazy until you do it.
+
 + Be present, not perfect. 
+
++ Creating things makes you humble and confidant. Humble because you knew the chances of success before creation, so later success can't totally blind you. Confidence because you know the chance of success before creation and still decided to pour your heart.
+
++ “If you need a machine and don’t buy it, then you will ultimately find that you have paid for it and don’t have it.” - Henry Ford
 
 + don’t ever be afraid to turn the page & start a new chapter of your life. there’s so much in this world to be experienced. so many amazing ppl that you can meet & a lot of opportunities waiting for you if you step outside of your comfort zone. don’t be too scared to take chances -- Warren Buffett
 
@@ -93,6 +127,10 @@ published: true
 
 + "Open source is a cult."
 
++ “Every man has two lives, and the second begins when he realizes he has only one.” - naval
+
++ This is the place. Now is the time. 
+
 + Don’t Start a Blog, Start a Cult – Mr. Money Mustache
 
 + Passion : how many useless facts you know about something.
@@ -109,6 +147,12 @@ published: true
 
 + Religion is scalable cult
 
++ Complexity Sells better but Simplicity works better
+
++ "Every victory is only the price of admission to a more difficult problem" ― Henry Kissinger
+
++ “Create with the heart; build with the mind.” ― Criss Jami, Killosophy
+
 + "Too old am I to be content with play; Too young to be untroubled by desire." Goethe's Faust.
 
 + Use the right tool for the job.Some times the right tool is time, some times its humans and some times its money.
@@ -117,11 +161,17 @@ published: true
 
 + Life is not a dress rehearsal. Rose Tremain. Make is count.
 
++ “Every one who has taken a shower has had an idea. It's the person who gets out of the shower, dries off and does something about it that makes a difference.” ― Nolan Bushnell
+
++ “Infinity is my spiritual horizon.” ― Talismanist Giebra
+
++ Dream as if you'll live forever. Live as if you'll die today. - James Dean
+
 + Humans are not generally great at understanding 2nd,3rd or nth order effects of their decisions. Online social media has made some of this effects that relatable, through RT, share etc.
 
 + Build cheaply, and earn the problem of scale
 
-+ Don’t run out of money
++ Don’t run out of money.
 
 + “A great goal in life would be to not have to be in a given place at a given time. Being accountable for your output rather than your input. I would love to be paid purely for my judgment.” - naval
 
@@ -143,6 +193,10 @@ published: true
 + The answer of why can not contain I.
 
 + "One day or day one. Decide."
+
++ “Don't forget:beautiful sunsets need cloudy skies.” ― Paulo Coelho
+
++ “Sometimes knowing is torture. You wish you could hide your secret away in a dark, cobwebby shed, shut the door, and break the key in the lock, so no one can ever get in again. You wish that you could go to sleep and have your last thought be anything but the buttery light of the New Mexico moon sneaking in through the cracks of an old barn's walls. But you can't erase the knowing.” ― Tawni Waters, Beauty of the Broken
 
 + Curiosity is the cure for imitation
 
@@ -169,15 +223,21 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "A revolution is a struggle to the death between the future and the past." - Fidel Castro
 
++ When a knife drops, a fraction of a second divides a brilliant save from an emergency-room visit. The 'bleeding edge'.
+
 + You can not move a fort. You have to build it, brick by brick.
 
 + "Facts are sacred, opinions are for human"
+
++ "What you do counts. Who you are doesn't. You are an ordinary part of an extraordinary process."
 
 + "The safest road to hell is the gradual one - the gentle slope, soft underfoot, without sudden turnings, without milestones, without signposts." - C. S. Lewis
 
 + "Success isn't a result of spontaneous combustion. You must set yourself on fire." - Arnold H. Glasow
 
 + "Expectation deserves to override reality"
+
++ "Not all those who wander are lost." - Tolkien
 
 + The smartness is initially about off trends, then about tradeoffs.
 
@@ -197,6 +257,10 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 + Sense of responsibility combined with sense of urgency creates force of action.
 
 + Perfection should not become enemy of action.
+
++ “Whenever people agree with me I always feel I must be wrong.” ~Oscar Wilde
+
++ Travel is still the best cure to prejudice.
 
 + Be regular and orderly in your life, so that you may be violent and original in your work. - Gustave Flaubert
 
@@ -1203,6 +1267,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 + Being satisfied with doing something is a different thing then being satisfied with the outcome of it. Probably that's what makes the difference. I guess this what "Lord Krishna" has explained in the "Geeta".
 
 + Always be smarter than the people who hire you. -Lena Horne
+
++ Every choice is a tradeoff, but not every tradeoff is a choice.
 
 + computers make it easy to do a lot of things, but most of the things they make it easier to do don't need to be done
 
