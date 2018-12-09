@@ -237,6 +237,14 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "Expectation deserves to override reality"
 
++ “Hope is a waking dream.” ― Aristotle
+
++ “In a time of destruction, create something.” ― Maxine Hong Kingston
+
++ “There is nothing like a dream to create the future.” ― Victor Hugo, Les Misérables
+
++ “Everything that is done in this world is done by hope.” ― Martin Luther
+
 + "Not all those who wander are lost." - Tolkien
 
 + The smartness is initially about off trends, then about tradeoffs.
