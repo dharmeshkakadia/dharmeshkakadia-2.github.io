@@ -207,6 +207,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "Perspective is worth 80 IQ points." - Alan Kay
 
++ Marketing is the science of knowing what economists are wrong about." - Rory Sutherland
+
 + "Look closely at the present you are constructing:   
   it should look like the future you are dreaming."
   ― Alice Walker
