@@ -21,6 +21,8 @@ published: true
 
 + Embrace your ambitions.
 
++ "The world is changed by examples, not by opinions." - Paulo Coelho
+
 + If everybody followed their first dreams in life, the world would be ruled by cowboys and princesses. - Stephen Colbert
 
 + Don't treat your heart like an action figure wrapped in plastic and never used - Amy Poehler
@@ -207,6 +209,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "Perspective is worth 80 IQ points." - Alan Kay
 
++ Marketing is the science of knowing what economists are wrong about." - Rory Sutherland
+
 + "Look closely at the present you are constructing:   
   it should look like the future you are dreaming."
   ― Alice Walker
@@ -237,6 +241,14 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "Expectation deserves to override reality"
 
++ “Hope is a waking dream.” ― Aristotle
+
++ “In a time of destruction, create something.” ― Maxine Hong Kingston
+
++ “There is nothing like a dream to create the future.” ― Victor Hugo, Les Misérables
+
++ “Everything that is done in this world is done by hope.” ― Martin Luther
+
 + "Not all those who wander are lost." - Tolkien
 
 + The smartness is initially about off trends, then about tradeoffs.
@@ -266,6 +278,51 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + Accuracy is a post action explanation.
 
++ अपने आप से भी पीछे खड़ा हु में 
+  ज़िंदगी, कितने धीरे चला हु में 
+  और मुझे जगाने जो भी हसीन होकर आते थे 
+  उन्  ख्वाबो को सच समजकर सोया रहा हु में 
+   - ज़ाकिर खान 
+
++ मैं शून्य पे सवार हूँ
+  बेअदब सा मैं खुमार हूँ
+  अब मुश्किलों से क्या डरूं
+  मैं खुद कहर हज़ार हूँ
+  मैं शून्य पे सवार हूँ
+  मैं शून्य पे सवार हूँ
+
+  उंच-नीच से परे
+  मजाल आँख में भरे
+  मैं लड़ रहा हूँ रात से
+  मशाल हाथ में लिए
+  न सूर्य मेरे साथ है
+  तो क्या नयी ये बात है
+  वो शाम होता ढल गया
+  वो रात से था डर गया
+  मैं जुगनुओं का यार हूँ
+  मैं शून्य पे सवार हूँ
+  मैं शून्य पे सवार हूँ
+
+  भावनाएं मर चुकीं
+  संवेदनाएं खत्म हैं
+  अब दर्द से क्या डरूं
+  ज़िन्दगी ही ज़ख्म है
+  मैं बीच रह की मात हूँ
+  बेजान-स्याह रात हूँ
+  मैं काली का श्रृंगार हूँ
+  मैं शून्य पे सवार हूँ
+  मैं शून्य पे सवार हूँ
+
+  हूँ राम का सा तेज मैं
+  लंकापति सा ज्ञान हूँ
+  किस की करूं आराधना
+  सब से जो मैं महान हूँ
+  ब्रह्माण्ड का मैं सार हूँ
+  मैं जल-प्रवाह निहार हूँ
+  मैं शून्य पे सवार हूँ
+  मैं शून्य पे सवार हूँ
+   - ज़ाकिर खान
+   
 + “Live with intention.
   Walk to the edge.  
   Listen Hard.  
