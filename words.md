@@ -93,6 +93,8 @@ published: true
 
 + Its only crazy until you do it.
 
++ The irony of success is you ascend to a level that’s a lot less fun but a lot more powerful - Bill Simmons and John Skipper
+
 + Be present, not perfect. 
 
 + Creating things makes you humble and confidant. Humble because you knew the chances of success before creation, so later success can't totally blind you. Confidence because you know the chance of success before creation and still decided to pour your heart.
