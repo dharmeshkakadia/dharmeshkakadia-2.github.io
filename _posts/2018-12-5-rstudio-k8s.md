@@ -4,11 +4,13 @@ published: false
 title: RStudio on Kubernetes
 ---
 
-R is very versatile language for data analysis and widely used for data science and exploration alongside python.
+R is very versatile language for data analysis and widely used for data science and exploration alongside python. [RStudio](https://www.rstudio.com/) is a great IDE for exploring data using R. RStudio has a lot of powerful [features](https://www.rstudio.com/products/rstudio/features/) for writing and debugging R code, but while using it on large data, it can be challanging due to:
 
-[RStudio](https://www.rstudio.com/) is a great tools for exploring data using R.
+* Scalability 
+* Privacy and security of data
+* Ability to connect R workflows with other worflows (Spark, Tensorflow etc.)
 
-[Blobfuse]() allows data on Azure Blob Storage as as local files.
+[Blobfuse]() allows data on Azure Blob Storage as as local files. 
 
 We will see how we can deploy RStudio using [Kubernetes](https://kubernetes.io), Deploying RStudio on Kubernetes has many advantages :
 
