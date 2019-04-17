@@ -8,9 +8,14 @@ R is very versatile language for data analysis and widely used for data science 
 
 * Scalability 
 * Privacy and security of data
-* Ability to connect R workflows with other worflows (Spark, Tensorflow etc.)
+* Ability to connect R workflows with other tools (Spark, Tensorflow etc.)
+* Backing up the R code automatically (?)
 
-[Blobfuse]() allows data on Azure Blob Storage as as local files. 
+We solve these challenges by running RStudio on Kubernetes and using [Blobfuse](https://github.com/Azure/azure-storage-fuse) for remote data access. 
+
+allows data on Azure Blob Storage as as local files. 
+
+We use blobfuse kubernetes volume drivers(https://github.com/Azure/kubernetes-volume-drivers/tree/master/flexvolume/blobfuse)
 
 We will see how we can deploy RStudio using [Kubernetes](https://kubernetes.io), Deploying RStudio on Kubernetes has many advantages :
 
@@ -20,7 +25,7 @@ We will see how we can deploy RStudio using [Kubernetes](https://kubernetes.io),
 * RStudio, running on cluster can have a lot more resources that can be used by for exploration by R
 * With cache interval, you can automatically cache the remote data for longer time as well, for better performance. 
 
-Git link:
+Git link: https://github.com/dharmeshkakadia/rstudio-k8s
 
 ```yaml
 apiVersion: apps/v1
@@ -55,7 +60,7 @@ spec:
 ```
 
 ```
-kubectl create -f git link TODO
+kubectl create -f https://raw.githubusercontent.com/dharmeshkakadia/rstudio-k8s/master/rstudio.yaml
 ```
 
 Now, if you dont want to assign public end point to your RStudio deployment, you can access via local port-forwarding:
@@ -68,3 +73,20 @@ Now you are ready to go : http://localhost:8787
 and username/password pairs are X/X
 
 Note that you can use similar deployment for deploying your Shiny (TODO link) apps on kubernetes.
+
+TODO screenshot 
+
+## Setup blobfuse for remote data access as a file system
+
+This is optional.
+Blobfuse allows us to treat remote storage as if it were files on the local file system. 
+This makes it possible to work with many packages that doesn't yet work with remote storage natively. 
+This also makes it simple for developers to be hidden from operational aspect of how the data is managed. 
+
+
+TODO : YAML with volumes and blobfuse
+TODO : git link to YAML with volumes and blobfuse
+TODO link blobfuse install on k8s
+TODO blobfuse create secret
+TODO blobfuse setup
+TODO show example of reading remote file as local
