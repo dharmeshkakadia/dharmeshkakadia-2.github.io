@@ -74,7 +74,8 @@ and username/password pairs are X/X
 
 Note that you can use similar deployment for deploying your Shiny (TODO link) apps on kubernetes.
 
-TODO screenshot 
+![Rstudio]({{site.baseurl}}/images/rstudio-k8s.png)
+
 
 ## Setup blobfuse for remote data access as a file system
 
