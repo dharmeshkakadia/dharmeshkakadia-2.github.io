@@ -59,6 +59,7 @@ spec:
          - 'rstudio-server start ; sleep infinity'
 ```
 
+You can deploy the above YAML directly from github link with:
 ```
 kubectl create -f https://raw.githubusercontent.com/dharmeshkakadia/rstudio-k8s/master/rstudio.yaml
 ```
@@ -68,11 +69,9 @@ Now, if you dont want to assign public end point to your RStudio deployment, you
 kubectl port-forward deploy/rstudio 8787:8787
 ```
 
-Now you are ready to go : http://localhost:8787
+Now you are ready to use RStudio. Go to [http://localhost:8787](http://localhost:8787) and use username and password as `rstudio`.
 
-and username/password pairs are X/X
-
-Note that you can use similar deployment for deploying your Shiny (TODO link) apps on kubernetes.
+Note that you can use similar deployment for deploying your [Shiny](https://shiny.rstudio.com/) apps on kubernetes.
 
 ![Rstudio]({{site.baseurl}}/images/rstudio-k8s.png)
 
