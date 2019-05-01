@@ -5,6 +5,7 @@ permalink: /talks/
 published: true
 ---
 
+* [Cloud Native Machine Learning](https://speakerdeck.com/dharmeshkakadia/cloud-native-machine-learning) @ East Bay Cloud Native meetup. Apr, 2019. [[video]](https://www.youtube.com/watch?v=HB6MCLFuT3A)
 * [Machine Learning on Kubernetes](https://speakerdeck.com/dharmeshkakadia/machine-learning-on-kubernetes) @ Kubernetes SF meetup. Aug, 2018
 * [Stream Processing](https://speakerdeck.com/dharmeshkakadia/stream-processing) @ Twitter HQ. Jun, 2018.
 * [Building Petabyte scale Interactive Data warehouse in Azure HDInsight](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3355) @ Microsoft Ignite. Oct, 2017. [[slides]](https://8gportalvhdsf9v440s15hrt.blob.core.windows.net/ignite2017/session-presentations/BRK3355.PPTX)  
