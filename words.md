@@ -282,6 +282,18 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + Accuracy is a post action explanation.
 
++ Present is underrated.
+
++ Don't be stranger to yourself.
+
++ Happiness is self expanding. Joy is self transcending. 
+
++ To be ready to grow, let it go.
+
++ "People don’t want to buy a quarter-inch drill. They want a quarter-inch hole." - Theodore Levitt, famous Harvard professor.
+
++ Culture is not a supermarket, its a farm.
+
 + अपने आप से भी पीछे खड़ा हु में 
   ज़िंदगी, कितने धीरे चला हु में 
   और मुझे जगाने जो भी हसीन होकर आते थे 
