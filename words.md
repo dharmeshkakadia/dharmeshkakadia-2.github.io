@@ -89,6 +89,8 @@ published: true
 
 + Code your legacy.
 
++ Pick battles big enough to matter, small enough to win - Jonathan Kozol
+
 + If you don’t dare to try and chase your dreams, you'll rob yourself the joy of doing it. Don't just dream it. #JustDoIt
 
 + Its only crazy until you do it.
