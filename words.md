@@ -129,6 +129,8 @@ published: true
 
 + Hard to simulate the urgency without the existential fear.
 
++ "Progress happens too slowly for people to notice; setbacks happen too fast for people to ignore." "There are lots of overnight tragedies. There are rarely overnight miracles."
+
 + "The hardest problem in computer science is aligning talent and incentives with outcomes"
 
 + "Open source is a cult."
