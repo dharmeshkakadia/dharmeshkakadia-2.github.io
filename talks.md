@@ -36,3 +36,9 @@ published: true
 * [Energy Efficient Data Center Networks - A SDN based approach](https://speakerdeck.com/dharmeshkakadia/energy-efficient-data-center-networks-a-sdn-based-approach) @ IBM Collaborative Academia Research Exchange (ICARE) Conference. Oct, 2012
 * Perforator : Resource provisioning for big data pipelines in the cloud @ Technical Advisory Board(TAB) meeting, Microsoft Research India. Jan 2016, Bangalore, India.
 
+## Internal 
+
+### Microsoft
+* Agile ML : Infrastructure and Processes. AI Symposium. Jun, 2019 
+* Cloud Native Data Scienc & ML. Yammer group. Jun, 2019
+* TODO : add other
