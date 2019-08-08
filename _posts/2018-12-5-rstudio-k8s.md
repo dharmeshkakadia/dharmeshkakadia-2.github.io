@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Versatile RStudio developement environment on Kubernetes
+title: Versatile RStudio development environment on Kubernetes
 ---
 
 R is very versatile language for data analysis and widely used for data science and exploration alongside python. [RStudio](https://www.rstudio.com/) is a great IDE for exploring data using R. RStudio has a lot of powerful [features](https://www.rstudio.com/products/rstudio/features/) for writing and debugging R code, but while using it on large data, it can be challenging due to:
