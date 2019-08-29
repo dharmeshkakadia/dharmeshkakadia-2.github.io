@@ -113,6 +113,8 @@ published: true
 
 + Fact + Idiot = Factoid
 
++ Luck is a scaler function.
+
 + Sometimes, the squeaky wheel gets replaced.
 
 + If the purpose of existence is procreation, then, ultimately, we're all just ads for our DNA.
@@ -1423,3 +1425,6 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
   क्यों किस्मतो से तू लड़ बैठा  
   जाना था तुजे बस दरिया पार,  
   क्यों समुन्दर पे तू मर बैठा  
+
++ ज़माने का खौफ, लिखने का शौख,  
+  बिकते बिकते दोस्त, दोनों ही निकल गए  
