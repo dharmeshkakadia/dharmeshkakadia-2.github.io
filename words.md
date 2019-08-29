@@ -1428,3 +1428,11 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + ज़माने का खौफ, लिखने का शौख,  
   बिकते बिकते दोस्त, दोनों ही निकल गए  
+
++ कुछ रास्तो में पीछे, कुछ मंज़िलो से आगे  
+  तू भाग रहा किधर, तेरी किस्मतो से आगे  
+
++ दुनिया तो है पागल, तू क्यों पगला हो रहा  
+  समजाना सबको है मुश्किल, तू क्यों खामखा ही लड़ रहा  
+  
++ Take facts from hedgehogs and take opinions from foxes  
