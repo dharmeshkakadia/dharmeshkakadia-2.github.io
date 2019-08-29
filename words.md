@@ -143,6 +143,8 @@ published: true
 
 + Passion : how many useless facts you know about something.
 
++ "The darker the night, the brighter the stars." - Fyodor Dostoevsky
+
 + "For peace of mind, resign as general manager of the universe." — Larry Eisenberg
 
 + "Not all problems are your to solve" - Erik
@@ -251,6 +253,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + “Hope is a waking dream.” ― Aristotle
 
++ Dont live for your obituary. 
+
 + “In a time of destruction, create something.” ― Maxine Hong Kingston
 
 + “There is nothing like a dream to create the future.” ― Victor Hugo, Les Misérables
@@ -287,6 +291,10 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 + Accuracy is a post action explanation.
 
 + Present is underrated.
+
++ The game might be the same, but the players have changed.
+
++ “How old would you be if you didn’t know how old you are?” -Satchel Paige
 
 + Don't be stranger to yourself.
 
