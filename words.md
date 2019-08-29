@@ -1399,3 +1399,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
   It's the decision that takes a lot of courage ant time, nothing after that. -- Anuj
 
 + You can ask more if you inspect more.
+
++ वह कृष्णप्रेम में पागल गोपी की तरह  
+  वह बांसुरी के सुर में लिपटे गीत की तरह  
+  ले चल मुझे इस रणभूमि के पार  
+  हे कृष्ण मुझे अर्जुन की तरह  
