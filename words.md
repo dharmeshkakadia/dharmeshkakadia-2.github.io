@@ -251,9 +251,23 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "Expectation deserves to override reality"
 
++ Don’t be beholden by your own delusions
+
++ Dreams, doubts and delusions are all ingredients
+
++ “Don’t counter your instincts with your intelligence”
+
++ Anxiety is just conspiracy theories about yourself.
+
++ Never fight with people who’s main goal in fight is to keep fighting
+
++ "No one understands the risk, until they have taken too much. Then they really understand it"
+
 + “Hope is a waking dream.” ― Aristotle
 
 + Dont live for your obituary. 
+
++ The antidote to fear is not courage but acceptance
 
 + “In a time of destruction, create something.” ― Maxine Hong Kingston
 
@@ -1404,3 +1418,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
   वह बांसुरी के सुर में लिपटे गीत की तरह  
   ले चल मुझे इस रणभूमि के पार  
   हे कृष्ण मुझे अर्जुन की तरह  
+
++ इन ख्वाइशो के चक्कर में,
+  क्यों किस्मतो से तू लड़ बैठा  
+  जाना था तुजे बस दरिया पार,  
+  क्यों समुन्दर पे तू मर बैठा  
