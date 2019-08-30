@@ -1436,3 +1436,14 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
   समजाना सबको है मुश्किल, तू क्यों खामखा ही लड़ रहा  
   
 + Take facts from hedgehogs and take opinions from foxes  
+
++ Priorities made us who we are  
+  Priorities took us all apart.
+
++ ambush, dont fight.
+
++ My journey, my fight,  
+  My road into the light.  
+  
++ I am picky & time is due,  
+  I am lucky to have found you.  
