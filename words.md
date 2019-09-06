@@ -183,6 +183,8 @@ published: true
 
 + Build cheaply, and earn the problem of scale
 
++ if you think I am stupid, its ok. But if you think I am _that_ stupid, we have a problem. 
+
 + Don’t run out of money.
 
 + "Men resist randomness, markets resist prophecy." – Maggie Mahar
