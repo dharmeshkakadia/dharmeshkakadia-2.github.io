@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Words
+title: Learning
 permalink: /learning/
 published: true
 ---
