@@ -155,6 +155,8 @@ published: true
 
 + "Risk" is just a scary synonym for "opportunity."
 
++ "Life shrinks or expands in proportion to one's courage." — Anais Nin
+
 + "Enthusiasm is common. Commitment is rare"
 
 + Religion is scalable cult
