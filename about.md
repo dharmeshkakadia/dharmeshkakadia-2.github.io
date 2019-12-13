@@ -8,13 +8,13 @@ Infinitely curious.
 
 ### Links
 
-I wrote a [book](book)
+I wrote a [book](/book)
 
 I read [books](https://www.goodreads.com/author/show/14159157.Dharmesh_Kakadia)
 
-I collect [other peoples words I like](words)
+I collect [other peoples words I like](/words)
 
-I also write some [words](mywords)
+I also write some [words](/mywords)
 
 I have a [blog](/)
 
