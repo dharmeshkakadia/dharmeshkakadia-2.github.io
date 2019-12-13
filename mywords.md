@@ -7,6 +7,18 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ ज़िद थी तब अब ज़िंदगी बन गयी हो  
+  सताओ नहीं अब ज़रूरत बन गयी हो 
+
++ ज़िद थी तब अब ज़रूरत बन गयी हो  
+  सताओ नहीं अब ज़िंदगी बन गयी हो 
+
++ दिया जला के आज तुम दिवाली तो मना लोगे  
+  पर क्या होगा उस अँधेरे का जो भीतर तुम्हारे है 
+
++ अंधेरे को कह दो अलविदा, दिवाली और नया साल आया है  
+  साल भर की खुशियाँ और ढेर सारा प्यार हमने भिजवाए है  
+
 + Dont fight me. If you still want, don’t come without an army. 
 
 + Don’t come to fight me without army
