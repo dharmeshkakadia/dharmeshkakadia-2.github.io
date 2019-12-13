@@ -278,6 +278,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + “Hope is a waking dream.” ― Aristotle
 
++ If you treat life like a race, you're just going to get to the finish line faster. - Sahil lavingia 
+
 + Dont live for your obituary. 
 
 + The antidote to fear is not courage but acceptance
