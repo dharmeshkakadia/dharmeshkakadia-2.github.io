@@ -491,6 +491,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + Remember, reality is subjective.
 
++ "The world is not a wish granting factory. Get over it." ― John Green, The Fault in Our Stars
+
 + Decision is the only manual thing in life, rest is automatic.
 
 + Attention is to respect what money is to power.
