@@ -7,6 +7,17 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ In my dreams,  
+  sky is beautiful,  
+  with you on my side,  
+  time seems plentiful.  
+
+  In my dreams,  
+  clouds seems unstoppable,  
+  with you on my side,  
+  everything seems possible.  
+
+
 + हो अगर आस्था  
   आहिस्ता आहिस्ता  
   मिल जायेगा रास्ता  
