@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Words
+title: My words
 permalink: /mywords/
 published: true
 ---
