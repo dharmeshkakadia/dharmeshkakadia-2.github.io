@@ -7,6 +7,8 @@ published: true
 
 + "Dreams are maps" - Carl Sagan
 
++ "Life shrinks or expands in proportion to one's courage." — Anais Nin
+
 + “Pessimists are intelligent.  
   Optimists are rich.” - @dmuthuk
 
