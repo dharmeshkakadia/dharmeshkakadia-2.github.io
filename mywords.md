@@ -7,6 +7,12 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Travel is the antidote 
+
++ "All problems in the world can be fixed by tight feedback loops"
+
++ The goal of goal is to gamify motivation 
+
 + हरा हम सिकंदर को भी देते,  
   थोड़ा वक़्त कम पद गया,  
   थोड़े हम late हो गए 
