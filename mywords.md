@@ -7,6 +7,12 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ એક વાત ની એક વાત માં, છું શૂન્ય ની પણ સાથ માં,  
+ ડર નથી મને આ સમુદ્ર નો, પણ ખોવાય જવા નો મારી વાત માં 
+
++ आँखों में तेरी कुछ इस तरह से डूब गया  
+  ना प्यार मिला ना पानी, बस ऐस ही मर गया
+
 + In my dreams,  
   sky is beautiful,  
   with you on my side,  
