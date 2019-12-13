@@ -12,6 +12,8 @@ published: true
 + “Pessimists are intelligent.  
   Optimists are rich.” - @dmuthuk
 
++ Be bold and be right - Steve Ballmer
+
 + Biology enables, culture forbids
 
 + Roll up your sleevs and make it happen.
