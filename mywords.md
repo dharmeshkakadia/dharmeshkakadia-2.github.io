@@ -5,8 +5,15 @@ permalink: /mywords/
 published: true
 ---
 
-+ Fly like a bird, flow like the wind,  
-  You can have it all, just like you dream.
++ ये खेल मेरा है और ये खिलाड़ी भी मेरे है  
+  जो बोल रहा है तू, वो अल्फ़ाज़ भी मेरे है 
+
++ पाप भी किए है और काफिर भी मैं हु  
+  इश्क़ में तेरे मैं गुनहगार रब का भी हु
+
++ पाप भी किए है और काफिर भी मैं हु  
+  जंग में मेरी मैं गुनहगार रब का भी हु
+
 
 + You can ask more if you inspect more.
 
@@ -41,3 +48,6 @@ published: true
   
 + I am picky & time is due,  
   I am lucky to have found you.  
+
++ Fly like a bird, flow like the wind,  
+  You can have it all, just like you dream.
