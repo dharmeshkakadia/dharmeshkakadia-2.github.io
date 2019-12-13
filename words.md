@@ -783,6 +783,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + “You are what you settle for” - Janis Joplin
 
++ “Sometimes I can feel my bones straining under the weight of all the lives I’m not living.” — Jonathan Safran Foer, Extremely Loud and Incredibly Close
+
 + “The three most harmful addictions are heroin, carbohydrates, and a monthly salary.”—Nassim Nicholas Taleb
 
 + Your preparation for the real world is not in the answers you’ve learned, but in the questions you’ve learned how to ask yourself.
