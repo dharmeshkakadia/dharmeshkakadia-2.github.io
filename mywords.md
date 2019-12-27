@@ -7,6 +7,10 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Be Santa Claus. Not Satan's claws.
+
++ Santa and Satan have the same characters. 
+
 + खामोशी कभी दर्द है  
   खामोशी कभी मर्ज़ है  
   शब्दों को अभी रहने दो   
