@@ -256,6 +256,16 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + You can not move a fort. You have to build it, brick by brick.
 
++ “When given the choice between being right or being kind, choose kind.”
+
++ In any dispute between being smart and not being stupid, not stupid wins … by a lot.
+
++ If you aren't going all the way, why go at all? ~ Joe Namath
+
++ "The best disguise for malice is incompetence"
+
++ "Insecure Canyon is where you are when you’re past the “Wait I actually don’t know shit” epiphany, but not yet past the “Ohhhh no one else knows shit either” epiphany." - WaitButWhy
+
 + "Facts are sacred, opinions are for human"
 
 + "What you do counts. Who you are doesn't. You are an ordinary part of an extraordinary process."
@@ -605,6 +615,7 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
   આ ‘સૈફ’ આપ તો જીવી ગયા ઘણું   
   બાકી અમે તો આપની ઘડીઓ ગણી હતી.  
   —સૈફ પાલનપુરી
+
 + "Money is the most successful fictional story ever invented"
 
 + ઓશિકું આકાશનું હું પણ કરત,  
