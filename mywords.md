@@ -7,6 +7,12 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ The truth is first replaced by silence, then by a lie and then by a permanent silence. 
+
++ Sometimes lie is a silence and sometime silence is a lie. 
+
++ Some lies are worth believing. 	
+
 + Chance > Chase
 
 + वह इश्क़ की ये बातें, वह तेरी मेरी मुलाकाते,  
