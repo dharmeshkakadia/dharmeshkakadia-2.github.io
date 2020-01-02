@@ -119,6 +119,176 @@ Some words I have written. Recent ones at the top.
 
 + Make money not noise
 
++ Every choice is a tradeoff, but not every tradeoff is a choice.
+
++ Embrace your ambitions.
+
++ Syn > Sin.
+
++ Machine learning vs Crypto opportunities : Machine learning is moving at a slower pace - hence big co have leverage - adapt, iterate and innovate tech. Crypto is moving faster, hence the opportunities at startups - lots of early experiments, confusion and biz model innovation.
+
++ Fact + Idiot = Factoid
+
++ Luck is a scaler function.
+
++ Religion is scalable cult
+
++ Use the right tool for the job. Some times the right tool is time, some times its humans and some times its money.
+
++ If you think I am stupid, its ok. But if you think I am _that_ stupid, we have a problem. 
+
++ Fit your actions to your beliefs, not beliefs to your actions.
+
++ Choose the hardest problems and the simplest solutions.
+
++ My definition of introverts/extroverts :  
+  Ratio of how much you talk out loud / how much you talk in your head.  
+  The closer the ratio to 0, the more introvert and the closer to 1, the more extrovert.  
+  P.S. >1 means probably stupid
+  
++ Idealistic enough to believe in ideas, ruthless enough to execute them. 
+
++ The answer of why can not contain I.
+
++ Curiosity is the cure for imitation
+
++ Meaning is what gives choices consequences.
+
++ Intent gives consequences to your choices.
+
++ You can not move a fort. You have to build it, brick by brick.
+
++ "Facts are sacred, opinions are for human" - paraphrasing C.P. Scott. -  "comment is free, but facts are sacred".
+
++ "Expectation deserves to override reality"
+
++ Dreams, doubts and delusions are all ingredients
+
++ Don’t be beholden by your own delusions
+
++ The antidote to fear is not courage but acceptance
+
++ The smartness is initially about off trends, then about tradeoffs.
+
++ If you think you are lucky you are not exercising it enough.
+
++ Be kind with humans, brutal with ideas. Not the other way around.
+
++ Ambitious : When your taste is ahead of your abilities.
+
++ Sense of responsibility combined with sense of urgency creates force of action.
+
++ Accuracy is a post action explanation.
+
++ Present is underrated.
+
++ Don't be stranger to yourself.
+
++ Be ready to grow, let it go.
+
++ Time - easy to pass, hard to find, good to use, important to spend, impossible to get back.
+
++ Luck is in limited supply, always.
+
++ There is a reason behind everything people do. The most common one being they don't think.
+
++ Doubt is fear in disguise.
+
++ Confusing outcome with the process is the outcome of not following the process.
+
++ If a lie is repeated again and again, it becomes a social norm.
+
++ Improbable, not impossible.
+
++ The goal of goal setting is to be better at setting goals.
+
++ Should and want cover an entire range of possibilities between them.
+
++ The purpose of a deadline is to make sure that the question is invalid after it, not the solution.
+
++ Principles : Rules :: Software : Hardware
+
++ Do things that matter > Do things > To-do things > Things.
+
++ Remember, reality is subjective.
+
++ Decision is the only manual thing in life, rest is automatic.
+
++ Attention is to respect what money is to power.
+
++ What doesn't exist out there is overhead.
+
++ Data converts art businesses to science ones.
+
++ Friends : Set of people who you can talk to in context sensitive language using context free grammar.
+
++ Commitment > Capability.
+
++ "Freedom, difficult to get, even more difficult to acknowledge"
+
++ A man with a broken dream and a women with a broken heart are both venerable and dangerous.
+
++ Don't focus on making the most, focus on making the best.
+
++ Each success needs a little bit of luck and each failure a little lack of work.
+
++ We all know "Its all about software and not hardware". And we still talk about talent, sadly.
+
++ In life, like in machine learning, constraints is what makes problems solvable.
+
++ Leave when the question turns from "why not" to "why".
+
++ Guessing is Messing. #data
+
++ When in doubt, follow the data.
+
++ I am zipfian, so your experience(s) may widely vary  :)
+
++ Constraint is not a compromise.
+
++ Generalizations don't work, generally.
+
++ Money is always a pointer.
+
++ People are good, just don't expect them to be.
+
++ People are generally good, you just can't rely them to be.
+
++ People who think other people "on-demand-google" often forget that these people also have the google-like personalization, which will effect your results next time you query.
+
++ Why are world and selfishness not listed as synonyms ? mistake or selfishness ?
+
++ I also wanted to change the world and they didn't give me source code. So I wrote a better version from scratch and deployed it :D
+
++ Money can't solve all the problems. True, but I never wanted to solve NP hard problems. :D
+
++ Smileys: Fooling people since 30 years. :)
+
++ I like to pull code, rather than legs.
+
++ Never say "Nobody understands me"....   
+  .   
+  .   
+  .   
+  At least Google (and Facebook in part) understand you in much detail.
+
++ When the choices start becoming compromises, its a sign of maturity.
+
++ At times people don't recognize the difference between the chat window and /dev/null.
+
++ Relationship is the name given to selfishness by the developed society.
+
++ Programming is not something that you save time for,  
+  Its something that saves time for you.
+
++ Code dies, Data lives on.
+
++ Selfishness - the most realistic motivating factor.
+
++ There can be endless excuses to Failure and only one reason to Success.
+
++ Think for a moment before you google. Believe me, can save a lot of effort.
+
 + Travel is the antidote 
 
 + "All problems in the world can be fixed by tight feedback loops"
