@@ -1260,6 +1260,10 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "Your time is limited, so don't waste it living someone else's life." - steve jobs
 
++ Peter Principle: talented people will keep getting promoted until they’re in over their head.
+
++ “The higher the monkey climbs a tree, the more you can see his ass,” T. Boone Pickens
+
 + "Risk is a religion" - vinod khosla
 
 + Dont trust 2much,   
