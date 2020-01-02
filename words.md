@@ -211,6 +211,15 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
   it should look like the future you are dreaming."
   ― Alice Walker
 
++ Balaji Srivnivasan's 6 P’s for any product checklist.
+
+    Product - what are you selling  
+    Pricing - at what price  
+    Person - to whom  
+    Purpose - why are they buying it  
+    Priority - why now  
+    Prestige - and why from you?  
+
 + "Hope is a good breakfast, but it is a bad supper." - Francis Bacon
 
 + You should consider what you want *before* considering what you can.
