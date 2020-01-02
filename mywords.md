@@ -7,6 +7,21 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ वक़्त वक़्त की बात है   
+  आज तेरी, कल मेरी ये बात है   
+  चाहता हु की भूल जाऊ सब कुछ  
+  पर क्या है ना की ये दिल की बात है   
+
++ कुछ राह मेरी तंग पड़ गयी   
+  कुछ चाह मेरी कम पड़ गयी   
+  कुछ अपने थोड़े पराए हो गए   
+  कुछ कसर थोड़ी वक़्त ने कर दी  
+
++ कुछ राह मेरी तंग पड़ गयी   
+  कुछ चाह मेरी कम पड़ गयी   
+  कुछ अपने थोड़े पराए हो गए   
+  बाक़ी कसर थोड़ी वक़्त ने कर दी  
+
 + The truth is first replaced by silence, then by a lie and then by a permanent silence. 
 
 + Sometimes lie is a silence and sometime silence is a lie. 
