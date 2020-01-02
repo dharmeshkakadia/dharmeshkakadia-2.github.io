@@ -7,6 +7,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ While shooting for stars, don’t forget to enjoy the stargazing 
+
 + वक़्त वक़्त की बात है   
   आज तेरी, कल मेरी ये बात है   
   चाहता हु की भूल जाऊ सब कुछ  
