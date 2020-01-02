@@ -7,6 +7,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Chance > Chase
+
 + What kind of relationship do you have if it can’t survive a passion? What kind of passion do you have if it can’t survive a relationship?
 
 + Be Santa Claus. Not Satan's claws.
