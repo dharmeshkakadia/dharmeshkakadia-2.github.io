@@ -238,6 +238,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "The best disguise for malice is incompetence"
 
++ “You don’t always have to chop with the sword of truth. You can point with it, too.” - Lamott, Anne in Bird by Bird
+
 + "Insecure Canyon is where you are when you’re past the “Wait I actually don’t know shit” epiphany, but not yet past the “Ohhhh no one else knows shit either” epiphany." - WaitButWhy
 
 + "What you do counts. Who you are doesn't. You are an ordinary part of an extraordinary process."
