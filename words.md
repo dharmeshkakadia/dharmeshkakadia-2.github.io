@@ -170,6 +170,8 @@ published: true
 
 + Religion is scalable cult
 
++ “Religion is like a blind man looking in a black room for a black cat that isn't there, and finding it.” ― Anonymous
+
 + Complexity Sells better but Simplicity works better
 
 + "Every victory is only the price of admission to a more difficult problem" ― Henry Kissinger
