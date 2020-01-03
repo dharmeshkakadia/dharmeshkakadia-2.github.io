@@ -116,6 +116,8 @@ published: true
 
 + Sometimes, the squeaky wheel gets replaced.
 
++ "Don’t play team sports alone: you’ll lose" - https://lethain.com/acquihire-tips/
+
 + If the purpose of existence is procreation, then, ultimately, we're all just ads for our DNA.
 
 + “Software engineering is what happens to programming when you add time, and other programmers.” — @_rsc
