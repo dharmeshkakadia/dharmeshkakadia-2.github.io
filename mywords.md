@@ -7,6 +7,9 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ मंज़िल काहेकि, काहेका सफ़र  
+  हम तो बस चलते गए, अपनी ही खोज में  
+
 + Expressions will find its way if Emotions Exist  
   
 + मुश्किले ना बढ़ाओ, आ जाओ तुम मेरे पास में  
