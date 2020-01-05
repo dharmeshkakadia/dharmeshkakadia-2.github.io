@@ -11,6 +11,8 @@ Some words I have written. Recent ones at the top.
   हम तो बस चलते गए, अपनी ही खोज में  
 
 + Expressions will find its way if Emotions Exist  
+
++ Some roads require going through falls and false starts. 
   
 + मुश्किले ना बढ़ाओ, आ जाओ तुम मेरे पास में  
   कब तक बैठा रहूँगा मैं, बाँहें खोले यूँ इंतज़ार में   
