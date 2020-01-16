@@ -1073,6 +1073,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "Find your passion and let it kill you"
 
++ "Intellect without balls is like a racecar without tires." - @nntaleb
+
 + "Find your passion, learn how to add value to it, and commit to a lifetime of learning." -- Ray Kurzweil
 
 + Internet removed the barriers to knowledge, cloud is doing the same for experiments.
