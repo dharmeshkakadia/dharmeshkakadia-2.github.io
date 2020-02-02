@@ -7,6 +7,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ History knows everything but chooses its words very carefully
+
 + आतिशी के दम पे तुम उजाला करने निकले हो   
   साथ मेरे सूरज और तुम अंधेरा करने निकले हो   
 
