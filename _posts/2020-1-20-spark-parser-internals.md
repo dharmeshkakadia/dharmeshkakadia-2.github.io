@@ -15,6 +15,7 @@ Like any compiler [may be cite] Spark Catalyst compiler has a various modules fo
 
 TODO: explain briefly each phases.
 TODO: show it contains tree/operator manipulation primitives 
+TODO: may be add why are you interested in this in the first place.
 
 In this post we will focus more on parser part of the Catalyst.
 
@@ -61,12 +62,14 @@ Some ``select * from sample`` is valid Spark statement or not?
 . any character
 ? repeated zero or one time
 + repeated one or more times
-* repeasted zero or more times
+* repeated zero or more times
 ```
 
 ### Simple ANTLR end to end example
 
-A very simple codebase that implements the following [grammer](https://github.com/dharmeshkakadia/hello-antlr/blob/master/src/main/antlr4/Hello.g4):
+TODO: add why and links https://github.com/dharmeshkakadia/hello-antlr
+
+A very simple codebase that implements the following [grammar](https://github.com/dharmeshkakadia/hello-antlr/blob/master/src/main/antlr4/Hello.g4):
 
 ```antlr-java
 grammar Hello;
