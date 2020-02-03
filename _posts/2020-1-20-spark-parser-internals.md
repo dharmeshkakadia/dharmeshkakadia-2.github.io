@@ -4,11 +4,19 @@ published: false
 title: Internals of Spark Parser
 ---
 
-WHat?
+Spark is a widely used analytics and machine learning engine, which you have probably heard of. You can use Spark with various languages - Scala, Java, Python - to perform a wide variety of tasks - streaming, ETL, SQL, ML or graph computations. Spark SQL/dataframe is one of the most popular ways to interact with Spark. Spark SQL provides SQL syntax and SQL like API to build complex computation graphs. Spark SQL relies on a common compiler framework to translate the high level SQL code into executable low level code. Spark Catalyst is the name of that compiler framework. 
 
 ### Catalyst Architecture
 
-[insert image]
+Following image describes various steps and components of Spark Catalyst. The image is taken from [databricks](https://databricks.com/glossary/catalyst-optimizer)
+![spark-arch.png]({{site.baseurl}}/images/spark-arch.png)
+
+Like any compiler [may be cite] Spark Catalyst compiler has a various modules for different phases of compilation process.
+
+TODO: explain briefly each phases.
+TODO: show it contains tree/operator manipulation primitives 
+
+In this post we will focus more on parser part of the Catalyst.
 
 ### Need for a formally defined grammar and parser
 
@@ -117,3 +125,5 @@ Entering Msg : world
 Exiting Msg
 
 ```
+
+P.S. This post is made from the the notebook that I used at Microsoft team for our internal [presentation](https://github.com/dharmeshkakadia/spark-internals), but was not published here on blog. 
