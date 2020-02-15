@@ -7,6 +7,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Today’s date is also asking just for you (o तू, o तू, तू o तू O) (on 02/02/2020)
+
 + दुआ करते है मिले जाए मंज़िले हर मुसाफ़िर को   
   हमें तो अब बस रास्तों से गुफ़्तगू की ख्वाहिश है   
 
