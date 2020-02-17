@@ -264,6 +264,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + Dont live for your obituary. - John Scalzi (Book with the same title)
 
++ The worst dancer is the one not dancing - John Mulaney 
+
 + “In a time of destruction, create something.” ― Maxine Hong Kingston
 
 + “There is nothing like a dream to create the future.” ― Victor Hugo, Les Misérables
