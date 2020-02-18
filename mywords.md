@@ -7,6 +7,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Sometimes success gets in the way. (may be someone has said this before me?)
+
 + Do what you want to learn.
 
 + चर्चा सुना था अख़बारों में, पुलिस में तेरा नाम था   
