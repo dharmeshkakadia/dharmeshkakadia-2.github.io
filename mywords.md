@@ -7,6 +7,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ People often forget that I don’t forget 
+
 + Let go off the weight of unfulfilled expectations, so that it can shoulder your dreams 
 
 + I belive in "loosely prearranged destiny" 
