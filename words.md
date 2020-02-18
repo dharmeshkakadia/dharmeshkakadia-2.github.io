@@ -144,6 +144,8 @@ published: true
 
 + Don’t Start a Blog, Start a Cult – Mr. Money Mustache
 
++ Be Kind First, Be Right Later - James Clear
+
 + Passion : how many useless facts you know about something.
 
 + "The darker the night, the brighter the stars." - Fyodor Dostoevsky
