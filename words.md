@@ -548,6 +548,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "Money is like gasoline during a road trip" - Tim O'Reilly. Necessary but you are not doing the road trip for visiting gas stations.
 
++ Internet is a machine to turn interests into identities
+
 + "Nobody cares how much you know, until they know how much you care." - Theodore Roosevelt
 
 + "Life is not a dress rehearsal. Make it count."
