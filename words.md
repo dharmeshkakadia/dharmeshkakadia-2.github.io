@@ -12,6 +12,8 @@ published: true
 + “Pessimists are intelligent.  
   Optimists are rich.” - @dmuthuk
 
++ Sillion valley’s largest export is optimism towards to the future. - Daniel gross
+
 + Be bold and be right - Steve Ballmer
 
 + Biology enables, culture forbids
@@ -254,7 +256,11 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + “Don’t counter your instincts with your intelligence”
 
++ Habit is something that doesn’t require willpower.
+
 + Anxiety is just conspiracy theories about yourself. - @trashythisis
+
++ “Questions are places in your mind where answers fit. If you haven’t asked the question, the answer has nowhere to go. It hits your mind and bounces right off. You have to ask the question — you have to want to know — in order to open up the space for the answer to fit.” Robin Hanson, The Elephant in the Brain: Hidden Motives in Everyday Life
 
 + “Nothing is more expensive than being unhappy” – @tomfgoodwin
 
