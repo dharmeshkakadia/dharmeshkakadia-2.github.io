@@ -7,6 +7,9 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ खोज में खुद की निकल पड़े, पत्थर पूजे हर कोई   
+  मंज़िल मिली ना रास्ते, हमसफ़र भी मिले ना कोई   
+
 + People often forget that I don’t forget 
 
 + Let go off the weight of unfulfilled expectations, so that it can shoulder your dreams 
