@@ -7,6 +7,9 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Melt your ego, mould it with pain  
+  Without loosing, no one can gain   
+
 + खोज में खुद की निकल पड़े, पत्थर पूजे हर कोई   
   मंज़िल मिली ना रास्ते, हमसफ़र भी मिले ना कोई   
 
