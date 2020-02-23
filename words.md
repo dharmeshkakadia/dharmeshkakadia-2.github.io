@@ -228,6 +228,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "Hope is a good breakfast, but it is a bad supper." - Francis Bacon
 
++ “Avoid calling heroes those who had no other choice.” – Taleb
+
 + You should consider what you want *before* considering what you can.
 
 + "Nobody will protect you from your suffering. You can’t cry it away or eat it away or starve it away or walk it away or punch it away or even therapy it away. It’s just there, and you have to survive it. You have to endure it. You have to live through it and love it and move on and be better for it and run as far as you can in the direction of your best and happiest dreams across the bridge that was built by your own desire to heal." - Cheryl Strayed
