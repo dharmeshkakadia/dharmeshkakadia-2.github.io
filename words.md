@@ -240,6 +240,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + “When given the choice between being right or being kind, choose kind.”
 
++ "Play stupid games, win stupid prizes"
+
 + In any dispute between being smart and not being stupid, not stupid wins … by a lot.
 
 + If you aren't going all the way, why go at all? ~ Joe Namath
