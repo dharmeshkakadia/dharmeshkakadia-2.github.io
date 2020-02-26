@@ -7,6 +7,11 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ ख़ुदा की खुदाई पे शक मत करो  
+  तुम अपनी औक़ात का दंभ ना करो   
+  होगा वही जो क़िस्मत में लिखा है   
+  तुम क्रिश्न की लीला में भंग ना करो   
+
 + Melt your ego, mould it with pain  
   Without loosing, no one can gain   
 
