@@ -7,6 +7,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Life is not encyclopedia. Its wikipedia. You can change it.
+
 + दुखी लग रहे हो बहुत, नाराज़ हम भी अभी   
   साथ थे हम दोनों कभी, तस्वीर में ही सही   
 
