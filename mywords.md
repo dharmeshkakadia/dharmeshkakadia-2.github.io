@@ -7,6 +7,14 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ रास्तों में राहे ढूँढ रहा हु,   
+  तारो में इशारे ढूँढ रहा हु   
+  उजाला करने निकला था,   
+  अब बस परछाई ढूँढ रहा हु   
+
++ बात भरोसे की नहीं है, विश्वास अभी भी बहुत है   
+  शिकायत सिर्फ़ इतनी है की बातें कुछ अनकही है  
+
 + Life is not encyclopedia. Its wikipedia. You can change it.
 
 + दुखी लग रहे हो बहुत, नाराज़ हम भी अभी   
