@@ -256,6 +256,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "The safest road to hell is the gradual one - the gentle slope, soft underfoot, without sudden turnings, without milestones, without signposts." - C. S. Lewis
 
++ "No amount of security is worth the suffering of a mediocre life chained to a routine that has killed your dreams." - Maya Mendoza 
+
 + "Success isn't a result of spontaneous combustion. You must set yourself on fire." - Arnold H. Glasow
 
 + “Don’t counter your instincts with your intelligence”
