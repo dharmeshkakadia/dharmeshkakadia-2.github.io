@@ -288,6 +288,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + “In a time of destruction, create something.” ― Maxine Hong Kingston
 
++ “Love speaks in flowers. Truth requires thorns.”― Leigh Bardugo,
+
 + “There is nothing like a dream to create the future.” ― Victor Hugo, Les Misérables
 
 + “Everything that is done in this world is done by hope.” ― Martin Luther
