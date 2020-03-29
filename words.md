@@ -566,8 +566,6 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "Nobody cares how much you know, until they know how much you care." - Theodore Roosevelt
 
-+ "Life is not a dress rehearsal. Make it count."
-
 + Career choice is simple: Which environment you want to be part of? one which does not have answers or one which does not have questions?
 
 + જ્યારથી એ જણ કશાની શોધમાં છે,   
