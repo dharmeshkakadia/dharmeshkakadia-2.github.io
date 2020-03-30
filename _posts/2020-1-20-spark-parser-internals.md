@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Internals of Spark Parser
 ---
 
@@ -124,4 +124,4 @@ Exiting Msg
 
 Thats it! 
 
-> This post is made from the the notebook that I used at for our internal Microsoft [presentation](https://github.com/dharmeshkakadia/spark-internals) and had been sitting in my TODO for years, but was not published here on blog. The Corona virus lockdown has allowed me to finally get to this. Stay safe everyone !!
+> P.S. This post is made from the the notebook that I used at for our internal Microsoft [presentation](https://github.com/dharmeshkakadia/spark-internals) and had been sitting in my TODO for quite some time, but was not published here on blog. The Corona virus lockdown has allowed me to finally get to this. Stay safe everyone !!
