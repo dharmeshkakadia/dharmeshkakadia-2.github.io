@@ -26,12 +26,10 @@ For example, is ``select * from sample`` a valid Spark statement or not?
 
 ### Why understand parser 
 
-Understanding parser allows us to answer questions like, 
-
-* Will/Why is the given statement giving error on parsing?
+* Understand will (or why is) the given statement giving error on parsing?
 * Is this a keyword in Spark or not? 
 * Add new feature (say merge statement support)
-* Build new tools, say our own editor for Spark..
+* Build new tools, say our own editor for Spark...
 * Generating automated tests from the grammar
 
 
