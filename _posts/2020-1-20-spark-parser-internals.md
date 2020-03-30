@@ -60,7 +60,7 @@ ANTLR has following operators that we can use to define structure of any languag
 * repeated zero or more times
 ```
 
-#### Simple ANTLR end to end example
+### Simple ANTLR end to end example
 
 Now we will build a very simple end-to-end example, that recognizes any string starting with `Hello` and extracts the alphabetic word following `Hello`. So, for string `Hello World` it would extract `World`, string `Hello Dharmesh` it would identify `Dharmesh` and so on. 
 
