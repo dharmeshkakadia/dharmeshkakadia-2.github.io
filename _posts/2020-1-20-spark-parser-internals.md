@@ -4,7 +4,7 @@ published: true
 title: Internals of Spark Parser
 ---
 
-In this post we will try to demistify details about Spark Parser and how we can implement a very simple langauge with the usr of same parser toolkit that Spark uses.
+In this post we will try to demystify details about Spark Parser and how we can implement a very simple language with the use of same parser toolkit that Spark uses.
 
 ### Intro
 [Apache Spark](https://spark.apache.org/) is a widely used analytics and machine learning engine, which you have probably heard of. You can use Spark with various languages - Scala, Java, Python - to perform a wide variety of tasks - streaming, ETL, SQL, ML or graph computations. Spark SQL/dataframe is one of the most popular ways to interact with Spark. Spark SQL provides SQL syntax and SQL like API to build complex computation graphs. Spark SQL relies on a common compiler framework to translate the high level SQL code into executable low level code. Spark Catalyst is the name of that compiler framework. 
@@ -21,18 +21,18 @@ Like any compiler, Spark Catalyst compiler has a various modules for different p
 Grammar + Parser helps in answering the following question: 
 >Is given statement complaint to the rules of the language? 
 
-For exmaple, is ``select * from sample`` a valid Spark statement or not?
+For example, is ``select * from sample`` a valid Spark statement or not?
 
 
 ### Why understand parser 
 
-Understaning parser allows us to answer questions like, 
+Understanding parser allows us to answer questions like, 
 
 * Will/Why is the given statement giving error on parsing?
 * Is this a keyword in Spark or not? 
 * Add new feature (say merge statement support)
 * Build new tools, say our own editor for Spark..
-* Generating automated tests from the grammer
+* Generating automated tests from the grammar
 
 
 ### Spark grammar
@@ -50,21 +50,21 @@ Spark grammar is LL. **Spark parser first tries to parse it using SLL mode (Stro
 
 #### ANTLR operators
 
-ANTLR has following operators that we can use to define structure of any langauge. 
+ANTLR has following operators that we can use to define structure of any language. 
 
 ```
 | alternatives
 . any character
 ? repeated zero or one time
 + repeated one or more times
-* repeasted zero or more times
+* repeated zero or more times
 ```
 
 #### Simple ANTLR end to end example
 
-Now we will build a very simple end-to-end example, that recognizes any string starting with `Hello` and extracts the alphabetic word folowing `Hello`. So, for string `Hello World` it would extract `World`, string `Hello Dharmesh` it would identify `Dharmesh` and so on. 
+Now we will build a very simple end-to-end example, that recognizes any string starting with `Hello` and extracts the alphabetic word following `Hello`. So, for string `Hello World` it would extract `World`, string `Hello Dharmesh` it would identify `Dharmesh` and so on. 
 
-First we need to define our grammer formally. Following is the formal definition of our [grammer](https://github.com/dharmeshkakadia/hello-antlr/blob/master/src/main/antlr4/Hello.g4) called `Hello`, where we define word we want to extract as `ID` with `[a-z]+` which means any charchter(`[a-z]`) 1 or more time(`+`). We also define whitespace as `WS` and finally define the `msg` as string `'Hello'` followed by `ID`:
+First we need to define our grammer formally. Following is the formal definition of our [grammer](https://github.com/dharmeshkakadia/hello-antlr/blob/master/src/main/antlr4/Hello.g4) called `Hello`, where we define word we want to extract as `ID` with `[a-z]+` which means any character(`[a-z]`) 1 or more time(`+`). We also define whitespace as `WS` and finally define the `msg` as string `'Hello'` followed by `ID`:
 
 ```antlr-java
 grammar Hello;
@@ -86,7 +86,7 @@ public void enterMsg(HelloParser.MsgContext ctx){
 }
 ```
 
-Finally, we have to initilize the lexer, parser etc. and start the parsing in our [main program](https://github.com/dharmeshkakadia/hello-antlr/blob/master/src/main/java/Hello.java) after passing the string `Hello Wrold`.
+Finally, we have to initialize the lexer, parser etc. and start the parsing in our [main program](https://github.com/dharmeshkakadia/hello-antlr/blob/master/src/main/java/Hello.java) after passing the string `Hello World`.
 
 ```java
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -106,7 +106,7 @@ public class Hello {
 
 [Our example code](https://github.com/dharmeshkakadia/hello-antlr) uses [ANTLR maven plugin](https://www.antlr.org/api/maven-plugin/latest/), which takes care of generating the code for the grammar. 
 
-To compile the priject and generate parser code,
+To compile the project and generate parser code,
 
 ```
 mvn compile
