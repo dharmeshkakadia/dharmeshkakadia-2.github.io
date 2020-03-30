@@ -4,6 +4,7 @@ published: true
 title: Internals of Spark Parser
 ---
 
+In this post we will try to demistify details about Spark Parser and how we can implement a very simple langauge with the usr of same parser toolkit that Spark uses.
 
 ### Intro
 [Apache Spark](https://spark.apache.org/) is a widely used analytics and machine learning engine, which you have probably heard of. You can use Spark with various languages - Scala, Java, Python - to perform a wide variety of tasks - streaming, ETL, SQL, ML or graph computations. Spark SQL/dataframe is one of the most popular ways to interact with Spark. Spark SQL provides SQL syntax and SQL like API to build complex computation graphs. Spark SQL relies on a common compiler framework to translate the high level SQL code into executable low level code. Spark Catalyst is the name of that compiler framework. 
