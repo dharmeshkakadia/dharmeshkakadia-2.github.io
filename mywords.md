@@ -7,6 +7,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Brave, not blind.
+
 + सपनो का मंदिर बनाओ, मेहनत की सीढिया   
   ये मुंबई है भाई, यँहा सब के angle होते है    
 
