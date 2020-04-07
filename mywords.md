@@ -7,6 +7,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Happiness is being the fish in the water. Wisdom is knowing you are in water-tank.
+
 + Brave, not blind.
 
 + सपनो का मंदिर बनाओ, मेहनत की सीढिया   
