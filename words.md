@@ -280,6 +280,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + “Hope is a waking dream.” ― Aristotle
 
++ "I know the craft don't know the art"
+
 + If you treat life like a race, you're just going to get to the finish line faster. - Sahil lavingia 
 
 + Dont live for your obituary. - John Scalzi (Book with the same title)
