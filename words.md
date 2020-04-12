@@ -270,6 +270,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + “Nothing is more expensive than being unhappy” – @tomfgoodwin
 
++ "Start, because continuing is so much easier."- https://twitter.com/shl/status/1249456352256118784
+
 + “Everything which you did today which took time away from what you wanted to do to improve yourself and your condition is an addiction, and has to be treated accordingly. Denying this truth will prevent you from realizing your addiction is a source of problems, and has to be treated first.” - @DellAnnaLuca
 
 + "The quality and quantity of the opportunities which will present in front of you always match the value you can provide to them. This is true for love, work, friendship, everything. Working on yourself is the best way to increase your opportunities." - @DellAnnaLuca
