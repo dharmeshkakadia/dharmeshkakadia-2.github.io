@@ -7,6 +7,12 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ सवालो की सवलियत नही, ना जवाबो की दास्तान   
+  आधी अधूरी किताब हू, यहा क्या ही मेरी पहचान     
+
++ सवालो की सवलियत नही, ना जवाबो की दास्तान   
+  आधी अधूरी किताब हू, तुम क्या जानो मेरी कहानी    
+
 + Happiness is being the fish in the water. Wisdom is knowing you are in water-tank.
 
 + Brave, not blind.
