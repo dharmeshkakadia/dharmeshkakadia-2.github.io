@@ -12,7 +12,7 @@ published: true
 + “Pessimists are intelligent.  
   Optimists are rich.” - @dmuthuk
 
-+ Sillion valley’s largest export is optimism towards to the future. - Daniel gross
++ Sillion valley’s largest export is optimism towards the future. - Daniel gross
 
 + Be bold and be right - Steve Ballmer
 
