@@ -298,6 +298,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + “Everything that is done in this world is done by hope.” ― Martin Luther
 
++ “Every past decline looks like an opportunity, every future decline looks like a risk.” – Morgan Housel
+
 + Because in the end, you won’t remember the time you spent working in the office or mowing your lawn. Climb that goddamn mountain.” - Jack Kerouac
 
 + "Not all those who wander are lost." - Tolkien
