@@ -169,9 +169,9 @@ Also, there is `hive.metastore.ds.connection.url.hook` which allows alternative 
 
 ### Resources:
 
-1. http://stackoverflow.com/questions/17461932/hive-execution-hook
-2. http://www.slideshare.net/julingks/apache-hive-hooksminwookim130813
-3. https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/Driver.java
+1. [http://stackoverflow.com/questions/17461932/hive-execution-hook](http://stackoverflow.com/questions/17461932/hive-execution-hook)
+2. [http://www.slideshare.net/julingks/apache-hive-hooksminwookim130813](http://www.slideshare.net/julingks/apache-hive-hooksminwookim130813)
+3. [https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/Driver.java](https://github.com/apache/hive/blob/master/ql/src/java/org/apache/hadoop/hive/ql/Driver.java)
 
 
 

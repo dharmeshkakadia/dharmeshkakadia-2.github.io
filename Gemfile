@@ -1,5 +1,5 @@
-source "https://rubygems.org"
-
+source 'https://rubygems.org'
+gem "bundler"
 gem "jekyll"
-gem "html-proofer"
-gem "jekyll-gist"
+gem "jekyll-sitemap"
+gem 'jekyll-tagging'

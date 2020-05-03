@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 title: Review - Are Ideas Getting Harder to Find? 
 ---
 This is a review of a recent paper [Are Ideas Getting Harder to Find?](https://web.stanford.edu/~chadj/IdeaPF.pdf) by Charles I. Jones. [Slides](https://web.stanford.edu/~chadj/slides-ideas.pdf) are also available.

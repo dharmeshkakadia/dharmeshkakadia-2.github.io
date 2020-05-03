@@ -1,5 +1,6 @@
 ---
 published: true
+layout: post
 title: Automate SQL server data pipelines with Kubernetes
 ---
 Kubernetes provides a great way to run modern infrastructure. SQL server is a widely deployed database. When you combine these two, you get a robust way of running a data pipeline using a modern platform.

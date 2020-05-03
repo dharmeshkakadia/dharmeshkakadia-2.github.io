@@ -1,92 +1,68 @@
-#
-# This file contains configuration flags to customize your site
-#
-
-# Name of your site (displayed in the header)
-name: Dharmesh Kakadia
-
-# Short bio or description (displayed in the header)
+title: Dharmesh Kakadia
+logo:  # you can add own logo.
 description: Curious
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars2.githubusercontent.com/u/2123078
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
-  github: dharmeshkakadia
-  instagram:
-  linkedin: dharmeshkakadia
-  pinterest:
-  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: dharmeshkakadia
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+#baseurl: "/" # the subpath of your site, e.g. /blog
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
+# Author Settings
+author:
+  name: Dharmesh Kakadia
+  image: '/images/dharmesh.png'
+  job: Lead AI/ML/Data at Microsoft
+  bio: Curious. Currently working on AI in FinTech
+  email: dharmesh.kakadia@gmail.com
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-44808193-2
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
+# Contact links
+contact:
+  - name: Twitter
+    link: https://twitter.com/dharmeshkakadia
+  - name: Facebook
+    link: https://facebook.com/dharmesh.kakadia
+  - name: Github
+    link: https://github.com/dharmeshkakadia  
+  - name: LinkedIn
+    link: https://instagram.com/dharmeshkakadia
 
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
+# Comment Section (Disqus)
+disqus-identifier: 
 
-#markdown: kramdown
-#highlighter: pygments
+
+# Google Analytics
+google-analytics: UA-44808193-2
+
+
+# Build settings
+markdown: kramdown
 permalink: /:title/
-
-# The release of Jekyll Now that you're using
-version: v1.2.0
-
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  # syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    # css_class: 'highlight'
-
 plugins:
-- jekyll-gist
- 
+  - jekyll-sitemap
+  - jekyll/tagging
 
-# Set the Sass partials directory, as we're using @imports
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag-page
+tag_permalink_style:  pretty
+
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  sass_dir: _sass
+  style: compressed
 
-# http://prose.io
-prose:
-  media: 'images'
 
-# Exclude these files from your production _site
+# Exclude from processing.
 exclude:
-    - Gemfile
-    - Gemfile.lock
-    - LICENSE
-    - README.md
-    - CNAME
-    - vendor
+  - Gemfile
+  - Gemfile.lock
+  - vendor

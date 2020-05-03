@@ -2,6 +2,8 @@
 layout: post
 published: true
 title: Internals of Spark Parser
+tags: [Spark, Parser, code-example]
+# image: /images/spark-arch.png
 ---
 
 In this post we will try to demystify details about Spark Parser and how we can implement a very simple language with the use of same parser toolkit that Spark uses.

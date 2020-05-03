@@ -8,7 +8,7 @@ Recently I started using [github action](https://github.com/features/actions) to
 
 Here is my github action config : 
 
-```
+```yaml
 name: CI
 
 on: [push]

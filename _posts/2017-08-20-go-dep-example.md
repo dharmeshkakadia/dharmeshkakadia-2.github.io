@@ -1,4 +1,5 @@
 ---
+layout: post
 published: true
 ---
 I wanted to give Go’s new dependency management system — [dep](https://github.com/golang/dep) - a try. I searched for a minimal example and did not find one. So here it is. The code/instructions are also located at [go-dep-example](https://github.com/dharmeshkakadia/go-dep-example)
