@@ -121,44 +121,82 @@ hr {
   background: $secondary-color;
 }
 
-/**
- * Tables
- */
- table {
-  margin-bottom: $spacing-unit;
-  width: 100%;
-  text-align: $table-text-align;
-  color: lighten($text-color, 18%);
-  border-collapse: collapse;
-  border: 1px solid $grey-color-light;
-  tr {
-    &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
-    }
-  }
-  th, td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
-  }
-  th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
-  }
-  td {
-    border: 1px solid $grey-color-light;
-  }
-
-  @include media-query($on-laptop) {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-            -ms-overflow-style: -ms-autohiding-scrollbar;
-  }
-
-  @include media-query($on-palm) {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-            -ms-overflow-style: -ms-autohiding-scrollbar;
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
   }
 }
+
+
+.wrapper-masthead {
+  margin-bottom: 50px;
+}
+
+.masthead {
+  padding: 20px 0;
+  border-bottom: 1px solid $lightGray;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.site-avatar {
+  float: left;
+  width: 40px;
+  height: 40px;
+  // margin-right: 15px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 5px;
+  }
+}
+
+// /**
+//  * Tables
+//  */
+//  table {
+//   margin-bottom: $spacing-unit;
+//   width: 100%;
+//   text-align: $table-text-align;
+//   color: lighten($text-color, 18%);
+//   border-collapse: collapse;
+//   border: 1px solid $grey-color-light;
+//   tr {
+//     &:nth-child(even) {
+//       background-color: lighten($grey-color-light, 6%);
+//     }
+//   }
+//   th, td {
+//     padding: ($spacing-unit / 3) ($spacing-unit / 2);
+//   }
+//   th {
+//     background-color: lighten($grey-color-light, 3%);
+//     border: 1px solid darken($grey-color-light, 4%);
+//     border-bottom-color: darken($grey-color-light, 12%);
+//   }
+//   td {
+//     border: 1px solid $grey-color-light;
+//   }
+
+//   @include media-query($on-laptop) {
+//     display: block;
+//     overflow-x: auto;
+//     -webkit-overflow-scrolling: touch;
+//             -ms-overflow-style: -ms-autohiding-scrollbar;
+//   }
+
+//   @include media-query($on-palm) {
+//     display: block;
+//     overflow-x: auto;
+//     -webkit-overflow-scrolling: touch;
+//             -ms-overflow-style: -ms-autohiding-scrollbar;
+//   }
+// }

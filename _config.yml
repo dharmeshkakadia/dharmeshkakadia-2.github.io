@@ -1,5 +1,5 @@
 title: Dharmesh Kakadia
-logo:  # you can add own logo.
+logo: '/images/dharmesh.png' # you can add own logo.
 description: Curious
 #baseurl: "/" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -40,6 +40,7 @@ permalink: /:title/
 plugins:
   - jekyll-sitemap
   - jekyll/tagging
+  - jekyll-gist
 
 # Pages Path
 defaults:
