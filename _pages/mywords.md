@@ -8,6 +8,11 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ शब मिले कुछ शब्द मिले   
+  Lockdown के अंत में   
+  नए मिले कुछ वही पुराने   
+  लोग मिल लिए खुद से  
+
 + मैं था, तू थी, सोचा बारी थी हमारी   
   पता कहाँ था, शुरू होनी थी कहानी   
 
