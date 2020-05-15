@@ -254,6 +254,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "What you do counts. Who you are doesn't. You are an ordinary part of an extraordinary process."
 
++ "If you loan someone $20 and you never see them again, it was probably worth it. "
+
 + "The safest road to hell is the gradual one - the gentle slope, soft underfoot, without sudden turnings, without milestones, without signposts." - C. S. Lewis
 
 + "No amount of security is worth the suffering of a mediocre life chained to a routine that has killed your dreams." - Maya Mendoza 
@@ -269,6 +271,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 + “Questions are places in your mind where answers fit. If you haven’t asked the question, the answer has nowhere to go. It hits your mind and bounces right off. You have to ask the question — you have to want to know — in order to open up the space for the answer to fit.” Robin Hanson, The Elephant in the Brain: Hidden Motives in Everyday Life
 
 + “Nothing is more expensive than being unhappy” – @tomfgoodwin
+
++ "Everyone is brave in a battle which someone else is fighting." - @Kpaxs
 
 + "Start, because continuing is so much easier."- https://twitter.com/shl/status/1249456352256118784
 
