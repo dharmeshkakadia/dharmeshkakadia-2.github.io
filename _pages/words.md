@@ -118,7 +118,7 @@ published: true
 
 + Sometimes, the squeaky wheel gets replaced.
 
-+ "Don’t play team sports alone: you’ll lose" - https://lethain.com/acquihire-tips/
++ "Don’t play team sports alone: you’ll lose" - [Will Larson](https://lethain.com/acquihire-tips/)
 
 + If the purpose of existence is procreation, then, ultimately, we're all just ads for our DNA.
 
@@ -128,7 +128,7 @@ published: true
 
 + "When life, the great simulation, gets you down, create a sub-simulation to run diagnostics within."
 
-+ "Lastly, try to remember through all the rejections that sometimes you only need one "yes" to survive and continue the journey. Nobody knows your market like you do--especially not investors so don't get discouraged. You got this. I believe in you" - https://twitter.com/Suhail/status/996767955760308224
++ "Lastly, try to remember through all the rejections that sometimes you only need one "yes" to survive and continue the journey. Nobody knows your market like you do--especially not investors so don't get discouraged. You got this. I believe in you" - [@Suhail](https://twitter.com/Suhail/status/996767955760308224)
 
 + "goals are for losers and passion is overrated" - Scott Adams
 
@@ -160,13 +160,11 @@ published: true
 
 + "Risk" is just a scary synonym for "opportunity."
 
-+ "Life shrinks or expands in proportion to one's courage." — Anais Nin
-
 + "Enthusiasm is common. Commitment is rare"
 
 + “Religion is like a blind man looking in a black room for a black cat that isn't there, and finding it.” ― Anonymous
 
-+ Complexity Sells better but Simplicity works better - https://twitter.com/stocknladdr/status/1068696621544873985
++ Complexity Sells better but Simplicity works better - [@stocknladdr](https://twitter.com/stocknladdr/status/1068696621544873985)
 
 + "Every victory is only the price of admission to a more difficult problem" ― Henry Kissinger
 
@@ -186,7 +184,7 @@ published: true
 
 + Humans are not generally great at understanding 2nd,3rd or nth order effects of their decisions. Online social media has made some of this effects that relatable, through RT, share etc.
 
-+ Build cheaply, and earn the problem of scale - https://twitter.com/cjgbest/status/1010376050268876800
++ Build cheaply, and earn the problem of scale - [@cjgbest](https://twitter.com/cjgbest/status/1010376050268876800)
 
 + Don’t run out of money.
 
@@ -274,7 +272,7 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "Everyone is brave in a battle which someone else is fighting." - @Kpaxs
 
-+ "Start, because continuing is so much easier."- https://twitter.com/shl/status/1249456352256118784
++ "Start, because continuing is so much easier."- [@shl](https://twitter.com/shl/status/1249456352256118784)
 
 + “Everything which you did today which took time away from what you wanted to do to improve yourself and your condition is an addiction, and has to be treated accordingly. Denying this truth will prevent you from realizing your addiction is a source of problems, and has to be treated first.” - @DellAnnaLuca
 
@@ -323,7 +321,7 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + Be regular and orderly in your life, so that you may be violent and original in your work. - Gustave Flaubert
 
-+ The game might be the same, but the players have changed. - https://ofdollarsanddata.com/the-seduction-of-above-average/
++ The game might be the same, but the players have changed. - [Nick Maggiulli](https://ofdollarsanddata.com/the-seduction-of-above-average/)
 
 + “How old would you be if you didn’t know how old you are?” -Satchel Paige
 
@@ -451,7 +449,7 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
   
 
 + You have, all it takes. Except that   
-  It will take all that you have. - https://twitter.com/vijayshekhar/status/671848961246818305
+  It will take all that you have. - [@vijayshekhar](https://twitter.com/vijayshekhar/status/671848961246818305)
   
 + સાવ ખાલીખમ સમયનો સામનો કયાંથી ગમે ?  
   દર વખત સામે મુકાતો આયનો ક્યાંથી ગમે ?
