@@ -12,7 +12,7 @@ I share what I know through [talks](/talks) and my [blog](/)
 
 I write some (non-technical) [words](/mywords) and also collect [other peoples words I like](/words)
 
-I read [books](https://www.goodreads.com/author/show/14159157.Dharmesh_Kakadia) and wrote a [book](/book)
+I like to [read](/reading) and wrote a [book](/book)
 
 I am findable on internet as [dharmesh[.]kakadia](https://www.google.com/search?q=dharmesh%20kakadia)
 
