@@ -8,6 +8,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ A tight hug and a tight slap can fix just about everything.
+
 + कुछ तो बात होगी, तुम्हारी भी फ़रियाद होगी   
   शतरंज का खेल है ये, तुम्हारी भी मात होगी  
 
