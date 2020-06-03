@@ -8,6 +8,11 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ हर शिखर पे मेरा नाम हो   
+  हर शहर में मेरा पाँव हो   
+  हर दिल में मेरा चेहरा बसे   
+  हर दुआ में मेरा नाम हो   
+
 + A tight hug and a tight slap can fix just about everything.
 
 + कुछ तो बात होगी, तुम्हारी भी फ़रियाद होगी   
