@@ -8,6 +8,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Logic goes only so far in changing hearts. 
+
 + I have direct channel to god but just lost the encryption keys. So nothing makes sense. 
 
 + धोखा दे दिया लफ़्ज़ों ने, होंठों ने हार मान ली   
