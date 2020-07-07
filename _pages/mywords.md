@@ -8,6 +8,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Use fast thinking to remove ambiguity and slow thinking to remove uncertainty
+
 + Logic goes only so far in changing hearts. 
 
 + I have direct channel to god but just lost the encryption keys. So nothing makes sense. 
