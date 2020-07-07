@@ -306,7 +306,7 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "Not all those who wander are lost." - Tolkien
 
-+ Use fast thinking to remove ambiguity and slow thinking to remove uncertainty
++ "El Flojo Trabaja el Doble (The Lazy One Works Double)"
 
 + And somewhere there are engineers 
   Helping machines learn faster than humans.  
