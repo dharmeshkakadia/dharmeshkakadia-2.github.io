@@ -8,6 +8,16 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ सपनो को तुम संभाल के रखो   
+  सच्चाई से उनको बचा के रखो   
+  मेहनत दिनभर की काम आएगी   
+  रात सपनो के लिए बचा के रखो   
+    
+  सपनो को तुम संभाल के रखो   
+  सच्चाई से उनको बचा के रखो   
+  बेड़ियाँ दिनभर भले ही लगी हो   
+  सपनो की उड़ान बचा के रखो  
+
 + Use fast thinking to remove ambiguity and slow thinking to remove uncertainty
 
 + Logic goes only so far in changing hearts. 
