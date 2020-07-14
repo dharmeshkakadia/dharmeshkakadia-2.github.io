@@ -190,6 +190,8 @@ published: true
 
 + "Men resist randomness, markets resist prophecy." – Maggie Mahar
 
++ "Normal is an illusion. What is normal for the spider is chaos for the fly." — Charles Addams
+
 + “A great goal in life would be to not have to be in a given place at a given time. Being accountable for your output rather than your input. I would love to be paid purely for my judgment.” - naval
 
 + "You were born with wings, why prefer to crawl through life?" ― Rumi
