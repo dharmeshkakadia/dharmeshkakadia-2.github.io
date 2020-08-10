@@ -104,6 +104,8 @@ published: true
 
 + Its only crazy until you do it.
 
++ Age quod agis—”Do what you are doing.” aka Focus.
+
 + The irony of success is you ascend to a level that’s a lot less fun but a lot more powerful - Bill Simmons and John Skipper
 
 + Be present, not perfect. - Aimee Chase (has book with the same title) 
