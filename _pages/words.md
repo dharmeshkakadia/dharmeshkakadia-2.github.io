@@ -180,6 +180,8 @@ published: true
 
 + Life is not a dress rehearsal. Rose Tremain. Make is count.
 
++ "Trade money for time, not time for money. You’re going to run out of time first." - Naval
+
 + “Every one who has taken a shower has had an idea. It's the person who gets out of the shower, dries off and does something about it that makes a difference.” ― Nolan Bushnell
 
 + “Infinity is my spiritual horizon.” ― Talismanist Giebra
