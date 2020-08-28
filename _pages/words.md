@@ -194,6 +194,8 @@ published: true
 
 + Don’t run out of money.
 
++ “Far more is accomplished through movement than was ever achieved through meditation.” - Getting Everything You Can Out of All You’ve Got, Jay Abraham
+
 + "Men resist randomness, markets resist prophecy." – Maggie Mahar
 
 + "Normal is an illusion. What is normal for the spider is chaos for the fly." — Charles Addams
