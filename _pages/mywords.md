@@ -8,6 +8,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Ego slows you down.
+
 + Dont outsource your self interest.
 
 + आज नहीं तो कल मिले, जो ना मिले तो रब मिले  
