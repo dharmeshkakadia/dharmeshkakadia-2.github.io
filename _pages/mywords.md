@@ -8,6 +8,9 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ नाकामयाबी हर बूँद की, जब सैलाब बनकर आयेगी  
+  हर बूँद पसीना जोड़ कर ही, प्यास ख़्वाबों की जायेगी   
+
 + A little bit of delusion goes a long way.
 
 + Ego slows you down.
