@@ -8,6 +8,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ A little bit of delusion goes a long way.
+
 + Ego slows you down.
 
 + Dont outsource your self interest.
