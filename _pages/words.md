@@ -98,6 +98,8 @@ published: true
 
 + Code your legacy.
 
++ "Spreadsheet leaves no room for miracles" - Rory Sutherland
+
 + Pick battles big enough to matter, small enough to win - Jonathan Kozol
 
 + If you don’t dare to try and chase your dreams, you'll rob yourself the joy of doing it. Don't just dream it. #JustDoIt
