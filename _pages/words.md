@@ -176,6 +176,8 @@ published: true
 
 + “Create with the heart; build with the mind.” ― Criss Jami, Killosophy
 
++ “A genius is the man who can do the average thing when everyone else around him is losing his mind.” —Napoleon
+
 + "Too old am I to be content with play; Too young to be untroubled by desire." Goethe's Faust.
 
 + The days are long but the decades are short - Sam Altman
