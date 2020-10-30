@@ -8,6 +8,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Pessimism is lazy.
+
 + नाकामयाबी हर बूँद की, जब सैलाब बनकर आयेगी  
   हर बूँद पसीना जोड़ कर ही, प्यास ख़्वाबों की जायेगी   
 
