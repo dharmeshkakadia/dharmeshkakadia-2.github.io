@@ -5,6 +5,7 @@ permalink: /talks/
 published: true
 ---
 
+* [Data Science : Raw Data to Actionable Insights](https://speakerdeck.com/dharmeshkakadia/data-science-raw-data-to-actionable-insights) @ Futuristic Technologies in Computer Science by Computer Society of India. Oct, 2020.
 * [Cloud Native Machine Learning](https://speakerdeck.com/dharmeshkakadia/cloud-native-machine-learning) @ East Bay Cloud Native meetup. Apr, 2019. [[video]](https://www.youtube.com/watch?v=HB6MCLFuT3A)
 * [Machine Learning on Kubernetes](https://speakerdeck.com/dharmeshkakadia/machine-learning-on-kubernetes) @ Kubernetes SF meetup. Aug, 2018
 * [Stream Processing](https://speakerdeck.com/dharmeshkakadia/stream-processing) @ Twitter HQ. Jun, 2018.
