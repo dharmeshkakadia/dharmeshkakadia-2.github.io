@@ -8,6 +8,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Words have the power that Money will only dream of.
+
 + Be grounded in data. Follow your heart.
 
 + Pessimism is lazy.
