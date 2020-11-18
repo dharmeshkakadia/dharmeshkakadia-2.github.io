@@ -8,6 +8,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Be grounded in data. Follow your heart.
+
 + Pessimism is lazy.
 
 + नाकामयाबी हर बूँद की, जब सैलाब बनकर आयेगी  
