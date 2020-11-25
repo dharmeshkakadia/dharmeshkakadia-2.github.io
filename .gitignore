@@ -9,4 +9,4 @@ node_modules
 package.json
 vendor/
 .jekyll-metadata
-.jekyll-cach
+.jekyll-cache
