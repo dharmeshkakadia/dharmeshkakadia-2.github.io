@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- mobile responsive meta -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Internals of Spark Parser</title>
+  <meta name='description' content='Curious'>
+
+  <link rel="canonical" href="/spark-parser-internals/">
+  <link rel="alternate" type="application/rss+xml" title="Dharmesh Kakadia" href="/feed.xml">
+
+  <!-- Main Stylesheet -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+  
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44808193-2', 'auto');
+  ga('send', 'pageview');
+</script>
+  
+
+  <div class="container-full">
+  <!-- begin header -->
+  <header class="header">
+
+    <div class="logo">
+      <a class="logo__link" href="/">
+      
+        <img class="logo__image" src=" /images/dharmesh.png" alt="Dharmesh Kakadia">
+        Dharmesh Kakadia
+      
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <span class="main-nav__open">menu</span>
+
+      <div class="main-nav__box">
+        <span class="main-nav__close">Close</span>
+
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="/" class="nav__link">Home</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="/about" class="nav__link">About</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="/words/" class="nav__link">Quotes</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="/book/" class="nav__link">My Book</a>
+          </li>
+
+
+          <li class="nav__item">
+            <a href="/talks" class="nav__link">Talks</a>
+          </li>
+          
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+  <!-- end header -->
+</div>
+
+
+  <!-- begin content -->
+  <main class="content" aria-label="Content">
+    <div class="container">
+  <!-- begin post -->
+  <article class="post">
+    <div class="post__head" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
+      <h1 class="post__title">Internals of Spark Parser</h1>
+      <div class="post__date">
+        <time datetime="2020-01-20T00:00:00+00:00">Published Jan 20, 2020</time>
+      </div>
+      
+    </div>
+
+    <div class="post__content" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-delay="100" data-aos-duration="700">
+      <p>In this post we will try to demystify details about Spark Parser and how we can implement a very simple language with the use of same parser toolkit that Spark uses.</p>
+
+<h3 id="intro">Intro</h3>
+<p><a href="https://spark.apache.org/">Apache Spark</a> is a widely used analytics and machine learning engine, which you have probably heard of. You can use Spark with various languages - Scala, Java, Python - to perform a wide variety of tasks - streaming, ETL, SQL, ML or graph computations. Spark SQL/dataframe is one of the most popular ways to interact with Spark. Spark SQL provides SQL syntax and SQL like API to build complex computation graphs. Spark SQL relies on a common compiler framework to translate the high level SQL code into executable low level code. Spark Catalyst is the name of that compiler framework.</p>
+
+<h3 id="catalyst-architecture">Catalyst Architecture</h3>
+
+<p>Following image describes various steps and components of Spark Catalyst. The image is taken from <a href="https://databricks.com/glossary/catalyst-optimizer">databricks</a>
+<img src="/images/spark-arch.png" alt="spark-arch.png" /></p>
+
+<p>Like any compiler, Spark Catalyst compiler has a various modules for different phases of compilation process. In this post we will focus more on parser part of the Catalyst and will also write an example program that parses simple string into well defined tokens.</p>
+
+<h3 id="grammar-and-parsers">Grammar and parsers</h3>
+
+<p>Grammar + Parser helps in answering the following question:</p>
+<blockquote>
+  <p>Is given statement complaint to the rules of the language?</p>
+</blockquote>
+
+<p>For example, is <code class="highlighter-rouge">select * from sample</code> a valid Spark statement or not?</p>
+
+<h3 id="why-understand-parser">Why understand parser</h3>
+
+<ul>
+  <li>Understand will (or why is) the given statement giving error on parsing?</li>
+  <li>Is this a keyword in Spark or not?</li>
+  <li>Add new feature (say merge statement support)</li>
+  <li>Build new tools, say our own editor for Spark…</li>
+  <li>Generating automated tests from the grammar</li>
+</ul>
+
+<h3 id="spark-grammar">Spark grammar</h3>
+
+<p>Spark grammar is LL. <strong>Spark parser first tries to parse it using SLL mode (Strong LL), which is faster. If that fails, it will try to parse it as LL.</strong> <code class="highlighter-rouge">LL</code> stands for Left to right parsing, deriving leftmost derivation.</p>
+
+<blockquote>
+  <p>A grammar G = ( N, T, P, S ) is said to be strong LL(k) for some fixed natural number k if for all nonterminals A, and for any two distinct A-productions in the grammar.</p>
+</blockquote>
+
+<blockquote>
+  <p>The strong LL(k) grammars are a subset of the LL(k) grammars that can be parsed without knowledge of the left-context of the parse. That is, each parsing decision is based only on the next k tokens of the input for the current nonterminal that is being expanded. Or in other words, parsers that ignore the parser call stack for prediction are called Strong LL (SLL) parsers.</p>
+</blockquote>
+
+<h3 id="antlr">ANTLR</h3>
+
+<p><a href="https://www.antlr.org/">ANTLR</a> stands for <code class="highlighter-rouge">ANother Tool for Language Recognition</code>. Its a toolkit for building languages and parsers. ANTLR can be used as a parser generator for reading, processing, executing, or translating structured text. ANTLR generates a parser that can build and walk parse trees. Its used widely by many big data languages (Groovy, Cassandra, Hive, …)</p>
+
+<h4 id="antlr-operators">ANTLR operators</h4>
+
+<p>ANTLR has following operators that we can use to define structure of any language.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| alternatives
+. any character
+? repeated zero or one time
++ repeated one or more times
+* repeated zero or more times
+</code></pre></div></div>
+
+<h3 id="simple-antlr-end-to-end-example">Simple ANTLR end to end example</h3>
+
+<p>Now we will build a very simple end-to-end example, that recognizes any string starting with <code class="highlighter-rouge">Hello</code> and extracts the alphabetic word following <code class="highlighter-rouge">Hello</code>. So, for string <code class="highlighter-rouge">Hello World</code> it would extract <code class="highlighter-rouge">World</code>, string <code class="highlighter-rouge">Hello Dharmesh</code> it would identify <code class="highlighter-rouge">Dharmesh</code> and so on.</p>
+
+<p>First we need to define our grammer formally. Following is the formal definition of our <a href="https://github.com/dharmeshkakadia/hello-antlr/blob/master/src/main/antlr4/Hello.g4">grammer</a> called <code class="highlighter-rouge">Hello</code>, where we define word we want to extract as <code class="highlighter-rouge">ID</code> with <code class="highlighter-rouge">[a-z]+</code> which means any character(<code class="highlighter-rouge">[a-z]</code>) 1 or more time(<code class="highlighter-rouge">+</code>). We also define whitespace as <code class="highlighter-rouge">WS</code> and finally define the <code class="highlighter-rouge">msg</code> as string <code class="highlighter-rouge">'Hello'</code> followed by <code class="highlighter-rouge">ID</code>:</p>
+
+<pre><code class="language-antlr-java">grammar Hello;
+msg   : 'Hello' ID;
+ID  : [a-z]+ ;
+WS  : [ \t\r\n]+ -&gt; skip ;
+</code></pre>
+
+<p>Now, we have to implement <a href="https://github.com/dharmeshkakadia/hello-antlr/blob/master/src/main/java/HelloVister.java">Visiter interface</a> to decide what to do when we encounter/parse/traverse a node in the grammar. For our simple example, we are just going to print the <code class="highlighter-rouge">ID</code> value as the parser enters and exits the node while parsing the input string.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloVister</span> <span class="kd">extends</span> <span class="n">HelloBaseListener</span> <span class="o">{</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">enterMsg</span><span class="o">(</span><span class="n">HelloParser</span><span class="o">.</span><span class="na">MsgContext</span> <span class="n">ctx</span><span class="o">){</span>
+	<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Entering Msg : "</span> <span class="o">+</span> <span class="n">ctx</span><span class="o">.</span><span class="na">ID</span><span class="o">().</span><span class="na">getText</span><span class="o">());</span>
+<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">exitMsg</span><span class="o">(</span><span class="n">HelloParser</span><span class="o">.</span><span class="na">MsgContext</span> <span class="n">ctx</span><span class="o">){</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Exiting Msg"</span><span class="o">);</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Finally, we have to initialize the lexer, parser etc. and start the parsing in our <a href="https://github.com/dharmeshkakadia/hello-antlr/blob/master/src/main/java/Hello.java">main program</a> after passing the string <code class="highlighter-rouge">Hello World</code>.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">org.antlr.v4.runtime.ANTLRInputStream</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.antlr.v4.runtime.CommonTokenStream</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.antlr.v4.runtime.tree.ParseTreeWalker</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Hello</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="n">HelloLexer</span> <span class="n">lexer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HelloLexer</span><span class="o">(</span><span class="k">new</span> <span class="n">ANTLRInputStream</span><span class="o">(</span><span class="s">"Hello world"</span><span class="o">));</span>
+		<span class="n">HelloParser</span> <span class="n">parser</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HelloParser</span><span class="o">(</span><span class="k">new</span> <span class="n">CommonTokenStream</span><span class="o">(</span><span class="n">lexer</span><span class="o">));</span>
+		<span class="n">ParseTreeWalker</span> <span class="n">visiter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ParseTreeWalker</span><span class="o">();</span>
+		<span class="n">visiter</span><span class="o">.</span><span class="na">walk</span><span class="o">(</span><span class="k">new</span> <span class="n">HelloVister</span><span class="o">(),</span><span class="n">parser</span><span class="o">.</span><span class="na">msg</span><span class="o">());</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+
+<p><a href="https://github.com/dharmeshkakadia/hello-antlr">Our example code</a> uses <a href="https://www.antlr.org/api/maven-plugin/latest/">ANTLR maven plugin</a>, which takes care of generating the code for the grammar.</p>
+
+<p>To compile the project and generate parser code,</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mvn compile
+</code></pre></div></div>
+
+<p>To run the program that passes in <code class="highlighter-rouge">Hello World</code> to our parser,</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mvn exec:java -q
+</code></pre></div></div>
+
+<p>which would print</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Entering Msg : world
+Exiting Msg
+
+</code></pre></div></div>
+
+<p>Thats it!</p>
+
+<blockquote>
+  <p>P.S. This post is made from the the notebook that I used at for our internal Microsoft <a href="https://github.com/dharmeshkakadia/spark-internals">presentation</a> and had been sitting in my TODO for quite some time, but was not published here on blog. The Corona virus lockdown has allowed me to finally get to this. Stay safe everyone !!</p>
+</blockquote>
+
+    </div>
+
+    
+    <div class="post-tags">
+      
+      <a href="/tag/spark" class="post-tags__tag">spark</a>
+      
+      <a href="/tag/parser" class="post-tags__tag">parser</a>
+      
+      <a href="/tag/code-example" class="post-tags__tag">code-example</a>
+      
+    </div>
+    
+
+    <div class="post__share">
+      <ul class="share__list list-reset">
+        
+
+        <li class="share__item">
+          <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=Internals%20of%20Spark%20Parser&url=/spark-parser-internals/"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow">
+              <svg enable-background="new 0 0 56.693 56.693" height="56.693" viewBox="0 0 56.693 56.693" width="56.693" xmlns="http://www.w3.org/2000/svg"><path d="m52.837 15.065c-1.811.805-3.76 1.348-5.805 1.591 2.088-1.25 3.689-3.23 4.444-5.592-1.953 1.159-4.115 2-6.418 2.454-1.843-1.964-4.47-3.192-7.377-3.192-5.581 0-10.106 4.525-10.106 10.107 0 .791.089 1.562.262 2.303-8.4-.422-15.848-4.445-20.833-10.56-.87 1.492-1.368 3.228-1.368 5.082 0 3.506 1.784 6.6 4.496 8.412-1.656-.053-3.215-.508-4.578-1.265-.001.042-.001.085-.001.128 0 4.896 3.484 8.98 8.108 9.91-.848.23-1.741.354-2.663.354-.652 0-1.285-.063-1.902-.182 1.287 4.015 5.019 6.938 9.441 7.019-3.459 2.711-7.816 4.327-12.552 4.327-.815 0-1.62-.048-2.411-.142 4.474 2.869 9.786 4.541 15.493 4.541 18.591 0 28.756-15.4 28.756-28.756 0-.438-.009-.875-.028-1.309 1.974-1.422 3.688-3.203 5.042-5.23z"/></svg>
+            </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="post__navigation">
+      
+      <a class="prev" href="/github-actions-awesome-bot/">
+        <div class="prev__post-icon">
+          <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m352 128.4-32.3-32.4-159.7 160 159.7 160 32.3-32.4-127.3-127.6z"/></svg>
+        </div>
+        <span class="post__nav-wrapper">
+          <div class="post__nav-image" style="background-image: url()"></div>
+          <h2 class="post__nav-title"><time datetime="2020-01-20T00:00:00+00:00">Jan 20, 2020</time> <br>Verifying links with Github actions & Awesome Bot</h2>
+        </span>
+      </a>
+      
+
+      
+    </div>
+
+    
+
+  </article>
+  <!-- end post -->
+</div>
+
+  </main>
+  <!-- end content -->
+
+  <div class="container">
+  <!-- begin footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="contact">
+        <div class="contact__title">Have a question where I can help? <a href="mailto:dharmesh.kakadia@gmail.com">Email me</a></div>
+        <ul class="contact__list list-reset">
+          
+          <li class="contact__item">
+            <a class="contact__link" href="https://twitter.com/dharmeshkakadia">Twitter</a>
+          </li>
+          
+          <li class="contact__item">
+            <a class="contact__link" href="https://facebook.com/dharmesh.kakadia">Facebook</a>
+          </li>
+          
+          <li class="contact__item">
+            <a class="contact__link" href="https://github.com/dharmeshkakadia">Github</a>
+          </li>
+          
+          <li class="contact__item">
+            <a class="contact__link" href="https://instagram.com/dharmeshkakadia">LinkedIn</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+</div>
+
+
+  <!-- begin js -->
+  <script src="/assets/js/vendors/jquery-3.3.1.min.js"></script>
+  <script src="/assets/js/vendors/aos.js"></script>
+  <script src="/assets/js/vendors/jquery.fitvids.js"></script>
+  <script src="/assets/js/common.js"></script>
+  <!-- end js -->
+</body>
+
+</html>
