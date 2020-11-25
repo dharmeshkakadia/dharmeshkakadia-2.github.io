@@ -36,23 +36,24 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 45px 0 30px;
+  margin: 60px 0 15px;
   font-family: $website_font;
   line-height: initial;
-  font-weight: 400;
+  font-weight: 1000;
   letter-spacing: 0.1px;
+  color: rgb(30, 30, 30);
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 42px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 36px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 h4 {
@@ -103,7 +104,7 @@ img {
 
 a {
     text-decoration: none;
-    color: $primary-color;
+    color: $link-color;
     transition: color 200ms;
 
     &:hover {
