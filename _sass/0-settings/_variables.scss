@@ -1,16 +1,20 @@
 // *****************
 // Color Variables
 // *****************
-$primary-color: #6b69fa;
-$secondary-color: #ffd001;
+$primary-color: #1c1c1d;
+$secondary-color: #666665;
+$link-color: #6166DC;
 $dark: #333;
-$gray: #666;
-$gray-dark: #999;
-$gray-blue: #b3bbcb;
+$gray: rgb(70, 50, 50);
+$gray-light: rgb(100, 87, 87);
+$gray-dark: rgb(21, 21, 21);
+$gray-blue: #7c7b7a;
 $gray-white: #f8f8f8;
 $gray-lighten: #c7d0e2;
 $white: #fff;
-$website_font: 'Lora', Georgia, Times, 'Times New Roman', serif;
+$black: #000;
+// $website_font: 'Lora', Georgia, Times, 'Times New Roman', serif;
+$website_font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $spacing-unit: 30px !default;
 $table-text-align: left !default;
 $text-color: #111111 !default;
