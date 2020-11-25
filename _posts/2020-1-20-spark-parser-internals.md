@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Internals of Spark Parser
-tags: [Spark, Parser, code-example]
+tags: [spark, parser, code-example]
 # image: /images/spark-arch.png
 ---
 
