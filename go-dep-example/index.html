@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- mobile responsive meta -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Go Dep Example</title>
+  <meta name='description' content='Curious'>
+
+  <link rel="canonical" href="/go-dep-example/">
+  <link rel="alternate" type="application/rss+xml" title="Dharmesh Kakadia" href="/feed.xml">
+
+  <!-- Main Stylesheet -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+  
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44808193-2', 'auto');
+  ga('send', 'pageview');
+</script>
+  
+
+  <div class="container-full">
+  <!-- begin header -->
+  <header class="header">
+
+    <div class="logo">
+      <a class="logo__link" href="/">
+      
+        <img class="logo__image" src=" /images/dharmesh.png" alt="Dharmesh Kakadia">
+        Dharmesh Kakadia
+      
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <span class="main-nav__open">menu</span>
+
+      <div class="main-nav__box">
+        <span class="main-nav__close">Close</span>
+
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="/" class="nav__link">Home</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="/about" class="nav__link">About</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="/words/" class="nav__link">Quotes</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="/book/" class="nav__link">My Book</a>
+          </li>
+
+
+          <li class="nav__item">
+            <a href="/talks" class="nav__link">Talks</a>
+          </li>
+          
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+  <!-- end header -->
+</div>
+
+
+  <!-- begin content -->
+  <main class="content" aria-label="Content">
+    <div class="container">
+  <!-- begin post -->
+  <article class="post">
+    <div class="post__head" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
+      <h1 class="post__title">Go Dep Example</h1>
+      <div class="post__date">
+        <time datetime="2017-08-20T00:00:00+00:00">Published Aug 20, 2017</time>
+      </div>
+      
+    </div>
+
+    <div class="post__content" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-delay="100" data-aos-duration="700">
+      <p>I wanted to give Go’s new dependency management system — <a href="https://github.com/golang/dep">dep</a> - a try. I searched for a minimal example and did not find one. So here it is. The code/instructions are also located at <a href="https://github.com/dharmeshkakadia/go-dep-example">go-dep-example</a></p>
+
+<ol>
+  <li>
+    <p>Lets install dep. On mac, you can do the following:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">brew install dep</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">dep init</code> This will generate following tree</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     ├── Gopkg.lock
+     ├── Gopkg.toml
+     ├── README.md
+     └── vendor
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Now import the new package in the code. We will import <a href="https://github.com/franela/goreq">github.com/franela/goreq</a>. You will see your IDE complaining about not being able to find the package, since its not yet installed. We will do that next. You can confirm this by running <code class="language-plaintext highlighter-rouge">dep status</code></p>
+  </li>
+  <li>
+    <p>Run dep ensure If you run <code class="language-plaintext highlighter-rouge">dep status</code> now it will confirm the package is installed. Also, the vendor directory now will have the following files from the package:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> vendor
+     └── github.com
+         └── franela
+             └── goreq
+                 ├── LICENSE
+                 ├── Makefile
+                 ├── README.md
+                 ├── goreq.go
+                 ├── goreq_test.go
+                 └── tags.govendor
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>You are ready, go change the world !</p>
+
+<p>P.S. This post is also published on <a href="https://medium.com/@dharmesh.kakadia/minimal-go-dep-example-54fc862615c4">medium</a>.</p>
+
+    </div>
+
+    
+
+    <div class="post__share">
+      <ul class="share__list list-reset">
+        
+
+        <li class="share__item">
+          <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=Go%20Dep%20Example&url=/go-dep-example/"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow">
+              <svg enable-background="new 0 0 56.693 56.693" height="56.693" viewBox="0 0 56.693 56.693" width="56.693" xmlns="http://www.w3.org/2000/svg"><path d="m52.837 15.065c-1.811.805-3.76 1.348-5.805 1.591 2.088-1.25 3.689-3.23 4.444-5.592-1.953 1.159-4.115 2-6.418 2.454-1.843-1.964-4.47-3.192-7.377-3.192-5.581 0-10.106 4.525-10.106 10.107 0 .791.089 1.562.262 2.303-8.4-.422-15.848-4.445-20.833-10.56-.87 1.492-1.368 3.228-1.368 5.082 0 3.506 1.784 6.6 4.496 8.412-1.656-.053-3.215-.508-4.578-1.265-.001.042-.001.085-.001.128 0 4.896 3.484 8.98 8.108 9.91-.848.23-1.741.354-2.663.354-.652 0-1.285-.063-1.902-.182 1.287 4.015 5.019 6.938 9.441 7.019-3.459 2.711-7.816 4.327-12.552 4.327-.815 0-1.62-.048-2.411-.142 4.474 2.869 9.786 4.541 15.493 4.541 18.591 0 28.756-15.4 28.756-28.756 0-.438-.009-.875-.028-1.309 1.974-1.422 3.688-3.203 5.042-5.23z"/></svg>
+            </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="post__navigation">
+      
+      <a class="prev" href="/presto-hdinsight/">
+        <div class="prev__post-icon">
+          <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m352 128.4-32.3-32.4-159.7 160 159.7 160 32.3-32.4-127.3-127.6z"/></svg>
+        </div>
+        <span class="post__nav-wrapper">
+          <div class="post__nav-image" style="background-image: url()"></div>
+          <h2 class="post__nav-title"><time datetime="2017-08-20T00:00:00+00:00">Aug 20, 2017</time> <br>Presto on HDInsight</h2>
+        </span>
+      </a>
+      
+
+      
+      <a class="next" href="/multistage-docker-go/">
+        <div class="next__post-icon">
+          <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m160 128.4 32.3-32.4 159.7 160-159.7 160-32.3-32.4 127.3-127.6z"/></svg>
+        </div>
+        <span class="post__nav-wrapper">
+          <div class="post__nav-image" style="background-image: url()"></div>
+          <h2 class="post__nav-title"><time datetime="2017-08-20T00:00:00+00:00">Aug 20, 2017</time> <br>Multi stage docker build for go</h2>
+        </span>
+      </a>
+      
+    </div>
+
+    
+
+  </article>
+  <!-- end post -->
+</div>
+
+  </main>
+  <!-- end content -->
+
+  <div class="container">
+  <!-- begin footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="contact">
+        <div class="contact__title">Have a question where I can help? <a href="mailto:dharmesh.kakadia@gmail.com">Email me</a></div>
+        <ul class="contact__list list-reset">
+          
+          <li class="contact__item">
+            <a class="contact__link" href="https://twitter.com/dharmeshkakadia">Twitter</a>
+          </li>
+          
+          <li class="contact__item">
+            <a class="contact__link" href="https://facebook.com/dharmesh.kakadia">Facebook</a>
+          </li>
+          
+          <li class="contact__item">
+            <a class="contact__link" href="https://github.com/dharmeshkakadia">Github</a>
+          </li>
+          
+          <li class="contact__item">
+            <a class="contact__link" href="https://instagram.com/dharmeshkakadia">LinkedIn</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+</div>
+
+
+  <!-- begin js -->
+  <script src="/assets/js/vendors/jquery-3.3.1.min.js"></script>
+  <script src="/assets/js/vendors/aos.js"></script>
+  <script src="/assets/js/vendors/jquery.fitvids.js"></script>
+  <script src="/assets/js/common.js"></script>
+  <!-- end js -->
+</body>
+
+</html>
