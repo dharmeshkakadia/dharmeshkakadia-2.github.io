@@ -8,6 +8,9 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ किताबों की दुकान में, एक ख़त पुराना बिक गया   
+  यादें कुछ पुरानी, कुछ सामान मौत का बिक गया   
+
 + Words have the power that Money will only dream of.
 
 + Be grounded in data. Follow your heart.
