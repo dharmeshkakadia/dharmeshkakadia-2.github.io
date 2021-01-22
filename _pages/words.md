@@ -723,6 +723,8 @@ Higher education is like antibiotics (costly, focused, can be harmful if not sui
 
 + "Choices make you rational, about everything"
 
++ "Sprint or walk. Never jog" - @nntaleb
+
 + Eventually all the pieces fall into place. Until then, laugh at the confusion, live for the moment and know that everything happens for a reason.
 
 + “You are what you settle for” - Janis Joplin
