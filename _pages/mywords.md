@@ -8,6 +8,14 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ How to learn anything:
+
+  1. Find/Build an environment where you can play the whole game.
+  2. Find something you like in the game and where you suck.
+  3. Work hard on where you suck. Use the fun part to build something useful as you go.
+
+  Rinse & Repeat.
+
 + हक़ जताने का हक़ है तुम्हें, बात इजाज़त की ना करो   
   मनमानिया है ये इश्क़ की, समझने की कोशिश ना करो  
 
