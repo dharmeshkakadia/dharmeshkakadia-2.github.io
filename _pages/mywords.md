@@ -8,6 +8,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Planning is astrology for organisations.
+
 + How to learn anything:
 
   1. Find/Build an environment where you can play the whole game.
