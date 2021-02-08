@@ -50,6 +50,8 @@ published: true
 
 + Measure what matters. 
 
++ "Everyone has the brainpower to make money in stocks. Not everyone has the stomach." - Peter Lynch
+
 + Do something that you will be proud of no matter the outcome.
 
 + Easy paths, crowded destinations.
