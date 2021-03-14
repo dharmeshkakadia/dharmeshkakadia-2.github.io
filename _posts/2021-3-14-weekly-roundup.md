@@ -1,23 +1,24 @@
 ---
 layout: post
 published: true
-title: What I consumed this week
+title: What I Consumed This Week
 ---
 
-I belive in "what you consume consumes you", so here is my last week's diet:
+I believe in "what you consume consumes you", so here is my last week's diet:
 
-## Podcasts & Videos
+### Podcasts & Videos
 
 * [Tim Urban - Exploring Ourselves on Infinite Loops](https://www.breaker.audio/infinite-loops/e/80593086). Great discussion and frameworks.
 
-* [Jonathan Neman - Building the Modern Restaurant on Invest Like the Best](https://www.breaker.audio/invest-like-the-best/e/82819241). Good discussion on 
+* [Jonathan Neman - Building the Modern Restaurant on Invest Like the Best](https://www.breaker.audio/invest-like-the-best/e/82819241). Good discussion on traditional businesses embracing tech & economics of food delivery. Also, check out [Doordash and Pizza Arbitrage
+](https://themargins.substack.com/p/doordash-and-pizza-arbitrage)
 
 * Meghan Oprah Interview.
 
-## Articles
+### Articles
 
+* [Prediction Markets: Tales from the Election](https://vitalik.ca/general/2021/02/18/election.html)
 * [Do Amazon ads bring in more cash than AWS?](https://www.ben-evans.com/benedictevans/2021/3/14/do-amazon-ads-bring-in-more-cash-than-aws)
-Releasing the Second Course in The Private AI Series	https://blog.openmined.org/releasing-the-second-course-in-the-private-ai-series/
 * [The Irrelevant Investor](https://theirrelevantinvestor.com/2021/03/14/these-are-the-goods-208/)
 * [Structured Transparency: Ensuring Input and Output Privacy](https://blog.openmined.org/structured-transparency-input-output-privacy/)
 * [Career advice for people with bad luck](https://chiefofstuff.substack.com/p/career-advice-for-people-with-bad)
