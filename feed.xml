@@ -7,28 +7,29 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>What I consumed this week</title>
-        <description>&lt;p&gt;I belive in “what you consume consumes you”, so here is my last week’s diet:&lt;/p&gt;
+        <title>What I Consumed This Week</title>
+        <description>&lt;p&gt;I believe in “what you consume consumes you”, so here is my last week’s diet:&lt;/p&gt;
 
-&lt;h2 id=&quot;podcasts--videos&quot;&gt;Podcasts &amp;amp; Videos&lt;/h2&gt;
+&lt;h3 id=&quot;podcasts--videos&quot;&gt;Podcasts &amp;amp; Videos&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://www.breaker.audio/infinite-loops/e/80593086&quot;&gt;Tim Urban - Exploring Ourselves on Infinite Loops&lt;/a&gt;. Great discussion and frameworks.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.breaker.audio/invest-like-the-best/e/82819241&quot;&gt;Jonathan Neman - Building the Modern Restaurant on Invest Like the Best&lt;/a&gt;. Good discussion on&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.breaker.audio/invest-like-the-best/e/82819241&quot;&gt;Jonathan Neman - Building the Modern Restaurant on Invest Like the Best&lt;/a&gt;. Good discussion on traditional businesses embracing tech &amp;amp; economics of food delivery. Also, check out &lt;a href=&quot;https://themargins.substack.com/p/doordash-and-pizza-arbitrage&quot;&gt;Doordash and Pizza Arbitrage
+&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Meghan Oprah Interview.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;articles&quot;&gt;Articles&lt;/h2&gt;
+&lt;h3 id=&quot;articles&quot;&gt;Articles&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.ben-evans.com/benedictevans/2021/3/14/do-amazon-ads-bring-in-more-cash-than-aws&quot;&gt;Do Amazon ads bring in more cash than AWS?&lt;/a&gt;
-Releasing the Second Course in The Private AI Series	https://blog.openmined.org/releasing-the-second-course-in-the-private-ai-series/&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://vitalik.ca/general/2021/02/18/election.html&quot;&gt;Prediction Markets: Tales from the Election&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ben-evans.com/benedictevans/2021/3/14/do-amazon-ads-bring-in-more-cash-than-aws&quot;&gt;Do Amazon ads bring in more cash than AWS?&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://theirrelevantinvestor.com/2021/03/14/these-are-the-goods-208/&quot;&gt;The Irrelevant Investor&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://blog.openmined.org/structured-transparency-input-output-privacy/&quot;&gt;Structured Transparency: Ensuring Input and Output Privacy&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://chiefofstuff.substack.com/p/career-advice-for-people-with-bad&quot;&gt;Career advice for people with bad luck&lt;/a&gt;&lt;/li&gt;
