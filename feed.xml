@@ -7,6 +7,76 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>What I consumed this week</title>
+        <description>&lt;p&gt;I belive in “what you consume consumes you”, so here is my last week’s diet:&lt;/p&gt;
+
+&lt;h2 id=&quot;podcasts--videos&quot;&gt;Podcasts &amp;amp; Videos&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.breaker.audio/infinite-loops/e/80593086&quot;&gt;Tim Urban - Exploring Ourselves on Infinite Loops&lt;/a&gt;. Great discussion and frameworks.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.breaker.audio/invest-like-the-best/e/82819241&quot;&gt;Jonathan Neman - Building the Modern Restaurant on Invest Like the Best&lt;/a&gt;. Good discussion on&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Meghan Oprah Interview.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;articles&quot;&gt;Articles&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ben-evans.com/benedictevans/2021/3/14/do-amazon-ads-bring-in-more-cash-than-aws&quot;&gt;Do Amazon ads bring in more cash than AWS?&lt;/a&gt;
+Releasing the Second Course in The Private AI Series	https://blog.openmined.org/releasing-the-second-course-in-the-private-ai-series/&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://theirrelevantinvestor.com/2021/03/14/these-are-the-goods-208/&quot;&gt;The Irrelevant Investor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.openmined.org/structured-transparency-input-output-privacy/&quot;&gt;Structured Transparency: Ensuring Input and Output Privacy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chiefofstuff.substack.com/p/career-advice-for-people-with-bad&quot;&gt;Career advice for people with bad luck&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://muratbuffalo.blogspot.com/2021/03/your-attitude-determines-your-success.html&quot;&gt;Your attitude determines your success&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://theirrelevantinvestor.com/2021/03/13/why-do-some-people-hate-cathie-wood/&quot;&gt;Why Do Some People Hate Cathie Wood?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://netflixtechblog.com/production-media-management-transforming-media-workflows-by-leveraging-the-cloud-1174699e4a08&quot;&gt;Production Media Management: Transforming Media Workflows by leveraging the Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nav.al/happiness-2&quot;&gt;Happiness&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ai.googleblog.com/2021/03/leaf-learnable-frontend-for-audio.html&quot;&gt;LEAF: A Learnable Frontend for Audio Classification&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://eng.uber.com/navigating-to-the-technical-program-management-and-learning-team/&quot;&gt;Navigating to the Technical Program Management and Learning Team&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/jaegertracing/jaeger-persistent-storage-with-elasticsearch-cassandra-kafka-f3c6c680a58c&quot;&gt;Jaeger Persistent Storage With Elasticsearch, Cassandra &amp;amp; Kafka&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://theirrelevantinvestor.com/2021/03/12/animal-spirits-investing-in-freedom/&quot;&gt;Animal Spirits: Investing in Freedom&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://theirrelevantinvestor.com/2021/03/12/how-to-become-a-financial-advisor/&quot;&gt;How To Become a Financial Advisor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://robinhood.engineering/growing-the-number-of-women-in-crypto-3a7be8218fad&quot;&gt;Growing the Number of Women in Crypto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.confluent.io/blog/integrate-kafka-and-jaeger-for-distributed-tracing-and-monitoring&quot;&gt;Integrating Apache Kafka Clients with CNCF Jaeger at Funding Circle Using OpenTelemetry&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.openmined.org/ai-privacy-and-compliance/&quot;&gt;AI Privacy and Compliance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=bqWAVNjk-cg&quot;&gt;How Can Machines Learn Human Values? - with Brian Christian&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bair.berkeley.edu/blog/2021/03/10/maxent-robust-rl/&quot;&gt;Maximum Entropy RL (Provably) Solves Some Robust RL Problems&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nav.al/read&quot;&gt;Read the Best 100 Books Over and Over Again&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.confluent.io/blog/how-to-tune-rocksdb-kafka-streams-state-stores-performance/&quot;&gt;How to Tune RocksDB for Your Kafka Streams Application&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://netflixtechblog.com/consoleme-a-central-control-plane-for-aws-permissions-and-access-fd09afdd60a8&quot;&gt;ConsoleMe: A Central Control Plane for AWS Permissions and Access&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://engineering.atspotify.com/2021/03/10/spotifys-new-experimentation-coordination-strategy/&quot;&gt;Spotify’s New Experimentation Coordination Strategy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://theirrelevantinvestor.com/2021/03/10/animal-spirits-the-recession-is-over/&quot;&gt;Animal Spirits: The Recession is Over&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.collaborativefund.com/blog/investing-the-greatest-show-on-earth/&quot;&gt;Investing: The Greatest Show On Earth&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bair.berkeley.edu/blog/2021/03/09/maxent-robust-rl/&quot;&gt;Maximum Entropy RL (Provably) Solves Some Robust RL Problems&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://eng.lyft.com/frontend-at-lyft-an-overview-f934c1524370&quot;&gt;Frontend at Lyft: An Overview&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.confluent.io/blog/real-time-analytics-with-kafka-and-pinot/&quot;&gt;Under the Hood of Real-Time Analytics with Apache Kafka and Pinot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pudding.cool/2021/03/love-and-ai/&quot;&gt;Nothing Breaks Like A.I. Heart&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://theirrelevantinvestor.com/2021/03/09/a-once-in-a-career-occurence/&quot;&gt;A Once-In-A-Career Occurrence&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://awealthofcommonsense.com/2020/12/a-short-history-of-chasing-the-best-performing-funds/&quot;&gt;A Short History of Chasing The Best Performing Funds&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.morningstar.com/articles/1027682/no-room-on-the-ark&quot;&gt;No Room on the ARK?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://nav.al/reach&quot;&gt;We Can Have Explanations That Reach the Entire Universe&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.collaborativefund.com/blog/the-fed-isnt-printing-as-much-money-as-you-think/&quot;&gt;The Fed Isn’t Printing As Much Money As You Think&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://robinhood.engineering/lets-talk-about-women-and-investing-f6298ff9f63d&quot;&gt;Let’s talk about women and investing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://netflixtechblog.com/remote-workstations-for-the-discerning-artists-8155a8fbd190&quot;&gt;Remote Workstations for the Discerning Artists&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://theirrelevantinvestor.com/2021/03/07/the-most-important-chart-of-the-decade/&quot;&gt;The Most Important Chart of the Decade&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://theirrelevantinvestor.com/2021/03/07/these-are-the-goods-207/&quot;&gt;The Irrelevant Investor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://elastisys.com/what-was-observability-again/&quot;&gt;What was observability again?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://theirrelevantinvestor.com/2021/02/26/what-happened-to-gold/&quot;&gt;What Happened to Gold?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/synapsefi/a-new-breed-of-neobank-the-neolender-9dfd2b983cfc&quot;&gt;Meet The New Breed Of Neobank… The ‘Neolender’&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://theirrelevantinvestor.com/2021/01/26/reflexivity-everywhere/&quot;&gt;Reflexivity Everywhere&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
+        <link>/weekly-roundup/</link>
+        <guid isPermaLink="true">/weekly-roundup/</guid>
+      </item>
+    
+      <item>
         <title>Internals of Spark Parser</title>
         <description>&lt;p&gt;In this post we will try to demystify details about Spark Parser and how we can implement a very simple language with the use of same parser toolkit that Spark uses.&lt;/p&gt;
 
@@ -900,73 +970,6 @@ URL: http://192.168.64.4:31112/function/hello
         <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
         <link>/openfaas-kubernetes/</link>
         <guid isPermaLink="true">/openfaas-kubernetes/</guid>
-      </item>
-    
-      <item>
-        <title>Multi stage docker build for go</title>
-        <description>&lt;p&gt;Support for multistage docker build has landed in Docker earlier this year. Multi stage builds simplify the image building and the genereated images are much smaller in the size. The code/instructions are available at &lt;a href=&quot;https://github.com/dharmeshkakadia/go-multi-stage-docker&quot;&gt;go-multi-stage-docker&lt;/a&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Here is our lovely go program that we want to run in the image:&lt;/p&gt;
-
-    &lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
-
- &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
-
- &lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-     &lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Println&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello Multistage Docker builds!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
- &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Here is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; that you can use:&lt;/p&gt;
-
-    &lt;div class=&quot;language-Dockerfile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c&quot;&gt;# gobase layer&lt;/span&gt;
- FROM golang:alpine AS go-base
- ADD . /src
- RUN cd /src &amp;amp;&amp;amp; go build -o hello
-
- &lt;span class=&quot;c&quot;&gt;# final layer&lt;/span&gt;
- FROM alpine
- COPY --from=go-base /src/hello /app/
- ENTRYPOINT /app/hello
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;Here we create two layers:&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;go-base layer: Includes go runtime. We are mounting src directory in the image and compiling our go package(hello.go) and generating the output binary hello.&lt;/li&gt;
-      &lt;li&gt;app layer: Extends the alpine image by copying our binary(/src/hello) from the go-base layer to /app/. It also defines entrypoint for the image as our binary(/app/hello)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Lets build our image and name it &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;go-multi-stage-docker&lt;/code&gt; :
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ docker build -f Dockerfile -t go-multi-stage-docker:latest .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    &lt;p&gt;You can see the new image would be only few MBs in the size :&lt;/p&gt;
-
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ docker image ls go-multi-stage-docker
-
- REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
- go-multi-stage-docker   latest              5f037e697b51        4 minutes ago       5.52MB
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Lets run our app/image&lt;/p&gt;
-
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; $ docker run --rm go-multi-stage-docker
-
- Hello Multistage Docker builds!
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Thats it !&lt;/p&gt;
-</description>
-        <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
-        <link>/multistage-docker-go/</link>
-        <guid isPermaLink="true">/multistage-docker-go/</guid>
       </item>
     
   </channel>
