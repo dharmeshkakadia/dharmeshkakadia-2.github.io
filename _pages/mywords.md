@@ -10,7 +10,7 @@ Some words I have written. Recent ones at the top.
 
 + I am smart enough to understand I am not wise.
 
-+ Smart enough to understand the difference between smart and wise. Not wise enough to explain it.
++ Smart enough to recognise the difference between smart and wise. Not wise enough to explain it.
 
 + Planning is astrology for organisations.
 
