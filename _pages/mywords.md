@@ -8,6 +8,8 @@ published: true
 
 Some words I have written. Recent ones at the top.
 
++ Passion is going after dreams without thinking of odds. Courage is going after dreams *even after* knowing the low odds.
+
 + I am smart enough to understand I am not wise.
 
 + Smart enough to recognise the difference between smart and wise. Not wise enough to explain it.
