@@ -8,12 +8,22 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}'>
 
-<link rel="canonical" href="https://dharmeshkakadia.com/blog{{ page.url | replace:'index.html','' | absolute_url }}">
+
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@site_username">
   <meta name="twitter:creator" content="@creator_username">
+  {% if page.layout == "post"%}
+    <link rel="canonical" href="https://dharmeshkakadia.com/blog{{ page.url | replace:'index.html','' | absolute_url }}">
+    <meta http-equiv="refresh" content="0; url=https://dharmeshkakadia.com/blog{{ page.url | replace:'index.html','' | absolute_url }}">
+  {% endif %}
+  
+  {% if page.layout == "page"%}
+    <link rel="canonical" href="https://dharmeshkakadia.com/{{ page.url | replace:'index.html','' | absolute_url }}">
+    <meta http-equiv="refresh" content="0; url=https://dharmeshkakadia.com/{{ page.url | replace:'index.html','' | absolute_url }}">
+  {% endif %}
+  
   {% if page.title %}
     <meta name="twitter:title" content="{{ page.title }}">
   {% else %}
