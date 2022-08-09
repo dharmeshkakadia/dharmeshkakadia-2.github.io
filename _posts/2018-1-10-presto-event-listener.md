@@ -3,7 +3,7 @@ published: true
 layout: post
 title: Write a Presto query logging plugin
 ---
-[Presto](https://prestodb.io/) is a fast distributed SQL query engine for big data. I wrote a more [introductory](http://dharmeshkakadia.github.io/presto-hdinsight/) and up and running post a while back.
+[Presto](https://prestodb.io/) is a fast distributed SQL query engine for big data. I wrote a more [introductory](blog/presto-hdinsight/) and up and running post a while back.
 
 Presto users frequently [[1](https://stackoverflow.com/questions/47286733/logging-all-presto-queries), [2](https://groups.google.com/forum/#!topic/presto-users/9jV7iOfdqeY), [3](https://groups.google.com/forum/#!topic/presto-users/zN2DFnzy5bs), [4](https://groups.google.com/forum/#!topic/presto-users/i1aG5LO40SY)] want the ability to log various details regarding queries and execution information from Presto. This is very useful for operationalizing presto in any organization. Logging query details allows a team to understand the usage of Presto, provide operational analytics and identify on performance bottlenecks. If you want to know how to achieve this, read on. You can also use this guide to learn how to implement any presto plugin. All the [code](https://github.com/dharmeshkakadia/presto-event-logger) used in this post is available. 
 

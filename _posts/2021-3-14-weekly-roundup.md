@@ -3,8 +3,7 @@ layout: post
 published: true
 title: What I Consumed This Week
 ---
-
-I believe in "what you consume consumes you", so here is my last week's diet:
+I believe in "what you consume consumes you", so here is my last week's diet.
 
 ### Podcasts & Videos
 

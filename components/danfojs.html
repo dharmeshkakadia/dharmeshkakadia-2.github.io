@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/danfojs@0.1.1/dist/index.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="plot_div"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+
+    <script>
+
+        dfd.read_csv("https://gist.githubusercontent.com/dharmeshkakadia/fc65eadf559cf3191a4fa5dcc36588ca/raw/ab44ae7b7c7c98c7f67c0d44d95ea5809310280b/pocket-test.csv")
+            .then(df => {
+                df.describe().print()
+                df.plot("plot_div").table()
+
+
+                df['AAPL.Open'].plot("div1").box() //makes a box plot
+
+                df.plot("div2").table() //display csv as table
+
+                new_df = df.set_index({ key: "Date" }) //resets the index to Date column
+                new_df.plot("div3").line({ columns: ["AAPL.Open", "AAPL.High"] })  //makes a timeseries plot
+
+            }).catch(err => {
+                console.log(err);
+            })
+
+    </script>
+    
+</body>
+
+</html>
